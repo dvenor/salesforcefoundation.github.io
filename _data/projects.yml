@@ -1,0 +1,12 @@
+- name:           Cumulus
+  description:        The next version of the Salesforce.com Nonprofit Starter Pack
+  repo:               https://github.com/SalesforceFoundation/Cumulus
+
+- name:           mrbelvedere
+  url:                https://salesforcefoundation.github.io/mrbelvedere
+  description:        A build bot used to fill gaps in triggering jobs and interacting with the GitHub API for CumulusCI
+  repo:               https://github.com/SalesforceFoundation/mrbelvedere
+
+- name:           visualforce-typeahead
+  description:        A flexible typeahead component for use on Visualforce pages. Uses the typeahead.js library from Twitter.
+  repo:               https://github.com/SalesforceFoundation/visualforce-typeahead

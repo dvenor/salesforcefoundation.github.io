@@ -1,0 +1,8 @@
+name: Salesforce.com Foundation Technology and Products
+markdown: redcarpet
+pygments: true
+
+paginate: 10
+paginate_path: ":num"
+
+exclude: [bower_components, node_modules]

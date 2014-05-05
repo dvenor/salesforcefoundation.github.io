@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body class="post">
+    <script>
+      window.location.href = '/#blog/post' + window.location.pathname;
+    </script>
+    {% include header.html %}
+
+    <div class="post">
+      <div class="meta">
+        <div class="post-date">{{ page.date | date: '%B %d, %Y' }}</div>
+        {% if page.author %}
+          {% assign member = site.data.members[page.author] %}
+          <img class="avatar" src="{{member.avatar}}?s=140" alt="{{page.author}}">
+          <span class="post-author">by {{ page.author }}</span>
+        {% endif %}
+      </div>
+      <h2 class="post-title">{{ page.title }}</h2>
+
+      <div class="content">
+        {{ content }}
+      </div>
+    </div>
+        
+    {% include footer.html %}
+  </body>
+</html>
+
+

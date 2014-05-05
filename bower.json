@@ -1,0 +1,23 @@
+{
+  "name": "salesforcefoundation.github.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/SalesforceFoundation/salesforcefoundation.github.io",
+  "authors": [
+    "Ryan Foster <ryan@rynamic.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-theme-foundation": "git@github.com:SalesforceFoundation/bootstrap-theme-foundation.git#gh-pages",
+    "backbone": "~1.1.2",
+    "requirejs": "~2.1.11",
+    "fontawesome": "~4.0.3"
+  }
+}

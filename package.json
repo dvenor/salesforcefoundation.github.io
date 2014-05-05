@@ -1,0 +1,29 @@
+{
+  "name": "salesforcefoundation.github.io",
+  "version": "0.0.0",
+  "description": "",
+  "main": " ",
+  "dependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-copy": "~0.5.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-less": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-requirejs": "^0.4.4",
+    "almond": "^0.2.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/SalesforceFoundation/salesforcefoundation.github.io.git"
+  },
+  "author": "Ryan Foster <ryan@rynamic.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SalesforceFoundation/salesforcefoundation.github.io/issues"
+  },
+  "homepage": "https://github.com/SalesforceFoundation/salesforcefoundation.github.io"
+}

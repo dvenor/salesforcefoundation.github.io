@@ -1,0 +1,121 @@
+---
+layout:     default
+title:      "Salesforce.com Foundation Technology and Products"
+base_url:   "./"
+---
+<section class="project-cloud">
+  <h2 class="section-head" id="projects">Projects</h2>
+  <div class="clouds">
+    <a class="clouds-up" href="#"></a>
+    {% for project in site.data.projects %}
+      <div class="cloud cloud-{% cycle '1', '2', '3', '4' %} cloud-pos-{{ forloop.index }}">
+        <a class="cloud-name" href="{% if project.url %}{{ project.url }}{% else %}{{ project.repo }}{% endif %}">
+          {{ project.name }}
+        </a>
+        <div class="cloud-info">
+          <p>
+            {{ project.description }}
+          </p>
+          <p>
+            {% if project.url %} <a href="{{ project.url }}" class="btn btn-primary">Project Site</a>{% endif %}
+            {% if project.repo %} <a href="{{ project.repo }}" class="btn btn-success">View on Github</a>{% endif %}
+          </p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section section-blog">
+  <h2 class="section-head" id="blog">Blog</h2>
+  <div class="container">
+    <div class="blog">
+      <article class="post">
+      </article>
+      <div class="blog-list">
+        <h4 class="blog-list-title">Recent Posts</h4>
+        <ul class="posts shown">
+          {% for post in paginator.posts %}
+            {% assign member = site.data.members[post.author] %}
+            <li>
+              {% if member %}
+                <img class="avatar" src="{{ member.avatar }}?s=140">
+              {% endif %}
+              <div class="posts-body">
+                <h3><a class="posts-link" href="#blog/post{{ post.url }}">{{ post.title }}</a></h3>
+                <span class="post-date">{{ post.date | date: '%B %d, %Y' }}</span>
+                {% if post.author %}<span class="author">by {{ post.author }}</span>{% endif %}
+                <p>{{ post.excerpt }}</p>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+        {% if paginator.total_pages > 1 %}
+          <ul class="pager" id="#pager">
+            {% if paginator.previous_page %}
+              <li>
+                {% if paginator.page == 2 %}
+                  <a href="#blog/page/1">&larr; Newer</a></li>
+                {% else %}
+                  <a href="#blog/page{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer</a></li>
+                {% endif %}
+            {% else %}
+              <li class="disabled"><a>Newer</a></li>
+            {% endif %}
+
+            {% if paginator.next_page %}
+              <li><a href="#blog/page{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &rarr;</a></li>
+            {% else %}
+              <li class="disabled"><a>Older &rarr;</a></li>
+            {% endif %}
+          </ul>
+        {% endif %}
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="section section-team">
+  <h2 class="section-head" id="team">Team</h2>
+  <div class="team-members">
+    {% for item in site.data.members %}
+    {% assign name = item[0] %}
+    {% assign member = item[1] %}
+      <div class="member">
+        {% if member.avatar %}
+          <img src="{{ member.avatar }}?s=460">
+        {% else %}
+          <div class="placeholder"></div>
+        {% endif %}
+        <div class="caption">
+          <h3>{{ name }}</h3>
+          {% if member.title %}
+            <p>{{ member.title }}</p>
+          {% endif %}
+          {% if member.bio %}
+            <p>{{ member.bio }}</p>
+          {% endif %}
+          {% if member.github %}
+            <p><i class="fa fa-github"></i> <a href="https://www.github.com/{{ member.github }}">{{ member.github }}</a></p>
+          {% endif %}
+          {% if member.twitter %}
+            <p><i class="fa fa-twitter"></i> {{ member.twitter }}</p>
+          {% endif %}
+          {% if member.url %}
+            <p><a href="https://www.github.com/{{ member.url }}">website</a></p>
+          {% endif %}
+          
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-head" id="about">About</h2>
+  <div class="container">
+  <p class="lead">The Salesforce.com Foundation is based on a simple idea: Leverage salesforce.com’s people, technology and resources to build collective knowledge and enable action to improve communities throughout the world. We call our integrated philanthropic approach the 1:1:1 model.</p>
+  <p class="lead">The Technology and Products team delivers products that drive the Foundation's constituent-centered vision and empower our customers to become connected nonprofits and campuses.</p>
+  </div>
+</section>

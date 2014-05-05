@@ -1,0 +1,561 @@
+@import "bower_components/fontawesome/less/font-awesome.less";
+@import "bower_components/bootstrap-theme-foundation/less/variables.less";
+@import "bower_components/bootstrap/less/mixins.less";
+@import (reference) "bower_components/bootstrap-theme-foundation/less/s1-icons.less";
+@import (reference) "bower_components/bootstrap/less/list-group.less";
+@import (reference) "bower_components/bootstrap/less/thumbnails.less";
+@import (reference) "bower_components/bootstrap/less/grid.less";
+
+body {
+
+
+  
+}
+
+.navbar-branded.navbar-fixed-top {
+    transition: all 200ms;
+    background: @brand-primary;
+    border-bottom: none;
+    top: 0;
+    min-height: 70px;
+    padding: 5px;
+
+    .container {
+        width: 100%;
+    }
+
+    .navbar-toggle {
+        margin-top: 15px;
+    }
+
+    .navbar-brand {
+        padding: 0;
+    }
+
+    .navbar-nav > li {
+      > a {
+        font-size: @font-size-base;
+        padding: 10px;
+        margin-left: 5px;
+
+        &:hover,
+        &:focus {
+          background: darken(@brand-primary, 10%);
+          color: #fff;
+
+          @media (min-width: @screen-sm) {
+            background: transparent;
+            border-bottom: 3px solid rgba(255, 255, 255, 0.4);
+          }
+        }
+
+        @media (min-width: @screen-sm) {
+          padding: 25px 10px 5px 10px;
+        }
+
+      }
+      &.active > a {
+        background: darken(@brand-primary, 10%);
+        color: #fff;
+
+        @media (min-width: @screen-sm) {
+          background: transparent;
+          border-bottom: 3px solid rgba(255, 255, 255, 0.4);
+        }
+      }
+    }
+
+    .navbar-foundation-logo {
+        width: 156px;
+        height: 60px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .navbar-foundation-teams {
+        height: 60px;
+        display: inline-block;
+        margin-left: 20px;
+        border-left: 1px solid rgba(255, 255, 255, 0.6);
+        padding-left: 20px;
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 10px;
+        font-weight: normal;
+    }
+
+    .calc(@attr, @base, @max, @percent) {
+        @{attr}: @base + floor((@percent * (@max - @base)));
+    }
+
+    @media (min-width: @screen-md) {
+      .navscale(@index) when (@index > 0) { // initial
+          @perc: floor((@index * 100));
+          @item: ~"navscale-@{perc}";
+          &.@{item} {
+              background: rgba(red(@brand-primary), green(@brand-primary), blue(@brand-primary), (1 - @index));
+              .calc(top, 0, 10px, @index);
+              .calc(min-height, 70px, 110px, @index);
+
+              .navbar-nav > li > a {
+                  @max_size: ceil((@font-size-base * 1.25));
+                  .calc(font-size, @font-size-base, @max_size, @index);
+                  .calc(padding-top, 25px, 41px, @index);
+                  .calc(padding-bottom, 5px, 10px, @index);
+              }
+              .navbar-foundation-logo {
+                  @logo_height: 60 + floor( ( @index * 40 ) );
+                  @logo_width: (2.6 * 60) + floor( ( @index * ( 260 - (2.6 * 60)) ) );
+                  height: ~"@{logo_height}px";
+                  width: ~"@{logo_width}px";
+              }
+              .navbar-foundation-teams {
+                  .calc(height, 60px, 100px, @index);
+                  .calc(font-size, 16px, ceil((@font-size-base * 2)), @index);
+                  .calc(line-height, 20px, ceil((@font-size-base * 2.55)), @index);
+                  .calc(padding-top, 10px, 14px, @index);
+              }
+          }
+          .navscale((@index - 0.1));
+      }
+      .navscale(1);
+    }
+
+}
+
+.section {
+  padding-bottom: 120px;
+}
+.section .section-head,
+.section-head {
+  padding: 80px 0 30px;
+  font-size: 38px;
+  text-align: center;
+  text-transform: lowercase;
+  font-weight: bold;
+  border-bottom: none;
+}
+.section-blog {
+
+}
+.section-team {
+  background-color: #fff;
+}
+
+.project-cloud {
+  background: @brand-primary;
+  #gradient > .vertical(@brand-primary, lighten(@brand-primary, 30%));
+
+  > h2 {
+    color: #fff;
+  }
+
+  .clouds {
+    .clouds-up {
+      display: none;
+    }
+    padding: 30px;
+  }
+
+  .cloud {
+    color: @gray-light;
+    font-size: 18px;
+    margin-bottom: 30px;
+    .cloud-name {
+      color: #fff;
+      font-size: 28px;
+    }
+  }
+  
+  @media (min-width: @screen-md) {
+    min-height: 580px;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 5px solid @gray-lighter;
+
+    > h2 {
+      padding: 140px 20px 20px 20px;
+      margin: 0;
+    }
+
+    &.active {
+      background-position: -400px;
+    }
+
+    .clouds {
+      .transition(top 1s);
+      position: absolute;
+      top: 260px;
+      width: 100%;
+
+      .clouds-up {
+        .transition(~"opacity linear 200ms, color linear 200ms, margin-top 200ms");
+        position: absolute;
+        opacity: 0;
+        left: 50%;
+        top: -999px;
+        color: rgba(255, 255, 255, 0.7);
+        &:before {
+          .s1utility;
+          font-size: 40px;
+          content: "\e01e";
+        }
+        &:hover,
+        &:focus {
+          color: rgba(255, 255, 255, 1);
+          margin-top: -5px;
+          text-decoration: none;
+        }
+      }
+
+      &.active {
+        top: 500px;
+
+        .clouds-up {
+          top: -50px;
+          display: block;
+          &.shown {
+            opacity: 1;
+          }
+        }
+
+        .cloud:hover,
+        .cloud:focus {
+          top: -100px;
+        }
+        .cloud.active:hover,
+        .cloud.active:focus {
+          top: -280px;
+        }
+      }
+    }
+
+    .cloud {
+      .transition(~"top 800ms, left 900ms, margin-left 800ms");
+      top: 0;
+      left: 30px;
+      margin-left: 0;
+      position: absolute;
+      display: table;
+      width: 332px;
+      height: 243px;
+
+      .pos(@index) when (@index < 101) {
+        @item: ~".cloud-pos-@{index}";
+        &@{item} {
+          left: (30px + ((@index - 1) * 292px));
+          z-index: (101 - @index);
+        }
+        .pos((@index + 1));
+      }
+      .pos(1);
+
+      .cloud-info {
+        display: none;
+        opacity: 0;
+        .transition(opacity 300ms);
+        color: #fff;
+        font-size: ceil((@font-size-base * 1.65));
+      }
+
+      &.active {
+        top: -280px;
+        left: 50%;
+        width: 760px;
+        margin-left: -360px;
+        z-index: 1;
+        .cloud-info {
+          display: table-cell;
+          vertical-align: middle;
+        }
+        > a {
+          opacity: 1.0;
+        }
+      }
+
+      &.shown {
+        .cloud-info {
+          opacity: 1.0;
+        }
+      }
+
+      .cloud-name {
+        color: @brand-primary;
+        opacity: .8;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 30px;
+        line-height: 34px;
+        padding: 0;
+        margin: 0;
+        padding: 10px 20px 20px 20px;
+        width: 332px;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        box-sizing: border-box;
+        word-wrap:break-word;
+        background-image: url("../images/cloud1.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 50%;
+        transition: opacity 300ms;
+
+        &:hover,
+        &:focus {
+          opacity: 1.0;
+          text-decoration: none;
+        }
+      }
+
+      &.cloud-2 {
+        > a {
+          background-image: url("../images/cloud2.png");
+        }
+      }
+      &.cloud-3 {
+        > a {
+          background-image: url("../images/cloud3.png");
+        }
+      }
+      &.cloud-4 {
+        > a {
+          background-image: url("../images/cloud4.png");
+        }
+      }
+    }
+  }
+}
+
+.blog {
+  .make-row();
+  
+  .blog-list {
+    .make-sm-column(12);
+    
+    .blog-list-title {
+      display: none;
+    }
+    .posts {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      opacity: 0;
+      .transition(opacity 300ms);
+      &.shown {
+        opacity: 1;
+      }
+      
+      > li {
+        .clearfix;
+        list-style: none;
+        background: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid @gray-light;
+
+        .avatar {
+          width: 16.6666667%;
+          
+          margin: 0 10px 10px 0;
+          float: left;
+          border-radius: 8px;
+
+          @media (min-width: @screen-sm) {
+            width: 8.333333%;
+          }
+        }
+
+        .posts-body {
+          display: block;
+          overflow: hidden;
+          zoom: 1;
+          > h3 {
+            margin-top: 0;
+            font-size: 28px;
+            > small {
+              display: block;
+            }
+          }
+          > p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  .post {
+    .transition(opacity 300ms);
+    opacity: 0;
+    position: relative;
+    margin-bottom: 30px;
+
+    &.shown {
+      opacity: 1;
+    }
+
+    .meta {
+      border-bottom: 1px solid @gray-light;
+      line-height: 20px;
+      margin: -15px;
+      margin-bottom: 0;
+
+      .avatar {
+        height: 40px;
+        width: auto;
+      }
+
+      .post-date {
+        background-color: @brand-danger;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        padding: 10px;
+        color: #fff;
+
+        &:after {
+          position: absolute;
+          top: 2px;
+          left: 2px;
+          right: 2px;
+          bottom: 2px;
+          content: '';
+          border: 1px solid lighten(@brand-danger, 10%);
+        }
+      }
+    }
+    
+
+    .post-title {
+      font-size: 48px;
+      margin-bottom: 30px;
+      font-weight: 800;
+    }
+
+    @media (min-width: @screen-md) {
+      .content {
+        padding: 0 40px 0 40px;
+      }
+    }
+  }
+  
+  &.open {
+    .blog-list {
+      .make-sm-column(4);
+      .blog-list-title {
+        display: block;
+      }
+      .posts {
+        .list-group;
+        > li {
+          .list-group-item;
+          .box-shadow(none);
+          border-radius: 0;
+          border-color: @gray;
+
+          &.active {
+            background-color: @gray-light;
+            position: relative;
+
+            .posts-link {
+              color: @gray-dark;
+            }
+
+            @media (min-width: @screen-sm) {
+              &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin-left: -11px;
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent @gray transparent transparent;
+              }
+            }
+          }
+          .avatar {
+            width: 40px;
+            
+            margin: 0 10px 0 0;
+            float: left;
+            border-radius: 8px;
+          }
+          .posts-body {
+            .post-date {
+              font-size: 12px;
+            }
+            .author {
+              font-size: 12px;
+            }
+            > h3 {
+              font-size: 18px;
+              margin: 0;
+            }
+            > p {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .post {
+      min-height: 400px;
+      .make-sm-column(8);
+      padding: 30px;
+      background: #fff;
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, .1);
+    }
+  }
+}
+
+.footer {
+  margin-top: 60px;
+  background-color: @brand-anchor;
+  padding: 60px 20px;
+  color: @gray-light;
+  border-top: 5px solid #fff;
+}
+
+.team-members {
+  .container;
+  .member {
+    .transition(background-color 300ms);
+    
+    .thumbnail;
+    text-align: center;
+    border-radius: 0;
+    background-color: #fff;
+    border: none;
+
+    .make-sm-column(6);
+    .make-md-column(3);
+
+    .caption,
+    .caption > h3 {
+      .transition(color 300ms);
+    }
+
+    .caption {
+      text-align: left;
+      padding: 10px 0;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: @gray-light;
+      .caption,
+      .caption > h3 {
+        
+      }
+    }
+    > img {
+      margin-top: 8px;
+      width: 100%;
+      height: auto;
+    }
+    
+  }
+}
