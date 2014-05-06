@@ -14495,7 +14495,8 @@ require([
 
       this.$('.posts-link, .pager a').on('click', function(event) {
         event.preventDefault();
-        app.router.navigate($(this).attr('href'), {trigger: true, replace: true});
+        var prefix = $(this).is('.posts-link') ? '#blog/post' : '#blog/page/';
+        app.router.navigate(prefix + $(this).attr('href'), {trigger: true, replace: true});
       });
 
       _.each(this.$('.posts > li'), function(item) {
@@ -14544,7 +14545,7 @@ require([
     }
   });
   
-
+  // Router for the app, mostly deals with the blog
   var BlogRouter = Backbone.Router.extend({
     routes: {
       'blog/page/:page': 'blogPage',
@@ -14576,6 +14577,8 @@ require([
       app.scrollTo('#'+id);
     },
 
+    // Not currently in use, but this method allows the pagination and
+    // blog post to be linked in the hash
     navigateSpecial: function(href) {
       var hash = ''+window.location.hash;
       var newHash = '#blog';

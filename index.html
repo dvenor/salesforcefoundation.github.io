@@ -42,7 +42,7 @@ base_url:   "./"
                 <img class="avatar" src="{{ member.avatar }}?s=140">
               {% endif %}
               <div class="posts-body">
-                <h3><a class="posts-link" href="#blog/post{{ post.url }}">{{ post.title }}</a></h3>
+                <h3><a class="posts-link" href="{{ post.url }}">{{ post.title }}</a></h3>
                 <span class="post-date">{{ post.date | date: '%B %d, %Y' }}</span>
                 {% if post.author %}<span class="author">by {{ post.author }}</span>{% endif %}
                 <p>{{ post.excerpt }}</p>
@@ -55,16 +55,16 @@ base_url:   "./"
             {% if paginator.previous_page %}
               <li>
                 {% if paginator.page == 2 %}
-                  <a href="#blog/page/1">&larr; Newer</a></li>
+                  <a href="1">&larr; Newer</a></li>
                 {% else %}
-                  <a href="#blog/page{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer</a></li>
+                  <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer</a></li>
                 {% endif %}
             {% else %}
               <li class="disabled"><a>Newer</a></li>
             {% endif %}
 
             {% if paginator.next_page %}
-              <li><a href="#blog/page{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &rarr;</a></li>
+              <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &rarr;</a></li>
             {% else %}
               <li class="disabled"><a>Older &rarr;</a></li>
             {% endif %}
