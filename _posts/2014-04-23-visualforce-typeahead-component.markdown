@@ -10,11 +10,11 @@ A few months back, I researched “typeahead” components&nbsp;- controls that 
 
 [![typeahead-readme-image](http://groundwired.files.wordpress.com/2014/04/typeahead-readme-image.png?w=600&amp;h=314)](http://groundwired.files.wordpress.com/2014/04/typeahead-readme-image.png)
 
-The most popular open-source typeahead components appear to be [jQueryUI’s autocomplete](http://jqueryui.com/autocomplete/) and [typeahead.js from Twitter](http://twitter.github.io/typeahead.js/).&nbsp;I&nbsp;found several helpful examples of the jQueryUI approach, but I wanted to try to the latest version of Twitter <span class="skimlinks-unlinked">typeahead.js</span> instead – primarily because I found it was easier to use with Javascript remoting to query the data rather than the Salesforce REST API. (Using the REST API&nbsp;consumes API calls, which are limited, while remoting does not.)
+The most popular open-source typeahead components appear to be [jQueryUI’s autocomplete](http://jqueryui.com/autocomplete/) and [typeahead.js from Twitter](http://twitter.github.io/typeahead.js/). I found several helpful examples of the jQueryUI approach, but I wanted to try to the latest version of Twitter typeahead.js instead – primarily because I found it was easier to use with Javascript remoting to query the data rather than the Salesforce REST API. (Using the REST API consumes API calls, which are limited, while remoting does not.)
 
-After I got <span class="skimlinks-unlinked">typeahead.js</span>&nbsp;working on my own page for an internal project, I thought it would be interesting to create a reusable Visualforce component. Introducing [visualforce-typeahead](https://github.com/SalesforceFoundation/visualforce-typeahead), an open-source project you can find and install on Github.
+After I got typeahead.js working on my own page for an internal project, I thought it would be interesting to create a reusable Visualforce component. Introducing [visualforce-typeahead](https://github.com/SalesforceFoundation/visualforce-typeahead), an open-source project you can find and install on Github.
 
-I designed the component with plenty&nbsp;of attributes so that you can customize its behavior, but as they all have default values it is extremely easy to get started with the component – just add it to your page and it works:
+I designed the component with plenty of attributes so that you can customize its behavior, but as they all have default values it is extremely easy to get started with the component – just add it to your page and it works:
 
 {% highlight html %}
 <h3>Account Name:</h3>
@@ -27,4 +27,4 @@ I also created a 4-minute video to introduce the component:
 
 You can install the component and resources into your own Salesforce account (or sandbox) using [this link](https://githubsfdeploy.herokuapp.com/?owner=SalesforceFoundation&amp;repo=visualforce-typeahead).
 
-Please give it a try and leave your feedback, or fork [the project on Github](https://github.com/SalesforceFoundation/visualforce-typeahead). &nbsp;-ejc
+Please give it a try and leave your feedback, or fork [the project on Github](https://github.com/SalesforceFoundation/visualforce-typeahead). -ejc

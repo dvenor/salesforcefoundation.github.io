@@ -2,7 +2,7 @@
   require.config({
     baseUrl: "../",
     wrap: true,
-    optimize: 'none',
+    // optimize: 'none',
     paths: {
       'jquery': 'bower_components/jquery/dist/jquery',
       'underscore': 'bower_components/underscore/underscore',

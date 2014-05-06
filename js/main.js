@@ -198,25 +198,27 @@ require([
 
     $(window).trigger('scroll');
 
-    $('.cloud').on('click', function(event) {
+    $('.cloud-name').on('click', function(event) {
       if ($(window).width() > 992) {
         event.preventDefault();
-
-        var $clouds = $('.clouds');
-        if (!$clouds.is('.active')) {
-          $clouds.addClass('active');
-          $('.project-cloud').addClass('active');
-          $clouds.one($.support.transition.end, function(event) {
-            $('.clouds-up').addClass('shown');
-          });
-        }
-        if (!$(this).is('.active')) {
-          $('.cloud.active').removeClass('active');
-          $('.cloud.shown').removeClass('shown');
-          $(this).addClass('active');
-          $(this).one($.support.transition.end, function(event) {
-            $(this).addClass('shown');
-          });
+        var $el = $(this).closest('.cloud');
+        if (!$el.is('.active')) {
+          var $clouds = $('.clouds');
+          if (!$clouds.is('.active')) {
+            $clouds.addClass('active');
+            $('.project-cloud').addClass('active');
+            $clouds.one($.support.transition.end, function(event) {
+              $('.clouds-up').addClass('shown');
+            });
+          }
+          if (!$(this).is('.active')) {
+            $('.cloud.active').removeClass('active');
+            $('.cloud.shown').removeClass('shown');
+            $el.addClass('active');
+            $el.one($.support.transition.end, function(event) {
+              $el.addClass('shown');
+            });
+          }
         }
       }
     });
