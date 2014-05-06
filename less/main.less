@@ -43,13 +43,13 @@ body {
           background: darken(@brand-primary, 10%);
           color: #fff;
 
-          @media (min-width: @screen-sm) {
+          @media (min-width: @screen-sm-min) {
             background: transparent;
             border-bottom: 3px solid rgba(255, 255, 255, 0.4);
           }
         }
 
-        @media (min-width: @screen-sm) {
+        @media (min-width: @screen-sm-min) {
           padding: 25px 10px 5px 10px;
         }
 
@@ -58,7 +58,7 @@ body {
         background: darken(@brand-primary, 10%);
         color: #fff;
 
-        @media (min-width: @screen-sm) {
+        @media (min-width: @screen-sm-min) {
           background: transparent;
           border-bottom: 3px solid rgba(255, 255, 255, 0.4);
         }
@@ -88,7 +88,7 @@ body {
         @{attr}: @base + floor((@percent * (@max - @base)));
     }
 
-    @media (min-width: @screen-md) {
+    @media (min-width: @screen-md-min) {
       .navscale(@index) when (@index > 0) { // initial
           @perc: floor((@index * 100));
           @item: ~"navscale-@{perc}";
@@ -167,7 +167,7 @@ body {
     }
   }
   
-  @media (min-width: @screen-md) {
+  @media (min-width: @screen-md-min) {
     min-height: 580px;
     position: relative;
     overflow: hidden;
@@ -361,7 +361,7 @@ body {
           float: left;
           border-radius: 8px;
 
-          @media (min-width: @screen-sm) {
+          @media (min-width: @screen-sm-min) {
             width: 8.333333%;
           }
         }
@@ -432,7 +432,7 @@ body {
       font-weight: 800;
     }
 
-    @media (min-width: @screen-md) {
+    @media (min-width: @screen-md-min) {
       .content {
         padding: 0 40px 0 40px;
       }
@@ -461,7 +461,7 @@ body {
               color: @gray-dark;
             }
 
-            @media (min-width: @screen-sm) {
+            @media (min-width: @screen-sm-min) {
               &:before {
                 content: '';
                 position: absolute;
@@ -532,6 +532,7 @@ body {
 
     .make-sm-column(6);
     .make-md-column(4);
+    .make-lg-column(3);
 
     .caption,
     .caption > h3 {

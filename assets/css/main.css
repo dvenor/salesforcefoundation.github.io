@@ -3224,6 +3224,12 @@ a.team-members .member.active {
     width: 33.33333333%;
   }
 }
+@media (min-width: 1200px) {
+  .team-members .member {
+    float: left;
+    width: 25%;
+  }
+}
 .team-members .member .caption,
 .team-members .member .caption > h3 {
   -webkit-transition: color 300ms;
