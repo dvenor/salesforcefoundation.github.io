@@ -241,7 +241,6 @@ require([
     });
 
     // set height of members
-    var firstLoad = true;
     function setMemberHeights() {
       $('.member').removeAttr('style');
       if ($(window).width() > 700) {
@@ -249,11 +248,9 @@ require([
         $('.member').each(function() {
           var thisHeight = $(this).height();
           var thisWidth = $(this).width();
+          var $img = $(this).find('img');
+          if ($img.height() < 1) thisHeight += thisWidth;
           if (thisHeight > height) height = thisHeight;
-          if (firstLoad) {
-            height += thisWidth;
-            firstLoad = false;
-          }
         });
 
         $('.member').height(height);
