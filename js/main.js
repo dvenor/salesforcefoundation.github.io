@@ -50,9 +50,9 @@ require([
         this.$('.pager').html($('<div />').html(this.raw).find('.pager').html());
       }
 
-      this.$('.posts-link, .pager a').on('click', function(event) {
+      this.$('.posts-link, .posts-more, .pager a').on('click', function(event) {
         event.preventDefault();
-        var prefix = $(this).is('.posts-link') ? '#blog/post' : '#blog/page/';
+        var prefix = $(this).parents('.posts').length > 0 ? '#blog/post' : '#blog/page/';
         app.router.navigate(prefix + $(this).attr('href'), {trigger: true, replace: true});
       });
 
@@ -130,7 +130,6 @@ require([
         app.scrollTo('#blog');
         return;
       }
-      if (!id) id = 'projects';
       app.scrollTo('#'+id);
     },
 

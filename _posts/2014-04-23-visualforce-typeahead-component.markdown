@@ -1,12 +1,13 @@
 ---
-layout: post
-title:  "Visualforce Typeahead Component"
-date:   2014-04-23 12:00:00
-author: Evan Callahan
+layout:   post
+title:    "Visualforce Typeahead Component"
+date:     2014-04-23 12:00:00
+author:   Evan Callahan
+excerpt:  "A few months back, I researched “typeahead” components - controls that let you search for data as you type - for use on Visualforce pages. When you want to provide a lookup to related data on a page, this can provide much better usability than the standard Salesforce lookup control."
 ---
 Here is something I hope will be helpful to you.
 
-A few months back, I researched “typeahead” components&nbsp;- controls that let you search for data as you type -&nbsp;for use on Visualforce pages. When you want to provide a lookup to related data on a page, this can provide&nbsp;much better usability than the standard Salesforce lookup control.
+A few months back, I researched “typeahead” components - controls that let you search for data as you type - for use on Visualforce pages. When you want to provide a lookup to related data on a page, this can provide much better usability than the standard Salesforce lookup control.
 
 [![typeahead-readme-image](http://groundwired.files.wordpress.com/2014/04/typeahead-readme-image.png?w=600&amp;h=314)](http://groundwired.files.wordpress.com/2014/04/typeahead-readme-image.png)
 
