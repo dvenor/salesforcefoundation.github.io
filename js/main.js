@@ -239,6 +239,30 @@ require([
         window.location.hash = hash;
       });
     });
+
+    // set height of members
+    var firstLoad = true;
+    function setMemberHeights() {
+      $('.member').removeAttr('style');
+      if ($(window).width() > 700) {
+        var height = 0;
+        $('.member').each(function() {
+          var thisHeight = $(this).height();
+          var thisWidth = $(this).width();
+          if (thisHeight > height) height = thisHeight;
+          if (firstLoad) {
+            height += thisWidth;
+            firstLoad = false;
+          }
+        });
+
+        $('.member').height(height);
+      }
+    }
+    $(window).on('resize', function() {
+      setMemberHeights();
+    });
+    $(window).trigger('resize');
   });
 
 })(jQuery);

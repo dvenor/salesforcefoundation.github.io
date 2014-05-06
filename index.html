@@ -100,10 +100,10 @@ base_url:   "./"
             <p><i class="fa fa-github"></i> <a href="https://www.github.com/{{ member.github }}">{{ member.github }}</a></p>
           {% endif %}
           {% if member.twitter %}
-            <p><i class="fa fa-twitter"></i> {{ member.twitter }}</p>
+            <p><i class="fa fa-twitter"></i> <a href="https://twitter.com/{{ member.twitter }}">{{ member.twitter }}</a></p>
           {% endif %}
           {% if member.url %}
-            <p><a href="https://www.github.com/{{ member.url }}">website</a></p>
+            <p><i class="fa fa-globe"></i> <a href="https://www.github.com/{{ member.url }}">website</a></p>
           {% endif %}
           
         </div>
