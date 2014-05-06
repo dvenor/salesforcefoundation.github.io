@@ -9,7 +9,9 @@ Kevin Bromer:
   github:         kbromer
   avatar:         https://avatars1.githubusercontent.com/u/926530
   title:          "Director of Product Development"
-  bio:            "I've been working with nonprofits on the platform since 2007, and with the Foundation since 2010.  I'm continually impressed with what salesforce and the force.com platform can enable for that community..  I'm into building super functional apps with great APIs, enjoy spending time in the execute anonymous window, and have been known to write a meandering batch class or two when provoked."
+  bio:            "I've been working with nonprofits on the platform since 2007, and with the Foundation since 2010.  I'm continually impressed with what salesforce and the force.com platform can enable for that community. I'm into building super functional apps with great APIs, enjoy spending time in the execute anonymous window, and have been known to write a meandering batch class or two when provoked."
+  twitter:        "kevinbromer"
+  url:            "http://kevinbromer.com"
 Evan Callahan:
   github:         groundwired
   avatar:         https://avatars3.githubusercontent.com/u/806318
@@ -18,7 +20,7 @@ Ryan Foster:
   avatar:         https://avatars0.githubusercontent.com/u/779557
   github:         dextermilo
   title:          "Force.com Developer"
-  bio:            "I have been a long time Web/CRM Developer primarily for nonprofits and joined the Foundation in March 2014. I especially enjoy working on good UI/UX and doing crazy things with the JSON class in Apex."
+  bio:            "I am a long time web developer, primarily for nonprofits, and was thrilled to discover Salesforce and Force.com in 2011. My background includes a smattering of PHP, quite a bit of Python, and lots of Javascript. My favorite projects have three primary ingredients: good design, elegent code, and a good cause. I am also fond of prefixing classnames with 'Ry' and doing crazily awesome things with the JSON class in Apex, though the 'awesome' part is sometimes debatable."
 David Habib:
   github:         davidhabib
   avatar:         https://avatars0.githubusercontent.com/u/908119
@@ -26,6 +28,10 @@ David Habib:
 Shannon Hale:
   github:         shannonsans
   avatar:         https://avatars2.githubusercontent.com/u/306059
+  title:          "Tech and Products Fellow"
+  bio:            "I'm a Salesforce Platform product manager and recovering interaction designer on a fellowship with the Salesforce Foundation, focusing on user experience and product strategy. I'm exploring how to make nonprofits more effective through technology and good user experience -- this is my dream job!"
+  twitter:        "shannonsans"
+  url:            "http://shannonsansserif.com"
 Jason Lantz:
   github:         jlantz
   avatar:         https://avatars3.githubusercontent.com/u/1697127
@@ -38,6 +44,8 @@ Carlos Ramirez Martinez-Eiroa:
   github:         ceiroa
   avatar:         https://avatars1.githubusercontent.com/u/1894238
   title:          "Senior Force.com Developer"
+  bio:            "I’m a certified Admin, Developer, and Advanced Developer. I came to the Salesforce platform from the Java and PHP worlds, upon realizing the enormous productivity gains that you can achieve in this platform. I live in the world of Triggers, Batches, Classes, and Scheduled jobs, and enjoy designing and writing robust object-oriented code. I joined the Foundation in 2013, and strive to provide our customer and partners with the right technical solutions that empower them to fulfill their missions."
+  twitter:        "carloseiroa"
 Cheryl Porro:
   title:      
   github:         cporro
