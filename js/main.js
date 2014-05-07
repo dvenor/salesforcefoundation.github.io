@@ -11,11 +11,13 @@ require([
   // Scroll the body, accepts a callback if you want to do anything when it is done
   app.scrollTo = function(hash, callback, context) {
     var $target = $(hash);
-    $('body,html').stop().animate({scrollTop: $target .offset().top}, 400, function() {
-      if (_.isFunction(callback)) {
-        callback.call(context);
-      }
-    });
+    if ($target.length) {
+      $('body,html').stop().animate({scrollTop: $target.offset().top}, 400, function() {
+        if (_.isFunction(callback)) {
+          callback.call(context);
+        }
+      });
+    }
   };
 
   // View for the pager on the blog
