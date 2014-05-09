@@ -21,7 +21,7 @@ Ryan Foster:
   avatar:         https://avatars0.githubusercontent.com/u/779557
   github:         dextermilo
   title:          "Force.com Developer"
-  bio:            "I am a long time web developer, primarily for nonprofits, and was thrilled to discover Salesforce and Force.com in 2011. My background includes a smattering of PHP, quite a bit of Python, and lots of Javascript. My favorite projects have three primary ingredients: good design, elegent code, and a good cause. I am also fond of prefixing classnames with 'Ry' and doing crazily awesome things with the JSON class in Apex, though the 'awesome' part is sometimes debatable."
+  bio:            "I am a long time web developer, primarily for nonprofits, and was thrilled to discover Salesforce and Force.com in 2011. My favorite projects have three primary ingredients: good design, elegent code, and a good cause. I am known to tell everyone to \"Have fun\" and gripe at my meowing cat while working form home."
 David Habib:
   github:         davidhabib
   avatar:         https://avatars0.githubusercontent.com/u/908119
@@ -50,10 +50,11 @@ Carlos Ramirez Martinez-Eiroa:
   bio:            "I’m a certified Admin, Developer, and Advanced Developer. I came to the Salesforce platform from the Java and PHP worlds, upon realizing the enormous productivity gains that you can achieve in this platform. I live in the world of Triggers, Batches, Classes, and Scheduled jobs, and enjoy designing and writing robust object-oriented code. I joined the Foundation in 2013, and strive to provide our customer and partners with the right technical solutions that empower them to fulfill their missions."
   twitter:        "carloseiroa"
 Cheryl Porro:
-  title:      
   github:         cporro
   avatar:         https://avatars3.githubusercontent.com/u/7000589
   title:          "SVP, Tech and Product"
+  bio:            "I have the honor of leading the phenomenal Salesforce Foundation technology & products team which builds product for nonprofits, for higher ed institutions, for salesforce.com to support volunteerism, probono, and matching, and for our own selves to help us run the business of the Foundation. I have been with the Foundation since February 2014 after spending 8.5 years in the Salesforce.com platform engineering team in various roles. In my spare time I do probono work for a handful of San Francisco nonprofits, run road races, hang out with my family, etc."
+  twitter:        cporro_sfdc
 Jon Michael Varese:
   github:         jvarese
   avatar:         https://avatars2.githubusercontent.com/u/7268038
