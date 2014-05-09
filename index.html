@@ -92,10 +92,7 @@ base_url:   "./"
           <h3 class="member-name">{{ name }}</h3>
           
           {% if member.title %}
-            <p>{{ member.title }}</p>
-          {% endif %}
-          {% if member.bio %}
-            <p>{{ member.bio }}</p>
+            <p class="member-title">{{ member.title }}</p>
           {% endif %}
           <div class="member-social">
             {% if member.github %}
@@ -108,6 +105,10 @@ base_url:   "./"
               <a href="{{ member.url }}" title="{{ name }}'s website" data-toggle="tooltip" data-placement="top"><i class="fa fa-globe"></i></a>
             {% endif %}
           </div>
+          {% if member.bio %}
+            <p>{{ member.bio }}</p>
+          {% endif %}
+          
           
         </div>
       </div>

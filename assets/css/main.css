@@ -3246,9 +3246,16 @@ a.team-members .member.active {
 .team-members .member .caption .member-name {
   font-size: 15px;
   font-weight: bold;
+  margin-bottom: 0;
+}
+.team-members .member .caption .member-title {
+  margin-bottom: 5px;
+}
+.team-members .member .caption .member-social {
+  margin-bottom: 5px;
 }
 .team-members .member .caption .member-social > a {
-  font-size: 18px;
+  font-size: 16px;
   padding-right: 5px;
 }
 .team-members .member:hover,
