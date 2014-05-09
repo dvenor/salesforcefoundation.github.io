@@ -21,7 +21,7 @@ Ryan Foster:
   avatar:         https://avatars0.githubusercontent.com/u/779557
   github:         dextermilo
   title:          "Force.com Developer"
-  bio:            "I am a long time web developer, primarily for nonprofits, and was thrilled to discover Salesforce and Force.com in 2011. My favorite projects have three primary ingredients: good design, elegent code, and a good cause. I am known to tell everyone to \"Have fun\" and gripe at my meowing cat while working form home."
+  bio:            "I am a long time web developer, primarily for nonprofits, and was thrilled to discover Salesforce and Force.com in 2011. My favorite projects have three primary ingredients: good design, elegent code, and a good cause. I am known to tell everyone to \"Have fun\" and gripe at my meowing cat while working from home."
 David Habib:
   github:         davidhabib
   avatar:         https://avatars0.githubusercontent.com/u/908119
@@ -43,6 +43,8 @@ David Manelski:
   github:         greenstork
   avatar:         https://avatars2.githubusercontent.com/u/794530
   title:          "Technical Architect"
+  bio:            "I want to help accelerate people on a mission. On the Technology & Products team at the Salesforce Foundation, I help build the tools to make this possible. I work closely with customers, partners, and across our internal teams to empower people and help their organizations to scale their impact and deepen their engagement."
+  twitter:        "greenstork"
 Carlos Ramirez Martinez-Eiroa:
   github:         ceiroa
   avatar:         https://avatars1.githubusercontent.com/u/1894238
@@ -53,7 +55,7 @@ Cheryl Porro:
   github:         cporro
   avatar:         https://avatars3.githubusercontent.com/u/7000589
   title:          "SVP, Tech and Product"
-  bio:            "I have the honor of leading the phenomenal Salesforce Foundation technology & products team which builds product for nonprofits, for higher ed institutions, for salesforce.com to support volunteerism, probono, and matching, and for our own selves to help us run the business of the Foundation. I have been with the Foundation since February 2014 after spending 8.5 years in the Salesforce.com platform engineering team in various roles. In my spare time I do probono work for a handful of San Francisco nonprofits, run road races, hang out with my family, etc."
+  bio:            "I have the honor of leading the phenomenal Salesforce Foundation technology & products team which builds product for nonprofits, for higher ed institutions, for salesforce.com to support volunteerism, probono, and matching, and for our own selves to help us run the business of the Foundation."
   twitter:        cporro_sfdc
 Jon Michael Varese:
   github:         jvarese
@@ -63,3 +65,4 @@ Suzanne Veiga:
   github:         sveiga
   avatar:         https://avatars0.githubusercontent.com/u/5631840
   title:          "System Administrator"
+  bio:            "I joined the Business Applications team in the Fall of 2013 and am previously a Foundation customer. I have been working with Salesforce since 2009 and I’m a certified Admin and Developer. I enjoy exploring new ways to use declarative features and sharing it with nonprofits."
