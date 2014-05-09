@@ -99,13 +99,13 @@ base_url:   "./"
           {% endif %}
           <div class="member-social">
             {% if member.github %}
-              <a href="https://www.github.com/{{ member.github }}" title="github" data-toggle="tooltip" data-placement="top"><i class="fa fa-github"></i></a>
+              <a href="https://www.github.com/{{ member.github }}" title="{{ member.github }} on github" data-toggle="tooltip" data-placement="top"><i class="fa fa-github"></i></a>
             {% endif %}
             {% if member.twitter %}
-              <a href="https://twitter.com/{{ member.twitter }}" title="twitter" data-toggle="tooltip" data-placement="top"><i class="fa fa-twitter"></i></a>
+              <a href="https://twitter.com/{{ member.twitter }}" title="{{ member.twitter }} on twitter" data-toggle="tooltip" data-placement="top"><i class="fa fa-twitter"></i></a>
             {% endif %}
             {% if member.url %}
-              <a href="{{ member.url }}" title="website" data-toggle="tooltip" data-placement="top"><i class="fa fa-globe"></i></a>
+              <a href="{{ member.url }}" title="{{ name }}'s website" data-toggle="tooltip" data-placement="top"><i class="fa fa-globe"></i></a>
             {% endif %}
           </div>
           
