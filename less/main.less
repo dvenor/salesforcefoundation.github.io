@@ -548,6 +548,24 @@ body {
     .caption {
       text-align: left;
       padding: 10px 0;
+
+      .member-name {
+
+        i.fa {
+          color: @link-color;
+          font-size: 12px;
+        }
+        
+        &:hover,
+        &:focus {
+          text-decoration: none;
+
+          i.fa {
+            color: @link-hover-color;
+          }
+        }
+
+      }
     }
 
     &:hover,

@@ -3242,6 +3242,18 @@ a.team-members .member.active {
   text-align: left;
   padding: 10px 0;
 }
+.team-members .member .caption .member-name i.fa {
+  color: #2a94d6;
+  font-size: 12px;
+}
+.team-members .member .caption .member-name:hover,
+.team-members .member .caption .member-name:focus {
+  text-decoration: none;
+}
+.team-members .member .caption .member-name:hover i.fa,
+.team-members .member .caption .member-name:focus i.fa {
+  color: #1d6897;
+}
 .team-members .member:hover,
 .team-members .member:focus {
   background-color: #eceef0;
