@@ -89,22 +89,7 @@ base_url:   "./"
           <div class="placeholder"></div>
         {% endif %}
         <div class="caption">
-          <div class="dropdown">
-            <a class="member-name" href="#" data-toggle="dropdown">
-              <h3>{{ name }} <i class="fa fa-reply"></i></h3>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              {% if member.github %}
-                <li><a href="https://www.github.com/{{ member.github }}"><i class="fa fa-github"></i>  {{ member.github }}</a></li>
-              {% endif %}
-              {% if member.twitter %}
-                <li><a href="https://twitter.com/{{ member.twitter }}"><i class="fa fa-twitter"></i> {{ member.twitter }}</a></li>
-              {% endif %}
-              {% if member.url %}
-                <li><a href="{{ member.url }}"><i class="fa fa-globe"></i> website</a></li>
-              {% endif %}
-            </ul>
-          </div>
+          <h3 class="member-name">{{ name }}</h3>
           
           {% if member.title %}
             <p>{{ member.title }}</p>
@@ -112,6 +97,17 @@ base_url:   "./"
           {% if member.bio %}
             <p>{{ member.bio }}</p>
           {% endif %}
+          <div class="member-social">
+            {% if member.github %}
+              <a href="https://www.github.com/{{ member.github }}" title="github" data-toggle="tooltip" data-placement="top"><i class="fa fa-github"></i></a>
+            {% endif %}
+            {% if member.twitter %}
+              <a href="https://twitter.com/{{ member.twitter }}" title="twitter" data-toggle="tooltip" data-placement="top"><i class="fa fa-twitter"></i></a>
+            {% endif %}
+            {% if member.url %}
+              <a href="{{ member.url }}" title="website" data-toggle="tooltip" data-placement="top"><i class="fa fa-globe"></i></a>
+            {% endif %}
+          </div>
           
         </div>
       </div>

@@ -262,6 +262,9 @@ require([
       setMemberHeights();
     });
     $(window).trigger('resize');
+
+    // Member social link tooltips
+    $('.member-social > a').tooltip();
   });
 
 })(jQuery);
