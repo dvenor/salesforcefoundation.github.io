@@ -10,3 +10,8 @@
 - name:           visualforce-typeahead
   description:        A flexible typeahead component for use on Visualforce pages. Uses the typeahead.js library from Twitter.
   repo:               https://github.com/SalesforceFoundation/visualforce-typeahead
+
+- name:           Bootstrap SF1
+  description:        "A Bootstrap theme based on the SFDC styleguide with a little extra."
+  repo:               https://github.com/SalesforceFoundation/bootstrap-sf1
+  url:                https://salesforcefoundation.github.io/bootstrap-sf1
