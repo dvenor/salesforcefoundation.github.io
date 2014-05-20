@@ -59,7 +59,7 @@ There are two approaches to this problem.
 
 We use a combination of both. It is hard to design apps that work well in both a desktop and mobile use case. It is sometimes easier from a development perspective to create 2 different pages, but it adds technical debt and requires you to make changes in multiple places. In either case, you will almost certainly be dealing with multiple device sizes and your applications should adjust accordingly.
 
-Dynamic styling
+###Dynamic styling
 
 In addition to traditional responsive design, we also need to think about dynamic styling. Most Force.com developers have plenty of experience designing pages that match the styling and markup of the browser-based Aloha interface. However, those styles aren't compatible with the new look and feel of the Salesforce1 mobile app and the markup is inappropriate for mobile.
 

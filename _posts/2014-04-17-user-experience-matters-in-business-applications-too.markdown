@@ -3,9 +3,7 @@ layout:   post
 title:    "User Experience Matters in Business Applications Too"
 date:     2014-04-17 12:00:00
 author:   Nick Bailey
-excerpt:  "I’ve recently undergone a shift in how I think about business application development. This change has developed while working on several projects at the Salesforce Foundation, such as finding better ways to get sales contracts signed. Here is what it boils down to:
-
-### Users > Business Goals > Technology"
+excerpt:  "I’ve recently undergone a shift in how I think about business application development. This change has developed while working on several projects at the Salesforce Foundation, such as finding better ways to get sales contracts signed. Here is what it boils down to: Users > Business Goals > Technology."
 ---
 My team and I build database applications for business users and, like many in the field, this means that I have spent a lot of my career taking risks and making mistakes. Mistakes and failures are great if you choose to take them as learning opportunities. But, it is really hard for me when long-held assumptions are challenged.
 
