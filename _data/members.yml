@@ -52,6 +52,13 @@ Carlos Ramirez Martinez-Eiroa:
   title:          "Senior Force.com Developer"
   bio:            "I’m a certified Salesforce Admin, Developer, and Advanced Developer. I came to the Salesforce platform from the Java and PHP worlds, after recognizing its enormous potential for productivity. I live in the world of Triggers, Batches, Classes, and Scheduled jobs, and enjoy designing and writing robust, object-oriented code."
   twitter:        "carloseiroa"
+
+Nicolas Campbell:
+  github:         njjc
+  title:          "Force.com Developer"
+  avatar:         https://avatars1.githubusercontent.com/u/1018198
+  bio:            "I'm a certified Force.com Developer that has been consulting for nonprofits on the Salesforce platform since 2011. I have enjoyed helping individual nonprofits achieve their mission through judicious use of technology, and I feel very fortunate to be part of a team dedicated to creating software for all nonprofits."
+
 Cheryl Porro:
   github:         cporro
   avatar:         https://avatars3.githubusercontent.com/u/7000589
