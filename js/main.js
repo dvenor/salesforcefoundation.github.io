@@ -177,7 +177,7 @@ require([
   });
 
   $(window).on('scroll', function() {
-    var $body = $('body, html');
+    var $body = $(document);
     var scroll_top = $body.scrollTop() > 90 ? 90 : $body.scrollTop();
     var percent = Math.floor((1-(scroll_top / 90))*10)*10;
     var $navbar = $('header.navbar');

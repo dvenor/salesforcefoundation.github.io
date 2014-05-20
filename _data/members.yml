@@ -9,7 +9,7 @@ Kevin Bromer:
   github:         kbromer
   avatar:         https://avatars1.githubusercontent.com/u/926530
   title:          "Director of Product Development"
-  bio:            "I've been working with nonprofits on the platform since 2007, and with the Foundation since 2010.  I'm continually impressed with what salesforce and the force.com platform can enable for that community. I'm into building super functional apps with great APIs, enjoy spending time in the execute anonymous window, and have been known to write a meandering batch class or two when provoked."
+  bio:            "I've been working with nonprofits on the Salesforce platform since 2007, and with the Foundation since 2010. I'm continually impressed with what Salesforce and the force.com platform can enable for those communities. I'm into building super functional apps with great APIs, and have been known to write a meandering batch class or two when provoked."
   twitter:        "kevinbromer"
   url:            "http://kevinbromer.com"
 Evan Callahan:
@@ -43,19 +43,19 @@ David Manelski:
   github:         greenstork
   avatar:         https://avatars2.githubusercontent.com/u/794530
   title:          "Technical Architect"
-  bio:            "I want to help accelerate people on a mission. On the Technology & Products team at the Salesforce Foundation, I help build the tools to make this possible. I work closely with customers, partners, and across our internal teams to empower people and help their organizations to scale their impact and deepen their engagement."
+  bio:            "I want to help accelerate people on a mission. On the Salesforce.com Foundation Technology & Products team, I help build the tools to make that possible. I work closely with customers, partners, and across our internal teams to help people scale their impact and deepen their engagement."
   twitter:        "greenstork"
 Carlos Ramirez Martinez-Eiroa:
   github:         ceiroa
   avatar:         https://avatars1.githubusercontent.com/u/1894238
   title:          "Senior Force.com Developer"
-  bio:            "I’m a certified Admin, Developer, and Advanced Developer. I came to the Salesforce platform from the Java and PHP worlds, upon realizing the enormous productivity gains that you can achieve in this platform. I live in the world of Triggers, Batches, Classes, and Scheduled jobs, and enjoy designing and writing robust object-oriented code."
+  bio:            "I’m a certified Salesforce Admin, Developer, and Advanced Developer. I came to the Salesforce platform from the Java and PHP worlds, after recognizing its enormous potential for productivity. I live in the world of Triggers, Batches, Classes, and Scheduled jobs, and enjoy designing and writing robust, object-oriented code."
   twitter:        "carloseiroa"
 Cheryl Porro:
   github:         cporro
   avatar:         https://avatars3.githubusercontent.com/u/7000589
   title:          "SVP, Tech and Product"
-  bio:            "I have the honor of leading the phenomenal Salesforce Foundation technology & products team which builds product for nonprofits, for higher ed institutions, for salesforce.com to support volunteerism, probono, and matching, and for our own selves to help us run the business of the Foundation."
+  bio:            "I have the honor of leading the phenomenal Salesforce.com Foundation Technology & Products team, which builds products for nonprofits and higher ed institutions. We also build internal applications that support the daily operations of the Foundation, as well as volunteerism, pro bono, and gift-matching programs for salesforce.com."
   twitter:        cporro_sfdc
 Jon Michael Varese:
   github:         jvarese
@@ -66,4 +66,4 @@ Suzanne Veiga:
   github:         sveiga
   avatar:         https://avatars0.githubusercontent.com/u/5631840
   title:          "System Administrator"
-  bio:            "I joined the Business Applications team in the Fall of 2013 and am previously a Foundation customer. I have been working with Salesforce since 2009 and I’m a certified Admin and Developer. I enjoy exploring new ways to use declarative features and sharing it with nonprofits."
+  bio:            "I'm a certified Salesforce Admin and Developer who's been working with the Salesforce platform since 2009. In the fall of 2013, I joined the Foundation Business Applications team. I enjoy exploring new ways of using declarative features, and sharing those innovations with nonprofits."
