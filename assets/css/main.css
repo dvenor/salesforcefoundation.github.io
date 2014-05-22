@@ -3037,6 +3037,9 @@ a.list-group-item-danger.active:focus {
   content: '';
   border: 1px solid #db8386;
 }
+.blog .post .meta .post-share {
+  float: right;
+}
 .blog .post .post-title {
   font-size: 48px;
   margin-bottom: 30px;
