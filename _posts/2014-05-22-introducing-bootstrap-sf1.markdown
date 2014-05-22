@@ -4,9 +4,9 @@ title:    "Introducing Bootstrap SF1"
 author:   Ryan Foster
 date:     2014-05-22 12:00:00
 ---
-We have lots of projects and a small team. We love Bootstrap because it allows our entire team to easily and rapidly prototype and build responsive UI. We also love the SFDC styleguide for Salesforce1 apps for its great look and feel. Wouldn't it be awesome if the two were merged? Well, that's the goal of [Bootstrap-SF1](http://developer.salesforcefoundation.org/bootstrap-sf1/): to blend Bootstrap easy with [SFDC styleguide](http://sfdc-styleguide.herokuapp.com) awesome.
+We have lots of projects and a small team. We love Bootstrap because it allows our entire team to easily and rapidly prototype and build responsive UI. We also love the SFDC styleguide for Salesforce1 apps for its great look and feel. Wouldn't it be awesome if the two were merged? Well, that's the goal of [Bootstrap SF1](http://developer.salesforcefoundation.org/bootstrap-sf1/): to blend Bootstrap easy with Salesforce1 awesome.
 
-Bootstrap SF1 is a theme for Bootstrap that aims for general consistency with the SFDC styleguide. We aren't trying to match the styleguide exactly because we have some more diverse needs (and have our own opinions). We need a base starting point for Visualforce pages or Heroku apps, and almost all of our projects need to work well on both desktop and mobile devices. We need the base theme to be easy to extend and maintain. We need it to be easier to wield than the styles in the styleguide.
+Bootstrap SF1 is a theme for Bootstrap that aims for general consistency with the SFDC styleguide. Why? So that we can quickly build apps for Salesforce1. But we aren't trying to match the styleguide exactly because we have some more diverse needs (and have our own opinions). Our projects are diverse and may be deployed as Visualforce pages for use in Salesforce1 or in the standard UI for both mobile and desktop. We also deploy projects out on Heroku from time to time. We also need the base theme to be easy to extend and maintain and need it to be easier to wield than the styles in the styleguide.
 
 With all of this in mind, I started the project with a few goals:
 
