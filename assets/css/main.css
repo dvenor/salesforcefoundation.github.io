@@ -3096,6 +3096,9 @@ a.list-group-item-danger.active:focus {
 .blog.open .blog-list .posts > li .meta .avatar {
   margin-right: 10px;
 }
+.blog.open .blog-list .posts > li .posts-more {
+  display: none;
+}
 .blog.open .blog-list .posts > li.active {
   background-color: #e8e9ec;
   position: relative;
