@@ -2380,7 +2380,7 @@ a.list-group-item-danger.active:focus {
   display: none;
 }
 .project-cloud .cloud {
-  color: #eceef0;
+  color: #e8e9ec;
   font-size: 18px;
   margin-bottom: 30px;
 }
@@ -2964,7 +2964,7 @@ a.list-group-item-danger.active:focus {
   background: #fff;
   padding: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #eceef0;
+  border-bottom: 1px solid #e8e9ec;
 }
 .blog .blog-list .posts > li:before,
 .blog .blog-list .posts > li:after {
@@ -3011,7 +3011,7 @@ a.list-group-item-danger.active:focus {
   opacity: 1;
 }
 .blog .post .meta {
-  border-bottom: 1px solid #eceef0;
+  border-bottom: 1px solid #e8e9ec;
   line-height: 20px;
   margin: -15px;
   margin-bottom: 0;
@@ -3071,8 +3071,8 @@ a.list-group-item-danger.active:focus {
   display: block;
   padding: 10px 15px;
   margin-bottom: -1px;
-  background-color: #ffffff;
-  border: 1px solid #eceef0;
+  background-color: transparent;
+  border: 1px solid #cfd0d2;
   -webkit-box-shadow: none;
   box-shadow: none;
   border-radius: 0;
@@ -3097,7 +3097,7 @@ a.list-group-item-danger.active:focus {
   margin-right: 10px;
 }
 .blog.open .blog-list .posts > li.active {
-  background-color: #eceef0;
+  background-color: #e8e9ec;
   position: relative;
 }
 .blog.open .blog-list .posts > li.active .posts-link {
@@ -3156,7 +3156,7 @@ a.list-group-item-danger.active:focus {
   margin-top: 60px;
   background-color: #344a5f;
   padding: 60px 20px;
-  color: #eceef0;
+  color: #e8e9ec;
   border-top: 5px solid #fff;
 }
 .team-members {
@@ -3260,7 +3260,7 @@ a.team-members .member.active {
 }
 .team-members .member:hover,
 .team-members .member:focus {
-  background-color: #eceef0;
+  background-color: #e8e9ec;
 }
 .team-members .member > img {
   margin-top: 8px;
