@@ -4,7 +4,7 @@ title:    "Introducing Bootstrap SF1"
 author:   Ryan Foster
 date:     2014-05-22 12:00:00
 ---
-We have lot's of projects and a small team. We love Bootstrap because it allows all of our team members to easily and rapidly prototype and build responsive UI. We also love the SFDC styleguide for Salesforce1 apps for its great look and feel. Wouldn't it be awesome if the two were merged? Well, that is the goal of [Bootstrap-SF1](http://developer.salesforcefoundation.org/bootstrap-sf1/): Bootstrap easy with [SFDC styleguide](http://sfdc-styleguide.herokuapp.com) awesome.
+We have lots of projects and a small team. We love Bootstrap because it allows all of our team members to easily and rapidly prototype and build responsive UI. We also love the SFDC styleguide for Salesforce1 apps for its great look and feel. Wouldn't it be awesome if the two were merged? Well, that is the goal of [Bootstrap-SF1](http://developer.salesforcefoundation.org/bootstrap-sf1/): Bootstrap easy with [SFDC styleguide](http://sfdc-styleguide.herokuapp.com) awesome.
 
 Bootstrap SF1 is a theme for Bootstrap that aims for general consistency with the SFDC styleguide. We aren't trying to match the styleguide exactly because we have some more diverse needs (and have our own opinions). We need a base starting point that we can use in Visualforce pages or out on Heroku, almost all of our projects need to work well on mobile and desktop. We need the base theme to be easy to extend and maintain. We need it to be easier to wield than the styles in the styleguide.
 
