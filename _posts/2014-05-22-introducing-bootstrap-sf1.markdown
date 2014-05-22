@@ -89,7 +89,7 @@ Pay extra attention to all of those classes. Do you have any idea what the marku
 
 ![SFDC Styleguide cards]({{ site.url }}/assets/sfdc-cards.png)
 
-One thing I wanted to do was make the markup a little cleaner, less opinionated, and more consistent with Bootstrap. A contact card is a contact card, let's make the CSS do more of the work and allow for cleaner more semantic markup. As such you can create the same list in Bootstrap SF1 like so: 
+One thing I wanted to do was make the markup a little cleaner, less opinionated, and more consistent with Bootstrap. A contact card is a contact card, let's make the CSS do more of the work and allow for cleaner markup. As such you can create the same list in Bootstrap SF1 like so: 
 
 {% highlight html %}
 <div class="card-list context-contact">
