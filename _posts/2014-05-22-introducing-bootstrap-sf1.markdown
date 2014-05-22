@@ -13,7 +13,7 @@ With all of this in mind, I started the project with a few goals:
 * Use [Less](http://lesscss.org) for CSS development. Less makes it easy to write extensible CSS, especially as Bootstrap is developed using Less.
 * Make local theme development easy with [Grunt](http://gruntjs.com/). The theme documentation is easy to spin up locally, which makes testing and iteration easy and efficient.
 * Provide new components to make the juicy bits of the styleguide, such as cards and icons, easy to wield.
-* Never force anyone to use numeric class names for the custom icons ... seriously.
+* Never force anyone to use numeric class names for the custom icons . . . seriously.
 * Automatically generate a namespaced CSS file so that the theme is easy to use even in Visualforce pages with the header enabled.
 
 ### Fair Warning
@@ -22,7 +22,7 @@ Oh, I should give a little warning, this project is pretty new to the world. We 
 
 ### The Goods
 
-On the [theme](http://developer.salesforcefoundation.org/bootstrap-sf1/pages/theme.html) section of the docs you can see a big list of common Bootstrap elements with some Salesforce1 goodness. But the real fun happens on the [new icons](http://developer.salesforcefoundation.org/bootstrap-sf1/pages/icons.html) and especially in the [new components](http://developer.salesforcefoundation.org/bootstrap-sf1/pages/new.html) sections of the docs.
+In the [theme](http://developer.salesforcefoundation.org/bootstrap-sf1/pages/theme.html) section of the docs you can see a big list of common Bootstrap elements with some Salesforce1 goodness. But the real fun happens on the [new icons](http://developer.salesforcefoundation.org/bootstrap-sf1/pages/icons.html) and especially in the [new components](http://developer.salesforcefoundation.org/bootstrap-sf1/pages/new.html) sections of the docs.
 
 You may be thinking to yourself, "Why not just include the SFDC styleguide CSS file in your project?" Well, we started there, along with a mildly customized Bootstrap CSS file. However, we quickly discovered that working with the styleguide styles presented some challenges. First of all, the CSS class names aren't pretty. There are a lot of single-purpose classes that are really not much better than adding style attributes directly to the markup. When we decided to update some of the look and feel in our app I found myself changing a lot of markup, and the markup wasn't particularly easy to read. Don't believe me? Here's an example from the SFDC Styleguide:
 
@@ -89,7 +89,7 @@ Pay extra attention to all of those classes. Do you have any idea what the marku
 
 ![SFDC Styleguide cards]({{ site.url }}/assets/sfdc-cards.png)
 
-One thing I wanted to do was make the markup a little cleaner, less opinionated, and more consistent with Bootstrap. A contact card is a contact card, let's make the CSS do more of the work and allow for cleaner markup. As such you can create the same list in Bootstrap SF1 like so: 
+One thing I wanted to do was make the markup a little cleaner, less opinionated, and more consistent with Bootstrap. A contact card is a contact card, let's make the CSS do more of the work and allow for cleaner more semantic markup. As such you can create the same list in Bootstrap SF1 like so: 
 
 {% highlight html %}
 <div class="card-list context-contact">
@@ -177,7 +177,7 @@ Now, the really fun part is at the top. See that class `context-contact`? That c
 
 I really hope you find this project to be of benefit as you build your own awesome apps for Salesforce1. Here at the Foundation we are really taking our own medicine and have made Bootstrap-SF1 our default starting point for our projects moving forward. Expect to see the project expand and grow over the next few months.
 
-You can checkout the [getting started](http://developer.salesforcefoundation.org/bootstrap-sf1/index.html#getting-started) guide if you want to jump right in and start using the theme.
+You can check out the [getting started](http://developer.salesforcefoundation.org/bootstrap-sf1/index.html#getting-started) guide if you want to jump right in and start using the theme.
 
 ### Contribute
 
