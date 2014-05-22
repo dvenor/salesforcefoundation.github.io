@@ -3042,6 +3042,10 @@ a.list-group-item-danger.active:focus {
   margin-bottom: 30px;
   font-weight: 800;
 }
+.blog .post .content img {
+  max-width: 100%;
+  height: auto;
+}
 @media (min-width: 992px) {
   .blog .post .content {
     padding: 0 40px 0 40px;
