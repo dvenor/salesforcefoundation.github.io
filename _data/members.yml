@@ -44,6 +44,14 @@ Shannon Hale:
   bio:            "I'm a Salesforce Platform product manager and recovering interaction designer on a fellowship with the Salesforce Foundation, focusing on user experience and product strategy. I'm exploring how to make nonprofits more effective through technology and good user experience -- this is my dream job!"
   twitter:        "shannonsans"
   url:            "http://shannonsansserif.com"
+
+Rajiv Kulkarni:
+  github:         rajiv-steelerfan
+  title:          "Product Manager"
+  avatar:         https://avatars3.githubusercontent.com/u/7685818
+  bio:            "I joined the Salesforce.com Foundation in 2014, after 5 years at Teach for America, where I helped shape TFA's Salesforce implementation. My hope in coming to the Foundation is to make an even larger impact, and to help complex organizations turn themselves into stream-lined, data-driven nonprofits."
+  twitter:        "rajivsteelerfan"
+
 Jason Lantz:
   github:         jlantz
   avatar:         https://avatars3.githubusercontent.com/u/1697127
@@ -68,6 +76,13 @@ Cheryl Porro:
   title:          "SVP, Tech and Product"
   bio:            "I have the honor of leading the phenomenal Salesforce.com Foundation Technology & Products team, which builds products for nonprofits and higher ed institutions. We also build internal applications that support the daily operations of the Foundation, as well as volunteerism, pro bono, and gift-matching programs for salesforce.com."
   twitter:        cporro_sfdc
+
+Ryan Ruiz:
+  title:          "Technical Support Analyst"
+  github:         "ryandruiz"
+  avatar:         "https://avatars0.githubusercontent.com/u/7913260"
+  bio:            "I am a passionate person who loves life and helping people. I moved back a year and a half ago from living in Mexico for 3 years. I worked as Spanish and English Tech Support at salesforce.com before joining the Foundation in 2014. I look forward to helping our for-purpose (nonprofit) customers love Salesforce as much as I do."
+
 Jon Michael Varese:
   github:         jvarese
   avatar:         https://avatars2.githubusercontent.com/u/7268038
