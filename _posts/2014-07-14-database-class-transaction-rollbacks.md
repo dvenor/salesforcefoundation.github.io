@@ -22,7 +22,7 @@ For example, let's say that you have 5 records that you want to insert with a Da
 
 To the best of our knowledge this behavior is undocumented, and you should keep it in mind when trying to do things such as saving error information to the database. Staying with the Database.insert example, a savepoint is set right when you call Database.insert. If that insert has any side-effects, such as triggers being fired, any code run further down in the stack will be rolled back if any of the records have errors. If you want to store errors or do any other database operation that you don’t want rolled back, you will have to do it after the control has been passed back to the routine that did the initial Database.insert.
 
-_If you’d like to see an example of how we did our tests you can take a look at the [question we posted in Salesforce.StackExchange.com](https://salesforce.stackexchange.com/questions/23462/record-insert-gets-rolled-back-if-reentrancy-flag-exists), and look at the our []Error Handling Test Project](https://github.com/SalesforceFoundation/Error_Handling) referenced there. The main files to look at in that project are (the rest are not related to this issue):_
+_If you’d like to see an example of how we did our tests you can take a look at the [question we posted in Salesforce.StackExchange.com](https://salesforce.stackexchange.com/questions/23462/record-insert-gets-rolled-back-if-reentrancy-flag-exists), and look at the our [Error Handling Test Project](https://github.com/SalesforceFoundation/Error_Handling) referenced there. The main files to look at in that project are (the rest are not related to this issue):_
 
 + `ERR_Handler.trigger`
 + `ParentAccountUpdater.cls`
