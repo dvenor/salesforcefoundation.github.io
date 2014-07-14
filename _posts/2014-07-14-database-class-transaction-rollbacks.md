@@ -8,7 +8,7 @@ While designing the error handling functionality for the [Nonprofit Starter Pack
 
 Our goal was to save an error record to the database, using a custom Error object that we created. To test that behavior we created a test that that would cause an exception to be thrown, which we were then parsing in order to store some information about it in the database. We were using Database.insert in the test in order to have an exception thrown in the code we were trying to test, not in the test itself. With a simple insert the exception would get thrown in the test and we would not get any further down the code. As probably most of you know, if you use the DML methods of the [Database class](https://www.salesforce.com/us/developer/docs/apexcode/Content/apex_methods_system_database.htm) no exception is thrown if there is an error in one of the records you are trying to manipulate, and you have the option to specify if the operation is still performed on the other records (the ones without errors). This is what the documentation says about the [Database.insert](https://www.salesforce.com/us/developer/docs/apexcode/Content/apex_methods_system_database.htm#apex_System_Database_insert_2) method:
 
-_"The optional opt_allOrNone parameter specifies whether the operation allows partial success. If you specify false for this parameter and a record fails, the remainder of the DML operation can still succeed."_
+"_The optional opt_allOrNone parameter specifies whether the operation allows partial success. If you specify false for this parameter and a record fails, the remainder of the DML operation can still succeed._"
 
 However, when writing the tests we found couple of strange things. Let’s describe each case with an example:
 
