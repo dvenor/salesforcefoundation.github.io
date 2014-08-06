@@ -5,19 +5,20 @@ author:   Ryan Foster
 date:     2014-05-22 12:00:00
 excerpt:  "We have lots of projects and a small team. We love Bootstrap because it allows our entire team to easily and rapidly prototype and build responsive UI. We also love the SFDC styleguide for Salesforce1 apps for its great look and feel. Wouldn't it be awesome if the two were merged? Well, that's the goal of Bootstrap SF1: to blend Bootstrap easy with Salesforce1 awesome."
 ---
-*UDPATE 8/6/2014*: There has been some discussion here, and with folks over at the company (we are not in fact the same organization), about this project and how it relates to the SFDC styleguide. After rereading this post I also realized that I should have made a few things more clear:
+*__UDPATE 8/6/2014__*: I have had a couple people in the community express some confusion as to the purpose and intent of this project. After rereading this post I also realized that I could have made a few things more clear:
 
-  * The SFDC Styleguide is excellent work.
-  * The fine people who created the SFDC Styleguide have different requirements than I might, which explains many of their design decisions.
+  * **This is not an official project of salesforce.com**
+  * This is a project released by the [Salesforce.com Foundation](http://salesforcefoundation.org).
+  * This project should be viewed as an extension of the excellent work done on the SFDC Styleguide
   * This project is *NOT* a replacement for the SFDC Styleguide, our goal is to make the process of keeping this in-sync with the styleguide fluid and automatic but the truth will always be in the SFDC Styleguide.
 
-I have also gone ahead and updated a little of the content in this post to better reflect the purpose and sentiment behind the project.
+I have also gone ahead and updated a little of the content in this post to better reflect the purpose and sentiment behind the project. Please excuse the interruption.
 
 Have fun!
 
 Ryan
 
-*END UDPATE*
+---
 
 We have lots of projects and a small team. We love Bootstrap because it allows our entire team to easily and rapidly prototype and build responsive UI. We also love the SFDC styleguide for Salesforce1 apps for its great look and feel. Wouldn't it be awesome if the two were merged? Well, that's the goal of [Bootstrap SF1](http://developer.salesforcefoundation.org/bootstrap-sf1/): to blend Bootstrap easy with Salesforce1 awesome.
 
@@ -39,7 +40,7 @@ Oh, I should give a little warning, this project is pretty new to the world. We 
 
 In the [theme](http://developer.salesforcefoundation.org/bootstrap-sf1/pages/theme.html) section of the docs you can see a big list of common Bootstrap elements with some Salesforce1 goodness. But the real fun happens on the [new icons](http://developer.salesforcefoundation.org/bootstrap-sf1/pages/icons.html) and especially in the [new components](http://developer.salesforcefoundation.org/bootstrap-sf1/pages/new.html) sections of the docs.
 
-(Updated) You may be thinking to yourself, "Why not just include the SFDC styleguide CSS file in your project?" Well, we started there, and in many cases that would be a very reasonable approach, but for various reasons we wanted to use markup and styling conventions more inline with Bootstrap. Our team is more familiar with Bootstrap and the SFDC Styleguide presented its own learning curve. In addition, as we often deploy projects that will be rendered in Salesforce1 or Visualforce pages in the browser we need to make it as easy as possible to swap out different CSS. To mitigate some of the markup opinions of the SFDC Styleguide we have abstracted some of their styles into more Bootstrap-esque classes. Case in point, take this example from the Styleguide:
+(*__Updated__*) You may be thinking to yourself, "Why not just include the SFDC styleguide CSS file in your project?" Well, we started there, and in many cases that would be a very reasonable approach, but for various reasons we wanted to use markup and styling conventions more inline with Bootstrap. Our team is more familiar with Bootstrap and the SFDC Styleguide presented its own learning curve. In addition, as we often deploy projects that will be rendered in Salesforce1 or Visualforce pages in the browser we need to make it as easy as possible to swap out different CSS. To mitigate some of the markup opinions of the SFDC Styleguide we have abstracted some of their styles into more Bootstrap-esque classes. Case in point, take this example from the Styleguide:
 
 {% highlight html %}
 <article class="mam bg-1 border border--3 brm">
