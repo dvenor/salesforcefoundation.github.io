@@ -9,10 +9,10 @@ excerpt:  "We have lots of projects and a small team. We love Bootstrap because 
 
   * This is not an official project of salesforce.com
   * This is a project released by the [Salesforce.com Foundation](http://salesforcefoundation.org).
-  * This project should be viewed as an extension of the excellent work done by the salesforce.com UX team on the [SFDC Styleguide](http://sfdc-styleguide.herokuapp.com/)
+  * This project should be viewed as an extension of the excellent work done by the salesforce.com UX team on the [SFDC Styleguide](http://sfdc-styleguide.herokuapp.com/).
   * This project is *NOT* a replacement for the [SFDC Styleguide](http://sfdc-styleguide.herokuapp.com/), our goal is to make the process of keeping this in-sync with the styleguide fluid and automatic but the truth will always be in the [SFDC Styleguide](http://sfdc-styleguide.herokuapp.com/).
 
-I have also gone ahead and updated a little of the content in this post to better reflect the purpose and sentiment behind the project. Please excuse the interruption.
+I have also gone ahead and updated a little of the content in this post to better reflect the purpose of and sentiment behind the project. Please excuse the interruption.
 
 Have fun!
 
