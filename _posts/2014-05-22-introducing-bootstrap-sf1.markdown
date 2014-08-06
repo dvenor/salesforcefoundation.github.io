@@ -7,7 +7,7 @@ excerpt:  "We have lots of projects and a small team. We love Bootstrap because 
 ---
 *__UDPATE 8/6/2014__*: I have had a couple people in the community express some confusion as to the purpose and intent of this project. After rereading this post I also realized that I could have made a few things more clear:
 
-  * **This is not an official project of salesforce.com**
+  * This is not an official project of salesforce.com
   * This is a project released by the [Salesforce.com Foundation](http://salesforcefoundation.org).
   * This project should be viewed as an extension of the excellent work done on the SFDC Styleguide
   * This project is *NOT* a replacement for the SFDC Styleguide, our goal is to make the process of keeping this in-sync with the styleguide fluid and automatic but the truth will always be in the SFDC Styleguide.
