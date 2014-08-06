@@ -9,7 +9,7 @@ excerpt:  "We have lots of projects and a small team. We love Bootstrap because 
 
   * The SFDC Styleguide is excellent work.
   * The fine people who created the SFDC Styleguide have different requirements than I might, which explains many of their design decisions.
-  * This project is *NOT* a replacement for the SFDC Styleguide, our goal is to make the process of keeping this in-sync with the styleguide fluid and automatic. But the truth will always be in the SFDC Styleguide.
+  * This project is *NOT* a replacement for the SFDC Styleguide, our goal is to make the process of keeping this in-sync with the styleguide fluid and automatic but the truth will always be in the SFDC Styleguide.
 
 I have also gone ahead and updated a little of the content in this post to better reflect the purpose and sentiment behind the project.
 
