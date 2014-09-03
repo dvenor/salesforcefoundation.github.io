@@ -6,7 +6,7 @@ date:     2014-09-03 11:00:00
 ---
 If you want to retrieve information from a controller using Javascript, there are multiple ways to do that. You can use the [Ajax Toolkit](https://www.salesforce.com/us/developer/docs/ajax/Content/sforce_api_ajax_introducing.htm) (which uses the SOAP API - no more than 200 records at a time), [Javascript Remoting](https://www.salesforce.com/us/developer/docs/pages/Content/pages_js_remoting.htm), or even the newer (in pilot at the time of this writing) [Javascript Remote Objects](https://www.salesforce.com/us/developer/docs/pages/Content/pages_remote_objects.htm). This [article](https://developer.salesforce.com/blogs/developer-relations/2013/03/using-javascript-with-force-com.html) has a good comparison of some of these technologies.
 
-But what if you just want to access from Javascript data from the controller that is not going to change? For example, a list or a map that was created and populated in the controller constructor and that is not going to change.
+But what if you just want to access from Javascript data from the controller that is not going to change? For example, a list or a map that was created and populated in the controller constructor and that is going to stay immunable.
 
 You would think that you can use Javascript Remoting to retrieve this data structure from Javascript. However, RemoteAction methods need to be static, thus they can only access static variables. And static variables are not part of the viewstate. They are not preserved in memory either, unlike static variables in Java Servlets. If you try to access a static variable from a static RemoteAction method you will get a null back because Apex controllers don't retain the state of the static variables.
 
