@@ -12,10 +12,11 @@ body {
   
 }
 
+@navbar-dev: #001E3F;
 .navbar-branded.navbar-fixed-top {
     transition: all 200ms;
-    background: @brand-primary;
-    border-bottom: none;
+    background: @navbar-dev;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.2);
     top: 0;
     min-height: 70px;
     padding: 5px;
@@ -93,27 +94,28 @@ body {
           @perc: floor((@index * 100));
           @item: ~"navscale-@{perc}";
           &.@{item} {
-              background: rgba(red(@brand-primary), green(@brand-primary), blue(@brand-primary), (1 - @index));
-              .calc(top, 0, 10px, @index);
-              .calc(min-height, 70px, 100px, @index);
+              // background: rgba(red(@navbar-dev), green(@navbar-dev), blue(@navbar-dev), (1 - @index));
+              // .calc(top, 0, 10px, @index);
+              .calc(min-height, 70px, 90px, @index);
 
               .navbar-nav > li > a {
-                  @max_size: ceil((@font-size-base * 1.25));
+                  @max_size: ceil((@font-size-base * 1.1));
                   .calc(font-size, @font-size-base, @max_size, @index);
                   .calc(padding-top, 25px, 36px, @index);
                   .calc(padding-bottom, 5px, 8px, @index);
               }
               .navbar-foundation-logo {
-                  @logo_height: 60 + floor( ( @index * 30 ) );
+                  @logo_height: 50 + floor( ( @index * 20 ) );
                   @logo_width: (2.6 * @logo_height);
                   height: ~"@{logo_height}px";
                   width: ~"@{logo_width}px";
               }
               .navbar-foundation-teams {
-                  .calc(height, 60px, 90px, @index);
-                  .calc(font-size, 16px, ceil((@font-size-base * 1.75)), @index);
+                  .calc(height, 60px, 70px, @index);
+                  .calc(font-size, 16px, ceil((@font-size-base * 1.6)), @index);
                   .calc(line-height, 20px, ceil((@font-size-base * 2.25)), @index);
-                  .calc(padding-top, 10px, 14px, @index);
+                  .calc(padding-top, 10px, 5px, @index);
+                  .calc(padding-bottom, 10px, 5px, @index);
               }
           }
           .navscale((@index - 0.1));
@@ -143,8 +145,8 @@ body {
 }
 
 .project-cloud {
-  background: @brand-primary;
-  #gradient > .vertical(@brand-primary, lighten(@brand-primary, 30%));
+  background: #001E3F;
+  #gradient > .vertical(#001E3F, lighten(#001E3F, 10%));
 
   > h2 {
     color: #fff;
@@ -280,7 +282,7 @@ body {
       }
 
       .cloud-name {
-        color: @brand-primary;
+        color: lighten(@navbar-dev, 10%);
         opacity: .8;
         display: table-cell;
         vertical-align: middle;

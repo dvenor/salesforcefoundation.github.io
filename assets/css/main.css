@@ -2062,8 +2062,8 @@ a.list-group-item-danger.active:focus {
 }
 .navbar-branded.navbar-fixed-top {
   transition: all 200ms;
-  background: #2a94d6;
-  border-bottom: none;
+  background: #001e3f;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.2);
   top: 0;
   min-height: 70px;
   padding: 5px;
@@ -2128,169 +2128,159 @@ a.list-group-item-danger.active:focus {
 }
 @media (min-width: 992px) {
   .navbar-branded.navbar-fixed-top.navscale-100 {
-    background: rgba(42, 148, 214, 0);
-    top: 10px;
-    min-height: 100px;
+    min-height: 90px;
   }
   .navbar-branded.navbar-fixed-top.navscale-100 .navbar-nav > li > a {
-    font-size: 18px;
+    font-size: 16px;
     padding-top: 36px;
     padding-bottom: 8px;
   }
   .navbar-branded.navbar-fixed-top.navscale-100 .navbar-foundation-logo {
-    height: 90px;
-    width: 234px;
+    height: 70px;
+    width: 182px;
   }
   .navbar-branded.navbar-fixed-top.navscale-100 .navbar-foundation-teams {
-    height: 90px;
-    font-size: 25px;
+    height: 70px;
+    font-size: 23px;
     line-height: 32px;
-    padding-top: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   .navbar-branded.navbar-fixed-top.navscale-90 {
-    background: rgba(42, 148, 214, 0.1);
-    top: 9px;
-    min-height: 97px;
+    min-height: 88px;
   }
   .navbar-branded.navbar-fixed-top.navscale-90 .navbar-nav > li > a {
-    font-size: 17px;
+    font-size: 15px;
     padding-top: 34px;
     padding-bottom: 7px;
   }
   .navbar-branded.navbar-fixed-top.navscale-90 .navbar-foundation-logo {
-    height: 87px;
-    width: 226.20000000000002px;
+    height: 68px;
+    width: 176.8px;
   }
   .navbar-branded.navbar-fixed-top.navscale-90 .navbar-foundation-teams {
-    height: 87px;
-    font-size: 24px;
+    height: 69px;
+    font-size: 22px;
     line-height: 30px;
-    padding-top: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   .navbar-branded.navbar-fixed-top.navscale-80 {
-    background: rgba(42, 148, 214, 0.2);
-    top: 8px;
-    min-height: 94px;
+    min-height: 86px;
   }
   .navbar-branded.navbar-fixed-top.navscale-80 .navbar-nav > li > a {
-    font-size: 17px;
+    font-size: 15px;
     padding-top: 33px;
     padding-bottom: 7px;
   }
   .navbar-branded.navbar-fixed-top.navscale-80 .navbar-foundation-logo {
-    height: 84px;
-    width: 218.4px;
+    height: 66px;
+    width: 171.6px;
   }
   .navbar-branded.navbar-fixed-top.navscale-80 .navbar-foundation-teams {
-    height: 84px;
-    font-size: 23px;
+    height: 68px;
+    font-size: 21px;
     line-height: 29px;
-    padding-top: 13px;
+    padding-top: 6px;
+    padding-bottom: 6px;
   }
   .navbar-branded.navbar-fixed-top.navscale-70 {
-    background: rgba(42, 148, 214, 0.3);
-    top: 7px;
-    min-height: 91px;
+    min-height: 84px;
   }
   .navbar-branded.navbar-fixed-top.navscale-70 .navbar-nav > li > a {
-    font-size: 16px;
+    font-size: 15px;
     padding-top: 32px;
     padding-bottom: 7px;
   }
   .navbar-branded.navbar-fixed-top.navscale-70 .navbar-foundation-logo {
-    height: 81px;
-    width: 210.6px;
+    height: 64px;
+    width: 166.4px;
   }
   .navbar-branded.navbar-fixed-top.navscale-70 .navbar-foundation-teams {
-    height: 81px;
-    font-size: 22px;
+    height: 67px;
+    font-size: 20px;
     line-height: 28px;
-    padding-top: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
   }
   .navbar-branded.navbar-fixed-top.navscale-60 {
-    background: rgba(42, 148, 214, 0.4);
-    top: 6px;
-    min-height: 88px;
+    min-height: 82px;
   }
   .navbar-branded.navbar-fixed-top.navscale-60 .navbar-nav > li > a {
-    font-size: 16px;
+    font-size: 15px;
     padding-top: 31px;
     padding-bottom: 6px;
   }
   .navbar-branded.navbar-fixed-top.navscale-60 .navbar-foundation-logo {
-    height: 78px;
-    width: 202.8px;
+    height: 62px;
+    width: 161.20000000000002px;
   }
   .navbar-branded.navbar-fixed-top.navscale-60 .navbar-foundation-teams {
-    height: 78px;
-    font-size: 21px;
+    height: 66px;
+    font-size: 20px;
     line-height: 27px;
-    padding-top: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
   }
   .navbar-branded.navbar-fixed-top.navscale-50 {
-    background: rgba(42, 148, 214, 0.5);
-    top: 5px;
-    min-height: 85px;
+    min-height: 80px;
   }
   .navbar-branded.navbar-fixed-top.navscale-50 .navbar-nav > li > a {
-    font-size: 16px;
+    font-size: 15px;
     padding-top: 30px;
     padding-bottom: 6px;
   }
   .navbar-branded.navbar-fixed-top.navscale-50 .navbar-foundation-logo {
-    height: 75px;
-    width: 195px;
+    height: 60px;
+    width: 156px;
   }
   .navbar-branded.navbar-fixed-top.navscale-50 .navbar-foundation-teams {
-    height: 75px;
-    font-size: 20px;
+    height: 65px;
+    font-size: 19px;
     line-height: 26px;
-    padding-top: 12px;
+    padding-top: 7px;
+    padding-bottom: 7px;
   }
   .navbar-branded.navbar-fixed-top.navscale-40 {
-    background: rgba(42, 148, 214, 0.6);
-    top: 4px;
-    min-height: 82px;
+    min-height: 78px;
   }
   .navbar-branded.navbar-fixed-top.navscale-40 .navbar-nav > li > a {
-    font-size: 15px;
+    font-size: 14px;
     padding-top: 29px;
     padding-bottom: 6px;
   }
   .navbar-branded.navbar-fixed-top.navscale-40 .navbar-foundation-logo {
-    height: 72px;
-    width: 187.20000000000002px;
+    height: 58px;
+    width: 150.8px;
   }
   .navbar-branded.navbar-fixed-top.navscale-40 .navbar-foundation-teams {
-    height: 72px;
-    font-size: 19px;
+    height: 64px;
+    font-size: 18px;
     line-height: 24px;
-    padding-top: 11px;
+    padding-top: 7px;
+    padding-bottom: 7px;
   }
   .navbar-branded.navbar-fixed-top.navscale-30 {
-    background: rgba(42, 148, 214, 0.7);
-    top: 3px;
-    min-height: 79px;
+    min-height: 76px;
   }
   .navbar-branded.navbar-fixed-top.navscale-30 .navbar-nav > li > a {
-    font-size: 15px;
+    font-size: 14px;
     padding-top: 28px;
     padding-bottom: 5px;
   }
   .navbar-branded.navbar-fixed-top.navscale-30 .navbar-foundation-logo {
-    height: 69px;
-    width: 179.4px;
+    height: 56px;
+    width: 145.6px;
   }
   .navbar-branded.navbar-fixed-top.navscale-30 .navbar-foundation-teams {
-    height: 69px;
+    height: 63px;
     font-size: 18px;
     line-height: 23px;
-    padding-top: 11px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
   .navbar-branded.navbar-fixed-top.navscale-20 {
-    background: rgba(42, 148, 214, 0.8);
-    top: 2px;
-    min-height: 76px;
+    min-height: 74px;
   }
   .navbar-branded.navbar-fixed-top.navscale-20 .navbar-nav > li > a {
     font-size: 14px;
@@ -2298,19 +2288,18 @@ a.list-group-item-danger.active:focus {
     padding-bottom: 5px;
   }
   .navbar-branded.navbar-fixed-top.navscale-20 .navbar-foundation-logo {
-    height: 66px;
-    width: 171.6px;
+    height: 54px;
+    width: 140.4px;
   }
   .navbar-branded.navbar-fixed-top.navscale-20 .navbar-foundation-teams {
-    height: 66px;
+    height: 62px;
     font-size: 17px;
     line-height: 22px;
-    padding-top: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
   .navbar-branded.navbar-fixed-top.navscale-10 {
-    background: rgba(42, 148, 214, 0.9);
-    top: 1px;
-    min-height: 73px;
+    min-height: 72px;
   }
   .navbar-branded.navbar-fixed-top.navscale-10 .navbar-nav > li > a {
     font-size: 14px;
@@ -2318,18 +2307,17 @@ a.list-group-item-danger.active:focus {
     padding-bottom: 5px;
   }
   .navbar-branded.navbar-fixed-top.navscale-10 .navbar-foundation-logo {
-    height: 63px;
-    width: 163.8px;
+    height: 52px;
+    width: 135.20000000000002px;
   }
   .navbar-branded.navbar-fixed-top.navscale-10 .navbar-foundation-teams {
-    height: 63px;
+    height: 61px;
     font-size: 16px;
     line-height: 21px;
-    padding-top: 10px;
+    padding-top: 9px;
+    padding-bottom: 9px;
   }
   .navbar-branded.navbar-fixed-top.navscale-0 {
-    background: #2a94d6;
-    top: 0px;
     min-height: 70px;
   }
   .navbar-branded.navbar-fixed-top.navscale-0 .navbar-nav > li > a {
@@ -2338,14 +2326,15 @@ a.list-group-item-danger.active:focus {
     padding-bottom: 5px;
   }
   .navbar-branded.navbar-fixed-top.navscale-0 .navbar-foundation-logo {
-    height: 60px;
-    width: 156px;
+    height: 50px;
+    width: 130px;
   }
   .navbar-branded.navbar-fixed-top.navscale-0 .navbar-foundation-teams {
     height: 60px;
     font-size: 16px;
     line-height: 20px;
-    padding-top: 10px;
+    padding-top: 9px;
+    padding-bottom: 9px;
   }
 }
 .section {
@@ -2364,11 +2353,11 @@ a.list-group-item-danger.active:focus {
   background-color: #fff;
 }
 .project-cloud {
-  background: #2a94d6;
-  background-image: -webkit-linear-gradient(top, #2a94d6 0%, #aad4ef 100%);
-  background-image: linear-gradient(to bottom, #2a94d6 0%, #aad4ef 100%);
+  background: #001E3F;
+  background-image: -webkit-linear-gradient(top, #001e3f 0%, #003672 100%);
+  background-image: linear-gradient(to bottom, #001e3f 0%, #003672 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2a94d6', endColorstr='#ffaad4ef', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff001e3f', endColorstr='#ff003672', GradientType=0);
 }
 .project-cloud > h2 {
   color: #fff;
@@ -2893,7 +2882,7 @@ a.list-group-item-danger.active:focus {
     opacity: 1.0;
   }
   .project-cloud .cloud .cloud-name {
-    color: #2a94d6;
+    color: #003672;
     opacity: .8;
     display: table-cell;
     vertical-align: middle;
