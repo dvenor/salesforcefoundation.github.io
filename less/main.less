@@ -67,8 +67,10 @@ body {
     }
 
     .navbar-foundation-logo {
-        width: 194px;
-        height: 60px;
+        @logo_height: 50;
+        @logo_width: (3.24 * @logo_height);
+        height: ~"@{logo_height}px";
+        width: ~"@{logo_width}px";
         display: inline-block;
         vertical-align: top;
         background-image: url(../images/logo-14.png);
@@ -77,9 +79,9 @@ body {
     }
 
     .navbar-foundation-teams {
-        height: 60px;
+        height: 50px;
         display: inline-block;
-        margin-left: 20px;
+        margin-left: 14px;
         border-left: 1px solid rgba(red(@brand-primary), green(@brand-primary), blue(@brand-primary), 0.3);
         padding-left: 14px;
         font-size: 16px;
@@ -99,7 +101,7 @@ body {
           &.@{item} {
               // background: rgba(red(@navbar-dev), green(@navbar-dev), blue(@navbar-dev), (1 - @index));
               // .calc(top, 0, 10px, @index);
-              .calc(min-height, 78px, 102px, @index);
+              .calc(min-height, 68px, 92px, @index);
 
               .navbar-nav > li > a {
                   @max_size: ceil((@font-size-base * 1.1));
@@ -108,18 +110,19 @@ body {
                   .calc(padding-bottom, 5px, 8px, @index);
               }
               .navbar-foundation-logo {
-                  @logo_height: 60 + floor( ( @index * 20 ) );
+                  @logo_height: 50 + floor( ( @index * 20 ) );
                   @logo_width: (3.24 * @logo_height);
                   height: ~"@{logo_height}px";
                   width: ~"@{logo_width}px";
                   .calc(margin-top, 4px, 6px, @index);
               }
               .navbar-foundation-teams {
-                  .calc(height, 64px, 84px, @index);
+                  .calc(height, 54px, 74px, @index);
                   .calc(font-size, 16px, ceil((@font-size-base * 1.6)), @index);
                   .calc(line-height, 20px, ceil((@font-size-base * 2.25)), @index);
                   .calc(padding-top, 10px, 5px, @index);
                   .calc(padding-left, 14px, 20px, @index);
+                  .calc(margin-left, 14px, 20px, @index);
                   .calc(padding-bottom, 10px, 5px, @index);
               }
           }
@@ -287,8 +290,9 @@ body {
       }
 
       .cloud-name {
-        color: lighten(@navbar-dev, 10%);
-        opacity: .8;
+        // color: lighten(@navbar-dev, 10%);
+        color: #fff;
+        // opacity: .8;
         display: table-cell;
         vertical-align: middle;
         text-align: center;
@@ -306,7 +310,7 @@ body {
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: 50%;
-        transition: opacity 300ms;
+        // transition: opacity 300ms;
 
         &:hover,
         &:focus {
