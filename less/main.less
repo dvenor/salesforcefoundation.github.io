@@ -73,6 +73,7 @@ body {
         vertical-align: top;
         background-image: url(../images/logo-14.png);
         background-repeat: no-repeat;
+        margin-top: 4px;
     }
 
     .navbar-foundation-teams {
@@ -98,7 +99,7 @@ body {
           &.@{item} {
               // background: rgba(red(@navbar-dev), green(@navbar-dev), blue(@navbar-dev), (1 - @index));
               // .calc(top, 0, 10px, @index);
-              .calc(min-height, 74px, 100px, @index);
+              .calc(min-height, 78px, 102px, @index);
 
               .navbar-nav > li > a {
                   @max_size: ceil((@font-size-base * 1.1));
@@ -111,9 +112,10 @@ body {
                   @logo_width: (3.24 * @logo_height);
                   height: ~"@{logo_height}px";
                   width: ~"@{logo_width}px";
+                  .calc(margin-top, 4px, 6px, @index);
               }
               .navbar-foundation-teams {
-                  .calc(height, 60px, 80px, @index);
+                  .calc(height, 64px, 84px, @index);
                   .calc(font-size, 16px, ceil((@font-size-base * 1.6)), @index);
                   .calc(line-height, 20px, ceil((@font-size-base * 2.25)), @index);
                   .calc(padding-top, 10px, 5px, @index);

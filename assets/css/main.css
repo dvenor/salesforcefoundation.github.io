@@ -2116,6 +2116,7 @@ a.list-group-item-danger.active:focus {
   vertical-align: top;
   background-image: url(../images/logo-14.png);
   background-repeat: no-repeat;
+  margin-top: 4px;
 }
 .navbar-branded.navbar-fixed-top .navbar-foundation-teams {
   height: 60px;
@@ -2130,7 +2131,7 @@ a.list-group-item-danger.active:focus {
 }
 @media (min-width: 992px) {
   .navbar-branded.navbar-fixed-top.navscale-100 {
-    min-height: 100px;
+    min-height: 102px;
   }
   .navbar-branded.navbar-fixed-top.navscale-100 .navbar-nav > li > a {
     font-size: 16px;
@@ -2140,9 +2141,10 @@ a.list-group-item-danger.active:focus {
   .navbar-branded.navbar-fixed-top.navscale-100 .navbar-foundation-logo {
     height: 80px;
     width: 259.20000000000005px;
+    margin-top: 6px;
   }
   .navbar-branded.navbar-fixed-top.navscale-100 .navbar-foundation-teams {
-    height: 80px;
+    height: 84px;
     font-size: 23px;
     line-height: 32px;
     padding-top: 5px;
@@ -2150,7 +2152,7 @@ a.list-group-item-danger.active:focus {
     padding-bottom: 5px;
   }
   .navbar-branded.navbar-fixed-top.navscale-90 {
-    min-height: 97px;
+    min-height: 99px;
   }
   .navbar-branded.navbar-fixed-top.navscale-90 .navbar-nav > li > a {
     font-size: 15px;
@@ -2160,9 +2162,10 @@ a.list-group-item-danger.active:focus {
   .navbar-branded.navbar-fixed-top.navscale-90 .navbar-foundation-logo {
     height: 78px;
     width: 252.72000000000003px;
+    margin-top: 5px;
   }
   .navbar-branded.navbar-fixed-top.navscale-90 .navbar-foundation-teams {
-    height: 78px;
+    height: 82px;
     font-size: 22px;
     line-height: 30px;
     padding-top: 5px;
@@ -2170,7 +2173,7 @@ a.list-group-item-danger.active:focus {
     padding-bottom: 5px;
   }
   .navbar-branded.navbar-fixed-top.navscale-80 {
-    min-height: 94px;
+    min-height: 97px;
   }
   .navbar-branded.navbar-fixed-top.navscale-80 .navbar-nav > li > a {
     font-size: 15px;
@@ -2180,9 +2183,10 @@ a.list-group-item-danger.active:focus {
   .navbar-branded.navbar-fixed-top.navscale-80 .navbar-foundation-logo {
     height: 76px;
     width: 246.24px;
+    margin-top: 5px;
   }
   .navbar-branded.navbar-fixed-top.navscale-80 .navbar-foundation-teams {
-    height: 76px;
+    height: 80px;
     font-size: 21px;
     line-height: 29px;
     padding-top: 6px;
@@ -2190,7 +2194,7 @@ a.list-group-item-danger.active:focus {
     padding-bottom: 6px;
   }
   .navbar-branded.navbar-fixed-top.navscale-70 {
-    min-height: 92px;
+    min-height: 94px;
   }
   .navbar-branded.navbar-fixed-top.navscale-70 .navbar-nav > li > a {
     font-size: 15px;
@@ -2200,9 +2204,10 @@ a.list-group-item-danger.active:focus {
   .navbar-branded.navbar-fixed-top.navscale-70 .navbar-foundation-logo {
     height: 74px;
     width: 239.76000000000002px;
+    margin-top: 5px;
   }
   .navbar-branded.navbar-fixed-top.navscale-70 .navbar-foundation-teams {
-    height: 74px;
+    height: 78px;
     font-size: 20px;
     line-height: 28px;
     padding-top: 6px;
@@ -2210,7 +2215,7 @@ a.list-group-item-danger.active:focus {
     padding-bottom: 6px;
   }
   .navbar-branded.navbar-fixed-top.navscale-60 {
-    min-height: 89px;
+    min-height: 92px;
   }
   .navbar-branded.navbar-fixed-top.navscale-60 .navbar-nav > li > a {
     font-size: 15px;
@@ -2220,9 +2225,10 @@ a.list-group-item-danger.active:focus {
   .navbar-branded.navbar-fixed-top.navscale-60 .navbar-foundation-logo {
     height: 72px;
     width: 233.28000000000003px;
+    margin-top: 5px;
   }
   .navbar-branded.navbar-fixed-top.navscale-60 .navbar-foundation-teams {
-    height: 72px;
+    height: 76px;
     font-size: 20px;
     line-height: 27px;
     padding-top: 6px;
@@ -2230,7 +2236,7 @@ a.list-group-item-danger.active:focus {
     padding-bottom: 6px;
   }
   .navbar-branded.navbar-fixed-top.navscale-50 {
-    min-height: 87px;
+    min-height: 90px;
   }
   .navbar-branded.navbar-fixed-top.navscale-50 .navbar-nav > li > a {
     font-size: 15px;
@@ -2240,9 +2246,10 @@ a.list-group-item-danger.active:focus {
   .navbar-branded.navbar-fixed-top.navscale-50 .navbar-foundation-logo {
     height: 70px;
     width: 226.8px;
+    margin-top: 5px;
   }
   .navbar-branded.navbar-fixed-top.navscale-50 .navbar-foundation-teams {
-    height: 70px;
+    height: 74px;
     font-size: 19px;
     line-height: 26px;
     padding-top: 7px;
@@ -2250,7 +2257,7 @@ a.list-group-item-danger.active:focus {
     padding-bottom: 7px;
   }
   .navbar-branded.navbar-fixed-top.navscale-40 {
-    min-height: 84px;
+    min-height: 87px;
   }
   .navbar-branded.navbar-fixed-top.navscale-40 .navbar-nav > li > a {
     font-size: 14px;
@@ -2260,9 +2267,10 @@ a.list-group-item-danger.active:focus {
   .navbar-branded.navbar-fixed-top.navscale-40 .navbar-foundation-logo {
     height: 68px;
     width: 220.32000000000002px;
+    margin-top: 4px;
   }
   .navbar-branded.navbar-fixed-top.navscale-40 .navbar-foundation-teams {
-    height: 68px;
+    height: 72px;
     font-size: 18px;
     line-height: 24px;
     padding-top: 7px;
@@ -2270,7 +2278,7 @@ a.list-group-item-danger.active:focus {
     padding-bottom: 7px;
   }
   .navbar-branded.navbar-fixed-top.navscale-30 {
-    min-height: 81px;
+    min-height: 85px;
   }
   .navbar-branded.navbar-fixed-top.navscale-30 .navbar-nav > li > a {
     font-size: 14px;
@@ -2280,9 +2288,10 @@ a.list-group-item-danger.active:focus {
   .navbar-branded.navbar-fixed-top.navscale-30 .navbar-foundation-logo {
     height: 66px;
     width: 213.84px;
+    margin-top: 4px;
   }
   .navbar-branded.navbar-fixed-top.navscale-30 .navbar-foundation-teams {
-    height: 66px;
+    height: 70px;
     font-size: 18px;
     line-height: 23px;
     padding-top: 8px;
@@ -2290,7 +2299,7 @@ a.list-group-item-danger.active:focus {
     padding-bottom: 8px;
   }
   .navbar-branded.navbar-fixed-top.navscale-20 {
-    min-height: 79px;
+    min-height: 82px;
   }
   .navbar-branded.navbar-fixed-top.navscale-20 .navbar-nav > li > a {
     font-size: 14px;
@@ -2300,9 +2309,10 @@ a.list-group-item-danger.active:focus {
   .navbar-branded.navbar-fixed-top.navscale-20 .navbar-foundation-logo {
     height: 64px;
     width: 207.36px;
+    margin-top: 4px;
   }
   .navbar-branded.navbar-fixed-top.navscale-20 .navbar-foundation-teams {
-    height: 64px;
+    height: 68px;
     font-size: 17px;
     line-height: 22px;
     padding-top: 8px;
@@ -2310,7 +2320,7 @@ a.list-group-item-danger.active:focus {
     padding-bottom: 8px;
   }
   .navbar-branded.navbar-fixed-top.navscale-10 {
-    min-height: 76px;
+    min-height: 80px;
   }
   .navbar-branded.navbar-fixed-top.navscale-10 .navbar-nav > li > a {
     font-size: 14px;
@@ -2320,9 +2330,10 @@ a.list-group-item-danger.active:focus {
   .navbar-branded.navbar-fixed-top.navscale-10 .navbar-foundation-logo {
     height: 62px;
     width: 200.88000000000002px;
+    margin-top: 4px;
   }
   .navbar-branded.navbar-fixed-top.navscale-10 .navbar-foundation-teams {
-    height: 62px;
+    height: 66px;
     font-size: 16px;
     line-height: 21px;
     padding-top: 9px;
@@ -2330,7 +2341,7 @@ a.list-group-item-danger.active:focus {
     padding-bottom: 9px;
   }
   .navbar-branded.navbar-fixed-top.navscale-0 {
-    min-height: 74px;
+    min-height: 78px;
   }
   .navbar-branded.navbar-fixed-top.navscale-0 .navbar-nav > li > a {
     font-size: 14px;
@@ -2340,9 +2351,10 @@ a.list-group-item-danger.active:focus {
   .navbar-branded.navbar-fixed-top.navscale-0 .navbar-foundation-logo {
     height: 60px;
     width: 194.4px;
+    margin-top: 4px;
   }
   .navbar-branded.navbar-fixed-top.navscale-0 .navbar-foundation-teams {
-    height: 60px;
+    height: 64px;
     font-size: 16px;
     line-height: 20px;
     padding-top: 9px;
