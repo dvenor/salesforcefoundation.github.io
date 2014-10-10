@@ -67,18 +67,20 @@ body {
     }
 
     .navbar-foundation-logo {
-        width: 156px;
+        width: 194px;
         height: 60px;
         display: inline-block;
         vertical-align: top;
+        background-image: url(../images/logo-14.png);
+        background-repeat: no-repeat;
     }
 
     .navbar-foundation-teams {
         height: 60px;
         display: inline-block;
         margin-left: 20px;
-        border-left: 1px solid rgba(255, 255, 255, 0.6);
-        padding-left: 20px;
+        border-left: 1px solid rgba(red(@brand-primary), green(@brand-primary), blue(@brand-primary), 0.3);
+        padding-left: 14px;
         font-size: 16px;
         line-height: 20px;
         padding-top: 10px;
@@ -96,7 +98,7 @@ body {
           &.@{item} {
               // background: rgba(red(@navbar-dev), green(@navbar-dev), blue(@navbar-dev), (1 - @index));
               // .calc(top, 0, 10px, @index);
-              .calc(min-height, 70px, 90px, @index);
+              .calc(min-height, 70px, 100px, @index);
 
               .navbar-nav > li > a {
                   @max_size: ceil((@font-size-base * 1.1));
@@ -105,16 +107,17 @@ body {
                   .calc(padding-bottom, 5px, 8px, @index);
               }
               .navbar-foundation-logo {
-                  @logo_height: 50 + floor( ( @index * 20 ) );
-                  @logo_width: (2.6 * @logo_height);
+                  @logo_height: 60 + floor( ( @index * 20 ) );
+                  @logo_width: (3.24 * @logo_height);
                   height: ~"@{logo_height}px";
                   width: ~"@{logo_width}px";
               }
               .navbar-foundation-teams {
-                  .calc(height, 60px, 70px, @index);
+                  .calc(height, 60px, 80px, @index);
                   .calc(font-size, 16px, ceil((@font-size-base * 1.6)), @index);
                   .calc(line-height, 20px, ceil((@font-size-base * 2.25)), @index);
                   .calc(padding-top, 10px, 5px, @index);
+                  .calc(padding-left, 14px, 20px, @index);
                   .calc(padding-bottom, 10px, 5px, @index);
               }
           }
