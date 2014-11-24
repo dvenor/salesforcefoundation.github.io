@@ -3,6 +3,7 @@ layout:   post
 title:    "Accessing Viewstate from Javascript"
 author:   Carlos Ramirez Martinez-Eiroa
 date:     2014-09-03 11:00:00
+excerpt: "Javascript can access variables in the viewstate (controller properties) using the same notation you would use inside VF elements, BUT only if they are primitives. Complex object types (such as lists or maps) are not directly translated into the equivalent Javascript types. They are basically stored as strings in the viewstate, and Javascript doesn’t have a way of knowing that it’s, for example, a list or a map. There is no information about the data type on the client side."
 ---
 If you want to retrieve information from a controller using Javascript, there are multiple ways to do that. You can use the [Ajax Toolkit](https://www.salesforce.com/us/developer/docs/ajax/Content/sforce_api_ajax_introducing.htm) (which uses the SOAP API - no more than 200 records at a time), [Javascript Remoting](https://www.salesforce.com/us/developer/docs/pages/Content/pages_js_remoting.htm), or even the newer (in pilot at the time of this writing) [Javascript Remote Objects](https://www.salesforce.com/us/developer/docs/pages/Content/pages_remote_objects.htm). This [article](https://developer.salesforce.com/blogs/developer-relations/2013/03/using-javascript-with-force-com.html) has a good comparison of some of these technologies.
 
