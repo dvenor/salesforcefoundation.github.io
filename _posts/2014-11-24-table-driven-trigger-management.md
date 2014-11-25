@@ -12,7 +12,7 @@ With this design, only one trigger exists per object (one for Contact, one for A
 
 Of course, we want this design to be extensible. We want to be able to add new classes and have our Trigger Handler run them. Also, we are storing the information of which classes to run (plus the details mentioned above), as strings in our custom object. Therefore we need to instantiate the classes to run dynamically. And in order to make sure that they can actually be run, they need to implement the [`TDTM_Runnable`](https://github.com/SalesforceFoundation/Cumulus/blob/dev/src/classes/TDTM_Runnable.cls) interface.
 
-The code in our TDTM_TriggerHandler class that creates an instance of each class to run and checks if it implements the required interface, looks like this:
+The code in our `TDTM_TriggerHandler` class that creates an instance of each class to run and checks if it implements the required interface, looks like this:
 
     if(classToRunRecord != null) {
         String classToRunName = String.valueOf(classToRunRecord.get('Class__c'));
