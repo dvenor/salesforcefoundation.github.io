@@ -85,6 +85,6 @@ This is the beginning of the `DmlWrapper` declaration, where we can see the data
         
 One more interesting aspect of `DmlWrapper` is that Salesforce has a limit of 10 different types of objects DML can be performed upon in a single call. Switching between different types of objects, even if the same type is repeated again, is counted as a new type every time. See the section “Creating Records for Multiple Object Types” at [Apex Dml Limitations](https://www.salesforce.com/us/developer/docs/apexcode/Content/langCon_apex_dml_limitations.htm). To avoid hitting this limit, we group all records of the same type before performing the DML operation. See the method `groupSObjects` in [`TDTM_Runnable`](https://github.com/SalesforceFoundation/Cumulus/blob/dev/src/classes/TDTM_Runnable.cls) for details.
 
-## Conclussion
+## Conclusion
 
 I hope this gives you a good idea of what the Table-Driven Trigger Management pattern is, how we use it at the Nonprofit Starter Pack, and how you can use it yourself to extend the trigger design in the NPSP, or even in your own independent applications. All the code in the Nonprofit Starter Pack is open source, so feel free to check it out at our [NPSP Github repository](https://github.com/SalesforceFoundation/Cumulus). If you have questions, you can find a vibrant and helpful community at the [Power of Us Hub](https://powerofus.force.com/). Happy coding!
