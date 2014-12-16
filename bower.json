@@ -19,6 +19,8 @@
     "bootstrap-theme-foundation": "git@github.com:SalesforceFoundation/bootstrap-theme-foundation.git#gh-pages",
     "backbone": "~1.1.2",
     "requirejs": "~2.1.11",
-    "fontawesome": "~4.0.3"
+    "fontawesome": "~4.0.3",
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.3.1"
   }
 }
