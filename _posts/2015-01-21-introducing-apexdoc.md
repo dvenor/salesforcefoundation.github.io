@@ -31,19 +31,17 @@ All the information about running ApexDoc and how you can format your code for A
 
 
 Here is an example of what a Class header comment will look like when you are adding ApexDoc formatting to it.
-```
-/**
-* @author Salesforce.com Foundation
-* @date 2014
-*
-* @group Accounts
-* @group-content ../../ApexDocContent/Accounts.htm
-*
-* @description Trigger Handler on Accounts that handles ensuring the correct system flags are set on
-* our special accounts (Household, One-to-One), and also detects changes on Household Account that requires
-* name updating.
-*/
-public with sharing class ACCT_Accounts_TDTM extends TDTM_Runnable {
-```
+	/**
+	* @author Salesforce.com Foundation
+	* @date 2014
+	*
+	* @group Accounts
+	* @group-content ../../ApexDocContent/Accounts.htm
+	*
+	* @description Trigger Handler on Accounts that handles ensuring the correct system flags are set on
+	* our special accounts (Household, One-to-One), and also detects changes on Household Account that requires
+	* name updating.
+	*/
+	public with sharing class ACCT_Accounts_TDTM extends TDTM_Runnable {
 
 I hope you like the new look (and new features) of ApexDoc!
