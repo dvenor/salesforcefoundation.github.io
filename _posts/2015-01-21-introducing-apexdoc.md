@@ -12,7 +12,9 @@ The [ApexDoc project on gitHub](http://github.com/SalesforceFoundation/ApexDoc) 
 ![ApexDoc Preview](../assets/images/ApexDoc3.jpg)
 
 
+<br/>
 Some of the new features I really like include:
+
 * all class, method, and property signatures link to the source code on your hosted repository
 * nested classes are now supported and displayed on the parent class's page
 * interfaces are now supported
