@@ -15,16 +15,16 @@ The [ApexDoc project on gitHub](http://github.com/SalesforceFoundation/ApexDoc) 
 <br/>
 Some of the new features I really like include:
 
-* all class, method, and property signatures link to the source code on your hosted repository
-* nested classes are now supported and displayed on the parent class's page
-* interfaces are now supported
-* multiline descriptions are supported
-* single-line ApexDoc comments now supported
-* hierarchical menu of classes provided for navigation with the class-group concept
-* class-group's can provide their own overview html page
-* users can specify an html file for their banner, allowing more flexibility on presentation
-* checkboxes provided to dynamically show/hide all items in that scope (global, public, private, etc.)
-* methods table of contents provided near the top of each class's page
+- all class, method, and property signatures link to the source code on your hosted repository
+- nested classes are now supported and displayed on the parent class's page
+- interfaces are now supported
+- multiline descriptions are supported
+- single-line ApexDoc comments now supported
+- hierarchical menu of classes provided for navigation with the class-group concept
+- class-group's can provide their own overview html page
+- users can specify an html file for their banner, allowing more flexibility on presentation
+- checkboxes provided to dynamically show/hide all items in that scope (global, public, private, etc.)
+- methods table of contents provided near the top of each class's page
 
 
 All the information about running ApexDoc and how you can format your code for ApexDoc are found in the repository's [readme](http://github.com/SalesforceFoundation/ApexDoc/blob/master/README.md).
