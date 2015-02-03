@@ -16,7 +16,7 @@ Our goals regarding error handling are:
 #Challenge
 The challenge in doing error handling on the Salesforce platform is that when an error occurs, all changes to the system are undone. This includes any kind of error record stored, and any type of notification that we tried to send.
 
-If any __unhandled exception__ (exception that is not caught by our code) occurs, or if any record in the context is flagged as containing an error through the use of the `addError` method, the whole transaction is rolled back. This makes it impossible to store custom errors or to send error notifications, as the storing of the error records or the creation of Chatter post records would also be rolled back. The emails containing error notifications would never be sent, as the transaction rollback pulls them from the queue they were put in.
+If any __unhandled exception__ (exception that is not caught by our code) occurs, or if any record in the context is flagged as containing an error through the use of the `addError` method, the whole transaction is rolled back. This makes it impossible to store custom errors or to send error notifications, as the storing of the error records or the creation of Chatter post would also be rolled back. The emails containing error notifications would never be sent, as the transaction rollback pulls them from the queue they were put in.
 
 #Solution
 Our solution is based on __taking transaction control__ away from the platform. 
@@ -30,7 +30,7 @@ If any exception occurs, we do as follows:
 3. We create and store an error record
 4. We send error notifications
 
-There is a caveat here, in the case of __triggers__. Since the earliest point where we can set a savepoint is the trigger, when we do a rollback the initial operation that caused the trigger to run is not rolled back. Only everything that happens in or after the trigger is. For the specific cases where we do not want to store an error record, and we want instead to roll everything back, including the original operation, we use `addError` to force the platform to do the rollback for us. We do this by setting the flag `isPropogateErrorsFromTrigger` to true in TDTM_TriggerHandler.
+There is a caveat here, in the case of __triggers__. Since the earliest point where we can set a savepoint is the trigger, when we do a rollback the initial operation that caused the trigger to run is not rolled back. Only everything that happens in or after the trigger is. For the specific cases where we do not want to store an error record, and we want instead to roll everything back, including the original operation, we use `addError` to force the platform to do the rollback for us. We do this by setting the flag `isPropogateErrorsFromTrigger` to true in `TDTM_TriggerHandler`.
 
 _*You could argue that a trigger is not an entry point, as it needs to be called from some other code in the platform, such a controller, a future, a batch, or even the data loader. However, we consider it an entry point to our application given that it can be called from standard VisualForce pages or some other standard platform code that we don’t have access to - the trigger thus becoming our de facto entry point._
 
@@ -52,7 +52,7 @@ If you throw an exception in a class that is being called from a __trigger__, ke
 
 If you use the `addError` method, the whole transaction will be rolled back. No error record will be stored, and no error notification will be sent.
 
-Instead of throwing exceptions or using addError to control transaction rollbacks in classes that are called from triggers, it is advisable to check for the conditions that need to be met on each side of the trigger transaction (BEFORE or AFTER).
+Instead of throwing exceptions or using `addError` to control transaction rollbacks in classes that are called from triggers, it is advisable to check for the conditions that need to be met on each side of the trigger transaction (BEFORE or AFTER).
 
 ##Controllers and Futures
 If you create a new public method  that performs DML* in a controller or a future method, follow this design:
