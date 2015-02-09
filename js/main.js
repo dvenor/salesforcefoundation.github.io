@@ -236,10 +236,6 @@ require([
       }
     });
 
-    function centerElement($el) {
-
-    };
-
     $('.project-cloud').on('sfdo.clouds.active', function(event, active) {
       if (active && !$clouds.hasClass('active')) {
         $clouds.addClass('active');
@@ -250,6 +246,7 @@ require([
         });
       } else if (!active) {
         $clouds.removeClass('active');
+        $('.clouds-up').removeClass('shown');
         $('.project-cloud').removeClass('active');
         $('.cloud')
           .removeClass('active')
@@ -258,9 +255,12 @@ require([
       }
     });
 
-    $('.clouds-up, .project-cloud').on('click', function(event) {
+    $('.clouds-up').on('click', function(event) {
       event.preventDefault();
-      $(this).removeClass('shown');
+      $(this).trigger('sfdo.clouds.active', [false]);
+    });
+
+    $('.project-cloud').on('click', function(event) {
       $(this).trigger('sfdo.clouds.active', [false]);
     });
 
