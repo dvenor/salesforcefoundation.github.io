@@ -6,6 +6,15 @@
   description:        Build and automation scripts to facilitate best practices based development and release processes for managed package development on the Salesforce1 Platform.
   repo:               https://github.com/SalesforceFoundation/CumulusCI
   
+- name:           Bootstrap SF1
+  description:        A Bootstrap theme based on the SFDC styleguide.
+  repo:               https://github.com/SalesforceFoundation/bootstrap-sf1
+  url:                https://salesforcefoundation.github.io/bootstrap-sf1
+  
+- name:           ApexDoc
+  description:        Generate documentation from inline comments in your Force.com Apex classes.
+  repo:               https://github.com/SalesforceFoundation/ApexDoc
+  
 - name:           mrbelvedere
   url:                https://salesforcefoundation.github.io/mrbelvedere
   description:        A build bot used to fill gaps in triggering jobs and interacting with the GitHub API for CumulusCI.
@@ -15,7 +24,3 @@
   description:        A flexible typeahead component for use on Visualforce pages. Uses the typeahead.js library from Twitter.
   repo:               https://github.com/SalesforceFoundation/visualforce-typeahead
 
-- name:           Bootstrap SF1
-  description:        A Bootstrap theme based on the SFDC styleguide.
-  repo:               https://github.com/SalesforceFoundation/bootstrap-sf1
-  url:                https://salesforcefoundation.github.io/bootstrap-sf1
