@@ -208,10 +208,13 @@ require([
       .on('jsp-scroll-x', function(event, scrollX) {
         $cloudsUp.css({'margin-left': scrollX+'px'})
         $('.cloud.active').css({'margin-left': (scrollX-360)+'px'});
-      })
-      .jScrollPane({
+      });
+
+    if ($(window).width() > 992) {
+      $scroll.jScrollPane({
         autoReinitialise: true
       });
+    }
     var scrollApi = $scroll.data('jsp');
 
     $('.cloud-name').on('click', function(event) {
