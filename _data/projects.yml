@@ -12,6 +12,6 @@
   repo:               https://github.com/SalesforceFoundation/visualforce-typeahead
 
 - name:           Bootstrap SF1
-  description:        "A Bootstrap theme based on the SFDC styleguide with a little extra."
+  description:        "A Bootstrap theme based on the SFDC styleguide."
   repo:               https://github.com/SalesforceFoundation/bootstrap-sf1
   url:                https://salesforcefoundation.github.io/bootstrap-sf1

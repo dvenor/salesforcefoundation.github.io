@@ -5,24 +5,26 @@ base_url:   "./"
 ---
 <section class="project-cloud">
   <h2 class="section-head" id="projects">Projects</h2>
-  <div class="clouds">
-    <a class="clouds-up" href="#"></a>
-    {% for project in site.data.projects %}
-      <div class="cloud cloud-{% cycle '1', '2', '3', '4' %} cloud-pos-{{ forloop.index }}">
-        <a class="cloud-name" href="{% if project.url %}{{ project.url }}{% else %}{{ project.repo }}{% endif %}">
-          {{ project.name }}
-        </a>
-        <div class="cloud-info">
-          <p>
-            {{ project.description }}
-          </p>
-          <p>
-            {% if project.url %} <a href="{{ project.url }}" class="btn btn-primary">Project Site</a>{% endif %}
-            {% if project.repo %} <a href="{{ project.repo }}" class="btn btn-success">View on Github</a>{% endif %}
-          </p>
+  <div class="clouds-scroll">
+    <div class="clouds">
+      <a class="clouds-up" href="#"></a>
+      {% for project in site.data.projects %}
+        <div class="cloud cloud-{% cycle '1', '2', '3', '4' %} cloud-pos-{{ forloop.index }}">
+          <a class="cloud-name" href="{% if project.url %}{{ project.url }}{% else %}{{ project.repo }}{% endif %}">
+            {{ project.name }}
+          </a>
+          <div class="cloud-info">
+            <p>
+              {{ project.description }}
+            </p>
+            <p>
+              {% if project.url %} <a href="{{ project.url }}" class="btn btn-primary">Project Site</a>{% endif %}
+              {% if project.repo %} <a href="{{ project.repo }}" class="btn btn-success">View on Github</a>{% endif %}
+            </p>
+          </div>
         </div>
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
 </section>
 

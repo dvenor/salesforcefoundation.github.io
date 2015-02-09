@@ -2,7 +2,10 @@ require([
   'jquery',
   'underscore',
   'backbone',
-  'bootstrap'
+  'bootstrap',
+  'jquery.mousewheel',
+  'mwheelIntent',
+  'jscrollpane'
 ], function($, _, Backbone) {
 
   // Hold our app specific stuff
@@ -199,39 +202,63 @@ require([
 
     $(window).trigger('scroll');
 
+    var $clouds = $('.clouds');
+    var $cloudsUp = $('.clouds-up');
+    var $scroll = $('.project-cloud > .clouds-scroll')
+      .on('jsp-scroll-x', function(event, scrollX) {
+        $cloudsUp.css({'margin-left': scrollX+'px'})
+        $('.cloud.active').css({'margin-left': (scrollX-360)+'px'});
+      })
+      .jScrollPane({
+        autoReinitialise: true
+      });
+    var scrollApi = $scroll.data('jsp');
+
     $('.cloud-name').on('click', function(event) {
       if ($(window).width() > 992) {
+        event.stopPropagation();
         event.preventDefault();
         var $el = $(this).closest('.cloud');
         if (!$el.is('.active')) {
-          var $clouds = $('.clouds');
-          if (!$clouds.is('.active')) {
-            $clouds.addClass('active');
-            $('.project-cloud').addClass('active');
-            $clouds.one($.support.transition.end, function(event) {
-              $('.clouds-up').addClass('shown');
-            });
-          }
-          if (!$(this).is('.active')) {
-            $('.cloud.active').removeClass('active');
-            $('.cloud.shown').removeClass('shown');
-            $el.addClass('active');
-            $el.one($.support.transition.end, function(event) {
-              $el.addClass('shown');
-            });
-          }
+          $clouds.trigger('sfdo.clouds.active', [true]);
+          $('.cloud.active').removeClass('active').removeAttr('style');
+          $('.cloud.shown').removeClass('shown');
+          $el
+            .addClass('active')
+            .css({'margin-left': (scrollApi.getContentPositionX() - 360)+'px'});;
+          $el.one($.support.transition.end, function(event) {
+            $el.addClass('shown');
+          });
         }
       }
     });
 
-    $('.clouds-up').on('click', function(event) {
+    function centerElement($el) {
+
+    };
+
+    $('.project-cloud').on('sfdo.clouds.active', function(event, active) {
+      if (active && !$clouds.hasClass('active')) {
+        $clouds.addClass('active');
+        $('.project-cloud').addClass('active');
+
+        $clouds.one($.support.transition.end, function(event) {
+          $('.clouds-up').addClass('shown');
+        });
+      } else if (!active) {
+        $clouds.removeClass('active');
+        $('.project-cloud').removeClass('active');
+        $('.cloud')
+          .removeClass('active')
+          .removeClass('shown')
+          .removeAttr('style');;
+      }
+    });
+
+    $('.clouds-up, .project-cloud').on('click', function(event) {
       event.preventDefault();
       $(this).removeClass('shown');
-      $('.clouds').removeClass('active');
-      $('.project-cloud').removeClass('active');
-      $('.cloud')
-        .removeClass('active')
-        .removeClass('shown');
+      $(this).trigger('sfdo.clouds.active', [false]);
     });
 
     $('.nav-primary a').on('click', function(event) {

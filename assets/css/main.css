@@ -1336,6 +1336,89 @@
 .fa-plus-square-o:before {
   content: "\f196";
 }
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+.jspContainer {
+  overflow: hidden;
+  position: relative;
+}
+.jspPane {
+  position: absolute;
+}
+.jspVerticalBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 100%;
+  background: red;
+}
+.jspHorizontalBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 16px;
+  background: red;
+}
+.jspCap {
+  display: none;
+}
+.jspHorizontalBar .jspCap {
+  float: left;
+}
+.jspTrack {
+  background: #dde;
+  position: relative;
+}
+.jspDrag {
+  background: #bbd;
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+  float: left;
+  height: 100%;
+}
+.jspArrow {
+  background: #50506d;
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+.jspArrow.jspDisabled {
+  cursor: default;
+  background: #80808d;
+}
+.jspVerticalBar .jspArrow {
+  height: 16px;
+}
+.jspHorizontalBar .jspArrow {
+  width: 16px;
+  float: left;
+  height: 100%;
+}
+.jspVerticalBar .jspArrow:focus {
+  outline: none;
+}
+.jspCorner {
+  background: #eeeef4;
+  float: left;
+  height: 100%;
+}
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner {
+  margin: 0 -3px 0 0;
+}
 .list-group-item-success {
   color: #327a4d;
   background-color: #ddede3;
@@ -1506,7 +1589,7 @@ a.list-group-item-danger.active:focus {
   right: 8.33333333%;
 }
 .col-xs-pull-0 {
-  right: 0%;
+  right: auto;
 }
 .col-xs-push-12 {
   left: 100%;
@@ -1545,7 +1628,7 @@ a.list-group-item-danger.active:focus {
   left: 8.33333333%;
 }
 .col-xs-push-0 {
-  left: 0%;
+  left: auto;
 }
 .col-xs-offset-12 {
   margin-left: 100%;
@@ -1663,7 +1746,7 @@ a.list-group-item-danger.active:focus {
     right: 8.33333333%;
   }
   .col-sm-pull-0 {
-    right: 0%;
+    right: auto;
   }
   .col-sm-push-12 {
     left: 100%;
@@ -1702,7 +1785,7 @@ a.list-group-item-danger.active:focus {
     left: 8.33333333%;
   }
   .col-sm-push-0 {
-    left: 0%;
+    left: auto;
   }
   .col-sm-offset-12 {
     margin-left: 100%;
@@ -1821,7 +1904,7 @@ a.list-group-item-danger.active:focus {
     right: 8.33333333%;
   }
   .col-md-pull-0 {
-    right: 0%;
+    right: auto;
   }
   .col-md-push-12 {
     left: 100%;
@@ -1860,7 +1943,7 @@ a.list-group-item-danger.active:focus {
     left: 8.33333333%;
   }
   .col-md-push-0 {
-    left: 0%;
+    left: auto;
   }
   .col-md-offset-12 {
     margin-left: 100%;
@@ -1979,7 +2062,7 @@ a.list-group-item-danger.active:focus {
     right: 8.33333333%;
   }
   .col-lg-pull-0 {
-    right: 0%;
+    right: auto;
   }
   .col-lg-push-12 {
     left: 100%;
@@ -2018,7 +2101,7 @@ a.list-group-item-danger.active:focus {
     left: 8.33333333%;
   }
   .col-lg-push-0 {
-    left: 0%;
+    left: auto;
   }
   .col-lg-offset-12 {
     margin-left: 100%;
@@ -2061,9 +2144,15 @@ a.list-group-item-danger.active:focus {
   }
 }
 .navbar-branded.navbar-fixed-top {
+  position: fixed;
+  background: #fff;
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
+  background-image: -o-linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
+  background-image: linear-gradient(to bottom, #ffffff 0%, #f3f3f3 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff3f3f3', GradientType=0);
   transition: all 200ms;
-  background: #001e3f;
-  border-bottom: 4px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid #ccc;
   top: 0;
   min-height: 70px;
   padding: 5px;
@@ -2075,17 +2164,19 @@ a.list-group-item-danger.active:focus {
   margin-top: 15px;
 }
 .navbar-branded.navbar-fixed-top .navbar-brand {
+  color: #74818A;
   padding: 0;
 }
 .navbar-branded.navbar-fixed-top .navbar-nav > li > a {
   font-size: 14px;
   padding: 10px;
   margin-left: 5px;
+  color: #555;
 }
 .navbar-branded.navbar-fixed-top .navbar-nav > li > a:hover,
 .navbar-branded.navbar-fixed-top .navbar-nav > li > a:focus {
   background: #2177ac;
-  color: #fff;
+  color: #2a94d6;
 }
 @media (min-width: 768px) {
   .navbar-branded.navbar-fixed-top .navbar-nav > li > a:hover,
@@ -2101,12 +2192,12 @@ a.list-group-item-danger.active:focus {
 }
 .navbar-branded.navbar-fixed-top .navbar-nav > li.active > a {
   background: #2177ac;
-  color: #fff;
+  color: #2a94d6;
 }
 @media (min-width: 768px) {
   .navbar-branded.navbar-fixed-top .navbar-nav > li.active > a {
     background: transparent;
-    border-bottom: 3px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 3px solid rgba(42, 148, 214, 0.5);
   }
 }
 .navbar-branded.navbar-fixed-top .navbar-foundation-logo {
@@ -2114,7 +2205,7 @@ a.list-group-item-danger.active:focus {
   width: 162px;
   display: inline-block;
   vertical-align: top;
-  background-image: url(../images/logo-14.png);
+  background-image: url(../images/logo-gray.png);
   background-repeat: no-repeat;
   margin-top: 4px;
 }
@@ -2122,7 +2213,7 @@ a.list-group-item-danger.active:focus {
   height: 50px;
   display: inline-block;
   margin-left: 14px;
-  border-left: 1px solid rgba(42, 148, 214, 0.3);
+  border-left: 1px solid rgba(116, 129, 138, 0.3);
   padding-left: 14px;
   font-size: 16px;
   line-height: 20px;
@@ -2389,13 +2480,14 @@ a.list-group-item-danger.active:focus {
   background-color: #fff;
 }
 .project-cloud {
-  background: #001E3F;
-  background-image: -webkit-linear-gradient(top, #001e3f 0%, #003672 100%);
-  background-image: linear-gradient(to bottom, #001e3f 0%, #003672 100%);
+  background: #2a94d6;
+  background-image: -webkit-linear-gradient(top, #2585c1 0%, #55a9de 100%);
+  background-image: -o-linear-gradient(top, #2585c1 0%, #55a9de 100%);
+  background-image: linear-gradient(to bottom, #2585c1 0%, #55a9de 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff001e3f', endColorstr='#ff003672', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2585c1', endColorstr='#ff55a9de', GradientType=0);
 }
-.project-cloud > h2 {
+.project-cloud > .section-head {
   color: #fff;
 }
 .project-cloud .clouds {
@@ -2413,14 +2505,41 @@ a.list-group-item-danger.active:focus {
   color: #fff;
   font-size: 28px;
 }
+.project-cloud > .clouds-scroll {
+  overflow: auto;
+  width: 100%;
+  height: 440px;
+}
+.project-cloud > .clouds-scroll.no-scroll {
+  overflow: hidden;
+}
+.project-cloud > .clouds-scroll:focus {
+  outline: none;
+}
+.project-cloud > .clouds-scroll .jspHorizontalBar,
+.project-cloud > .clouds-scroll .jspVerticalBar {
+  border-radius: 6px;
+  height: 16px;
+  background-color: transparent;
+  padding: 3px;
+}
+.project-cloud > .clouds-scroll .jspTrack {
+  background-color: transparent;
+}
+.project-cloud > .clouds-scroll .jspDrag {
+  border-radius: 6px;
+  background-color: rgba(42, 148, 214, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
 @media (min-width: 992px) {
   .project-cloud {
-    min-height: 580px;
     position: relative;
-    overflow: hidden;
+    width: 100%;
     border-bottom: 5px solid #f5f6f7;
   }
-  .project-cloud > h2 {
+  .project-cloud > .section-head {
     padding: 140px 20px 20px 20px;
     margin: 0;
   }
@@ -2428,14 +2547,16 @@ a.list-group-item-danger.active:focus {
     background-position: -400px;
   }
   .project-cloud .clouds {
-    -webkit-transition: top 1s;
-    transition: top 1s;
-    position: absolute;
-    top: 260px;
+    -webkit-transition: top 300ms;
+    -o-transition: top 300ms;
+    transition: top 300ms;
+    top: 120px;
     width: 100%;
+    position: absolute;
   }
   .project-cloud .clouds .clouds-up {
     -webkit-transition: opacity linear 200ms, color linear 200ms, margin-top 200ms;
+    -o-transition: opacity linear 200ms, color linear 200ms, margin-top 200ms;
     transition: opacity linear 200ms, color linear 200ms, margin-top 200ms;
     position: absolute;
     opacity: 0;
@@ -2464,7 +2585,7 @@ a.list-group-item-danger.active:focus {
     text-decoration: none;
   }
   .project-cloud .clouds.active {
-    top: 500px;
+    top: 320px;
   }
   .project-cloud .clouds.active .clouds-up {
     top: -50px;
@@ -2482,8 +2603,9 @@ a.list-group-item-danger.active:focus {
     top: -280px;
   }
   .project-cloud .cloud {
-    -webkit-transition: top 800ms, left 900ms, margin-left 800ms;
-    transition: top 800ms, left 900ms, margin-left 800ms;
+    -webkit-transition: top 400ms, padding-top 400ms, left 500ms, margin-left 400ms;
+    -o-transition: top 400ms, padding-top 400ms, left 500ms, margin-left 400ms;
+    transition: top 400ms, padding-top 400ms, left 500ms, margin-left 400ms;
     top: 0;
     left: 30px;
     margin-left: 0;
@@ -2497,405 +2619,406 @@ a.list-group-item-danger.active:focus {
     z-index: 100;
   }
   .project-cloud .cloud.cloud-pos-2 {
-    left: 322px;
+    left: 312px;
     z-index: 99;
   }
   .project-cloud .cloud.cloud-pos-3 {
-    left: 614px;
+    left: 594px;
     z-index: 98;
   }
   .project-cloud .cloud.cloud-pos-4 {
-    left: 906px;
+    left: 876px;
     z-index: 97;
   }
   .project-cloud .cloud.cloud-pos-5 {
-    left: 1198px;
+    left: 1158px;
     z-index: 96;
   }
   .project-cloud .cloud.cloud-pos-6 {
-    left: 1490px;
+    left: 1440px;
     z-index: 95;
   }
   .project-cloud .cloud.cloud-pos-7 {
-    left: 1782px;
+    left: 1722px;
     z-index: 94;
   }
   .project-cloud .cloud.cloud-pos-8 {
-    left: 2074px;
+    left: 2004px;
     z-index: 93;
   }
   .project-cloud .cloud.cloud-pos-9 {
-    left: 2366px;
+    left: 2286px;
     z-index: 92;
   }
   .project-cloud .cloud.cloud-pos-10 {
-    left: 2658px;
+    left: 2568px;
     z-index: 91;
   }
   .project-cloud .cloud.cloud-pos-11 {
-    left: 2950px;
+    left: 2850px;
     z-index: 90;
   }
   .project-cloud .cloud.cloud-pos-12 {
-    left: 3242px;
+    left: 3132px;
     z-index: 89;
   }
   .project-cloud .cloud.cloud-pos-13 {
-    left: 3534px;
+    left: 3414px;
     z-index: 88;
   }
   .project-cloud .cloud.cloud-pos-14 {
-    left: 3826px;
+    left: 3696px;
     z-index: 87;
   }
   .project-cloud .cloud.cloud-pos-15 {
-    left: 4118px;
+    left: 3978px;
     z-index: 86;
   }
   .project-cloud .cloud.cloud-pos-16 {
-    left: 4410px;
+    left: 4260px;
     z-index: 85;
   }
   .project-cloud .cloud.cloud-pos-17 {
-    left: 4702px;
+    left: 4542px;
     z-index: 84;
   }
   .project-cloud .cloud.cloud-pos-18 {
-    left: 4994px;
+    left: 4824px;
     z-index: 83;
   }
   .project-cloud .cloud.cloud-pos-19 {
-    left: 5286px;
+    left: 5106px;
     z-index: 82;
   }
   .project-cloud .cloud.cloud-pos-20 {
-    left: 5578px;
+    left: 5388px;
     z-index: 81;
   }
   .project-cloud .cloud.cloud-pos-21 {
-    left: 5870px;
+    left: 5670px;
     z-index: 80;
   }
   .project-cloud .cloud.cloud-pos-22 {
-    left: 6162px;
+    left: 5952px;
     z-index: 79;
   }
   .project-cloud .cloud.cloud-pos-23 {
-    left: 6454px;
+    left: 6234px;
     z-index: 78;
   }
   .project-cloud .cloud.cloud-pos-24 {
-    left: 6746px;
+    left: 6516px;
     z-index: 77;
   }
   .project-cloud .cloud.cloud-pos-25 {
-    left: 7038px;
+    left: 6798px;
     z-index: 76;
   }
   .project-cloud .cloud.cloud-pos-26 {
-    left: 7330px;
+    left: 7080px;
     z-index: 75;
   }
   .project-cloud .cloud.cloud-pos-27 {
-    left: 7622px;
+    left: 7362px;
     z-index: 74;
   }
   .project-cloud .cloud.cloud-pos-28 {
-    left: 7914px;
+    left: 7644px;
     z-index: 73;
   }
   .project-cloud .cloud.cloud-pos-29 {
-    left: 8206px;
+    left: 7926px;
     z-index: 72;
   }
   .project-cloud .cloud.cloud-pos-30 {
-    left: 8498px;
+    left: 8208px;
     z-index: 71;
   }
   .project-cloud .cloud.cloud-pos-31 {
-    left: 8790px;
+    left: 8490px;
     z-index: 70;
   }
   .project-cloud .cloud.cloud-pos-32 {
-    left: 9082px;
+    left: 8772px;
     z-index: 69;
   }
   .project-cloud .cloud.cloud-pos-33 {
-    left: 9374px;
+    left: 9054px;
     z-index: 68;
   }
   .project-cloud .cloud.cloud-pos-34 {
-    left: 9666px;
+    left: 9336px;
     z-index: 67;
   }
   .project-cloud .cloud.cloud-pos-35 {
-    left: 9958px;
+    left: 9618px;
     z-index: 66;
   }
   .project-cloud .cloud.cloud-pos-36 {
-    left: 10250px;
+    left: 9900px;
     z-index: 65;
   }
   .project-cloud .cloud.cloud-pos-37 {
-    left: 10542px;
+    left: 10182px;
     z-index: 64;
   }
   .project-cloud .cloud.cloud-pos-38 {
-    left: 10834px;
+    left: 10464px;
     z-index: 63;
   }
   .project-cloud .cloud.cloud-pos-39 {
-    left: 11126px;
+    left: 10746px;
     z-index: 62;
   }
   .project-cloud .cloud.cloud-pos-40 {
-    left: 11418px;
+    left: 11028px;
     z-index: 61;
   }
   .project-cloud .cloud.cloud-pos-41 {
-    left: 11710px;
+    left: 11310px;
     z-index: 60;
   }
   .project-cloud .cloud.cloud-pos-42 {
-    left: 12002px;
+    left: 11592px;
     z-index: 59;
   }
   .project-cloud .cloud.cloud-pos-43 {
-    left: 12294px;
+    left: 11874px;
     z-index: 58;
   }
   .project-cloud .cloud.cloud-pos-44 {
-    left: 12586px;
+    left: 12156px;
     z-index: 57;
   }
   .project-cloud .cloud.cloud-pos-45 {
-    left: 12878px;
+    left: 12438px;
     z-index: 56;
   }
   .project-cloud .cloud.cloud-pos-46 {
-    left: 13170px;
+    left: 12720px;
     z-index: 55;
   }
   .project-cloud .cloud.cloud-pos-47 {
-    left: 13462px;
+    left: 13002px;
     z-index: 54;
   }
   .project-cloud .cloud.cloud-pos-48 {
-    left: 13754px;
+    left: 13284px;
     z-index: 53;
   }
   .project-cloud .cloud.cloud-pos-49 {
-    left: 14046px;
+    left: 13566px;
     z-index: 52;
   }
   .project-cloud .cloud.cloud-pos-50 {
-    left: 14338px;
+    left: 13848px;
     z-index: 51;
   }
   .project-cloud .cloud.cloud-pos-51 {
-    left: 14630px;
+    left: 14130px;
     z-index: 50;
   }
   .project-cloud .cloud.cloud-pos-52 {
-    left: 14922px;
+    left: 14412px;
     z-index: 49;
   }
   .project-cloud .cloud.cloud-pos-53 {
-    left: 15214px;
+    left: 14694px;
     z-index: 48;
   }
   .project-cloud .cloud.cloud-pos-54 {
-    left: 15506px;
+    left: 14976px;
     z-index: 47;
   }
   .project-cloud .cloud.cloud-pos-55 {
-    left: 15798px;
+    left: 15258px;
     z-index: 46;
   }
   .project-cloud .cloud.cloud-pos-56 {
-    left: 16090px;
+    left: 15540px;
     z-index: 45;
   }
   .project-cloud .cloud.cloud-pos-57 {
-    left: 16382px;
+    left: 15822px;
     z-index: 44;
   }
   .project-cloud .cloud.cloud-pos-58 {
-    left: 16674px;
+    left: 16104px;
     z-index: 43;
   }
   .project-cloud .cloud.cloud-pos-59 {
-    left: 16966px;
+    left: 16386px;
     z-index: 42;
   }
   .project-cloud .cloud.cloud-pos-60 {
-    left: 17258px;
+    left: 16668px;
     z-index: 41;
   }
   .project-cloud .cloud.cloud-pos-61 {
-    left: 17550px;
+    left: 16950px;
     z-index: 40;
   }
   .project-cloud .cloud.cloud-pos-62 {
-    left: 17842px;
+    left: 17232px;
     z-index: 39;
   }
   .project-cloud .cloud.cloud-pos-63 {
-    left: 18134px;
+    left: 17514px;
     z-index: 38;
   }
   .project-cloud .cloud.cloud-pos-64 {
-    left: 18426px;
+    left: 17796px;
     z-index: 37;
   }
   .project-cloud .cloud.cloud-pos-65 {
-    left: 18718px;
+    left: 18078px;
     z-index: 36;
   }
   .project-cloud .cloud.cloud-pos-66 {
-    left: 19010px;
+    left: 18360px;
     z-index: 35;
   }
   .project-cloud .cloud.cloud-pos-67 {
-    left: 19302px;
+    left: 18642px;
     z-index: 34;
   }
   .project-cloud .cloud.cloud-pos-68 {
-    left: 19594px;
+    left: 18924px;
     z-index: 33;
   }
   .project-cloud .cloud.cloud-pos-69 {
-    left: 19886px;
+    left: 19206px;
     z-index: 32;
   }
   .project-cloud .cloud.cloud-pos-70 {
-    left: 20178px;
+    left: 19488px;
     z-index: 31;
   }
   .project-cloud .cloud.cloud-pos-71 {
-    left: 20470px;
+    left: 19770px;
     z-index: 30;
   }
   .project-cloud .cloud.cloud-pos-72 {
-    left: 20762px;
+    left: 20052px;
     z-index: 29;
   }
   .project-cloud .cloud.cloud-pos-73 {
-    left: 21054px;
+    left: 20334px;
     z-index: 28;
   }
   .project-cloud .cloud.cloud-pos-74 {
-    left: 21346px;
+    left: 20616px;
     z-index: 27;
   }
   .project-cloud .cloud.cloud-pos-75 {
-    left: 21638px;
+    left: 20898px;
     z-index: 26;
   }
   .project-cloud .cloud.cloud-pos-76 {
-    left: 21930px;
+    left: 21180px;
     z-index: 25;
   }
   .project-cloud .cloud.cloud-pos-77 {
-    left: 22222px;
+    left: 21462px;
     z-index: 24;
   }
   .project-cloud .cloud.cloud-pos-78 {
-    left: 22514px;
+    left: 21744px;
     z-index: 23;
   }
   .project-cloud .cloud.cloud-pos-79 {
-    left: 22806px;
+    left: 22026px;
     z-index: 22;
   }
   .project-cloud .cloud.cloud-pos-80 {
-    left: 23098px;
+    left: 22308px;
     z-index: 21;
   }
   .project-cloud .cloud.cloud-pos-81 {
-    left: 23390px;
+    left: 22590px;
     z-index: 20;
   }
   .project-cloud .cloud.cloud-pos-82 {
-    left: 23682px;
+    left: 22872px;
     z-index: 19;
   }
   .project-cloud .cloud.cloud-pos-83 {
-    left: 23974px;
+    left: 23154px;
     z-index: 18;
   }
   .project-cloud .cloud.cloud-pos-84 {
-    left: 24266px;
+    left: 23436px;
     z-index: 17;
   }
   .project-cloud .cloud.cloud-pos-85 {
-    left: 24558px;
+    left: 23718px;
     z-index: 16;
   }
   .project-cloud .cloud.cloud-pos-86 {
-    left: 24850px;
+    left: 24000px;
     z-index: 15;
   }
   .project-cloud .cloud.cloud-pos-87 {
-    left: 25142px;
+    left: 24282px;
     z-index: 14;
   }
   .project-cloud .cloud.cloud-pos-88 {
-    left: 25434px;
+    left: 24564px;
     z-index: 13;
   }
   .project-cloud .cloud.cloud-pos-89 {
-    left: 25726px;
+    left: 24846px;
     z-index: 12;
   }
   .project-cloud .cloud.cloud-pos-90 {
-    left: 26018px;
+    left: 25128px;
     z-index: 11;
   }
   .project-cloud .cloud.cloud-pos-91 {
-    left: 26310px;
+    left: 25410px;
     z-index: 10;
   }
   .project-cloud .cloud.cloud-pos-92 {
-    left: 26602px;
+    left: 25692px;
     z-index: 9;
   }
   .project-cloud .cloud.cloud-pos-93 {
-    left: 26894px;
+    left: 25974px;
     z-index: 8;
   }
   .project-cloud .cloud.cloud-pos-94 {
-    left: 27186px;
+    left: 26256px;
     z-index: 7;
   }
   .project-cloud .cloud.cloud-pos-95 {
-    left: 27478px;
+    left: 26538px;
     z-index: 6;
   }
   .project-cloud .cloud.cloud-pos-96 {
-    left: 27770px;
+    left: 26820px;
     z-index: 5;
   }
   .project-cloud .cloud.cloud-pos-97 {
-    left: 28062px;
+    left: 27102px;
     z-index: 4;
   }
   .project-cloud .cloud.cloud-pos-98 {
-    left: 28354px;
+    left: 27384px;
     z-index: 3;
   }
   .project-cloud .cloud.cloud-pos-99 {
-    left: 28646px;
+    left: 27666px;
     z-index: 2;
   }
   .project-cloud .cloud.cloud-pos-100 {
-    left: 28938px;
+    left: 27948px;
     z-index: 1;
   }
   .project-cloud .cloud .cloud-info {
     display: none;
     opacity: 0;
     -webkit-transition: opacity 300ms;
+    -o-transition: opacity 300ms;
     transition: opacity 300ms;
     color: #fff;
     font-size: 24px;
@@ -2918,12 +3041,13 @@ a.list-group-item-danger.active:focus {
     opacity: 1.0;
   }
   .project-cloud .cloud .cloud-name {
-    color: #fff;
+    color: #2a94d6;
+    opacity: .8;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    font-size: 30px;
-    line-height: 34px;
+    font-size: 24px;
+    line-height: 24px;
     padding: 0;
     margin: 0;
     padding: 10px 20px 20px 20px;
@@ -2932,10 +3056,11 @@ a.list-group-item-danger.active:focus {
     text-overflow: ellipsis;
     box-sizing: border-box;
     word-wrap: break-word;
-    background-image: url("../images/cloud1.png");
+    background-image: url("../images/cloud1-w.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 50%;
+    transition: opacity 300ms;
   }
   .project-cloud .cloud .cloud-name:hover,
   .project-cloud .cloud .cloud-name:focus {
@@ -2943,13 +3068,13 @@ a.list-group-item-danger.active:focus {
     text-decoration: none;
   }
   .project-cloud .cloud.cloud-2 > a {
-    background-image: url("../images/cloud2.png");
+    background-image: url("../images/cloud2-w.png");
   }
   .project-cloud .cloud.cloud-3 > a {
-    background-image: url("../images/cloud3.png");
+    background-image: url("../images/cloud3-w.png");
   }
   .project-cloud .cloud.cloud-4 > a {
-    background-image: url("../images/cloud4.png");
+    background-image: url("../images/cloud4-w.png");
   }
 }
 .blog {
@@ -2977,6 +3102,7 @@ a.list-group-item-danger.active:focus {
   padding: 0;
   opacity: 0;
   -webkit-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
   transition: opacity 300ms;
 }
 .blog .blog-list .posts.shown {
@@ -3025,6 +3151,7 @@ a.list-group-item-danger.active:focus {
 }
 .blog .post {
   -webkit-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
   transition: opacity 300ms;
   opacity: 0;
   position: relative;
@@ -3117,11 +3244,46 @@ a.list-group-item-danger.active:focus {
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-.blog.open .blog-list .posts > li > .badge {
-  float: right;
+.blog.open .blog-list .posts > li.disabled,
+.blog.open .blog-list .posts > li.disabled:hover,
+.blog.open .blog-list .posts > li.disabled:focus {
+  background-color: #f5f6f7;
+  color: #e8e9ec;
+  cursor: not-allowed;
 }
-.blog.open .blog-list .posts > li > .badge + .badge {
-  margin-right: 5px;
+.blog.open .blog-list .posts > li.disabled .list-group-item-heading,
+.blog.open .blog-list .posts > li.disabled:hover .list-group-item-heading,
+.blog.open .blog-list .posts > li.disabled:focus .list-group-item-heading {
+  color: inherit;
+}
+.blog.open .blog-list .posts > li.disabled .list-group-item-text,
+.blog.open .blog-list .posts > li.disabled:hover .list-group-item-text,
+.blog.open .blog-list .posts > li.disabled:focus .list-group-item-text {
+  color: #e8e9ec;
+}
+.blog.open .blog-list .posts > li.active,
+.blog.open .blog-list .posts > li.active:hover,
+.blog.open .blog-list .posts > li.active:focus {
+  z-index: 2;
+  color: #ffffff;
+  background-color: #2a94d6;
+  border-color: #2a94d6;
+}
+.blog.open .blog-list .posts > li.active .list-group-item-heading,
+.blog.open .blog-list .posts > li.active:hover .list-group-item-heading,
+.blog.open .blog-list .posts > li.active:focus .list-group-item-heading,
+.blog.open .blog-list .posts > li.active .list-group-item-heading > small,
+.blog.open .blog-list .posts > li.active:hover .list-group-item-heading > small,
+.blog.open .blog-list .posts > li.active:focus .list-group-item-heading > small,
+.blog.open .blog-list .posts > li.active .list-group-item-heading > .small,
+.blog.open .blog-list .posts > li.active:hover .list-group-item-heading > .small,
+.blog.open .blog-list .posts > li.active:focus .list-group-item-heading > .small {
+  color: inherit;
+}
+.blog.open .blog-list .posts > li.active .list-group-item-text,
+.blog.open .blog-list .posts > li.active:hover .list-group-item-text,
+.blog.open .blog-list .posts > li.active:focus .list-group-item-text {
+  color: #d5eaf7;
 }
 .blog.open .blog-list .posts > li .meta .avatar {
   margin-right: 10px;
@@ -3187,7 +3349,7 @@ a.list-group-item-danger.active:focus {
 }
 .footer {
   margin-top: 60px;
-  background-color: #344a5f;
+  background-color: #34495e;
   padding: 60px 20px;
   color: #e8e9ec;
   border-top: 5px solid #fff;
@@ -3215,6 +3377,7 @@ a.list-group-item-danger.active:focus {
 }
 .team-members .member {
   -webkit-transition: background-color 300ms;
+  -o-transition: background-color 300ms;
   transition: background-color 300ms;
   display: block;
   padding: 4px;
@@ -3223,8 +3386,9 @@ a.list-group-item-danger.active:focus {
   background-color: #f0f1f2;
   border: 1px solid #cfd0d2;
   border-radius: 4px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: border 0.2s ease-in-out;
+  -o-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
   padding-bottom: 20px;
   text-align: center;
   border-radius: 0;
@@ -3247,7 +3411,7 @@ a.team-members .member.active {
 }
 .team-members .member .caption {
   padding: 9px;
-  color: #525354;
+  color: #3c3d3e;
 }
 @media (min-width: 768px) {
   .team-members .member {
@@ -3270,6 +3434,7 @@ a.team-members .member.active {
 .team-members .member .caption,
 .team-members .member .caption > h3 {
   -webkit-transition: color 300ms;
+  -o-transition: color 300ms;
   transition: color 300ms;
 }
 .team-members .member .caption {
