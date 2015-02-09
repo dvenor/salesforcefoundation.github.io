@@ -1,10 +1,14 @@
-- name:           Cumulus
-  description:        The next version of the Salesforce.com Nonprofit Starter Pack
+- name:           NPSP
+  description:        The next version of the Salesforce.com Nonprofit Starter Pack.
   repo:               https://github.com/SalesforceFoundation/Cumulus
 
+- name:           CumulusCI
+  description:        A reusable set of build and automation scripts to facilitate a best practices based development and release process for managed package development on the Salesforce1 Platform.
+  repo:               https://github.com/SalesforceFoundation/CumulusCI
+  
 - name:           mrbelvedere
   url:                https://salesforcefoundation.github.io/mrbelvedere
-  description:        A build bot used to fill gaps in triggering jobs and interacting with the GitHub API for CumulusCI
+  description:        A build bot used to fill gaps in triggering jobs and interacting with the GitHub API for CumulusCI.
   repo:               https://github.com/SalesforceFoundation/mrbelvedere
 
 - name:           visualforce-typeahead
@@ -12,6 +16,6 @@
   repo:               https://github.com/SalesforceFoundation/visualforce-typeahead
 
 - name:           Bootstrap SF1
-  description:        "A Bootstrap theme based on the SFDC styleguide."
+  description:        A Bootstrap theme based on the SFDC styleguide.
   repo:               https://github.com/SalesforceFoundation/bootstrap-sf1
   url:                https://salesforcefoundation.github.io/bootstrap-sf1
