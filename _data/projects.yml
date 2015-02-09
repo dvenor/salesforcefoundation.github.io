@@ -3,7 +3,7 @@
   repo:               https://github.com/SalesforceFoundation/Cumulus
 
 - name:           CumulusCI
-  description:        A reusable set of build and automation scripts to facilitate a best practices based development and release process for managed package development on the Salesforce1 Platform.
+  description:        Build and automation scripts to facilitate best practices based development and release processes for managed package development on the Salesforce1 Platform.
   repo:               https://github.com/SalesforceFoundation/CumulusCI
   
 - name:           mrbelvedere
