@@ -3,7 +3,7 @@ layout:   post
 title:    "Duplicate Management for the Nonprofit Starter Pack"
 author:   Nicolas Campbell
 date:     2015-03-25 11:00:00
-excerpt: "Managing duplicates and keeping your data clean requires good tools and a sophisticated strategy. Learn how the Nonprofit Starter Pack can help you deduplicate your data and keep it clean.."
+excerpt: "Managing duplicates and keeping your data clean requires good tools and a sophisticated strategy. Learn how the Nonprofit Starter Pack can help you deduplicate your data and keep it clean."
 ---
 With the recent [Spring '15 Release](https://help.salesforce.com/help/pdfs/en/salesforce_spring15_release_notes.pdf), Salesforce introduced [Data.com Duplicate Management](https://help.salesforce.com/apex/HTViewHelpDoc?id=managing_duplicates_overview.htm&language=en_US), an out-of-box way to prevent accidental creation of duplicate records and help keep your data clean. This new feature is a great tool for users of the Nonprofit Starter Pack, and we recommend that you take advantage of it. Unfortunately, Data.com Duplicate Management is not a silver bullet, as no single tool can be.
 
