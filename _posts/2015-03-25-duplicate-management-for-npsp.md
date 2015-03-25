@@ -58,7 +58,7 @@ And . . . if you’ve spent some time building great NPSP-compatible matching ru
 
 Your database didn't sprout up hundreds of duplicates overnight, and the problem won't be fixed in a few minutes of work. De-duplication takes time and attention, and while these tools can merge hundreds of records in a single click, special care should be taken at every step of the way, because **MERGING IS DESTRUCTIVE!** The record that “loses” during a merge is deleted, and data is copied over to the winning (or "master") record.
 
-A mistake in a merge often means having to restore data manually from a backup file, as there's no undo button after merging duplicates. **Make sure you’ve backed up data and all related objects for the object you're de-duping.** Demandtools has a backup function, but you're already [downloading your weekly data export, right?](https://help.salesforce.com/apex/HTViewHelpDoc?id=admin_exportdata.htm)
+A mistake in a merge often means having to restore data manually from a backup file, as there's no undo button after merging duplicates. **Make sure you’ve backed up data and all related objects for the object you're de-duping.** Demandtools has a backup function, but you're already [downloading your weekly data export, right?](https://powerofus.force.com/articles/Resource/maintaining-an-effective-salesforce-backup)
 
 #### Use Multiple Passes
 
