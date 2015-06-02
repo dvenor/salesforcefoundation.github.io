@@ -47,7 +47,7 @@ This is an example of a class that is not part of the NPSP package, but that fol
 
       if (triggerAction == npsp.TDTM_Runnable.Action.AfterInsert) {
       
-        dmlWrapper = new DmlWrapper();
+        dmlWrapper = new npsp.TDTM_Runnable.DmlWrapper();
         List<Opportunity> newOppList = (List<Opportunity>)newlist;        
         List<CampaignMember> members_to_add = new List<CampaignMember>();
               
