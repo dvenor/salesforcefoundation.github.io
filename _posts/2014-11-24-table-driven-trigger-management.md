@@ -41,17 +41,25 @@ This is an example of a class that is not part of the NPSP package, but that fol
     global without sharing class OpportunityMemberCreation_TDTM extends npsp.TDTM_Runnable {
   
       // the main entry point for TDTM to invoke our trigger handlers.
-      global override DmlWrapper run(List<SObject> newlist,   List<SObject> oldlist, npsp.TDTM_Runnable.Action triggerAction, Schema.DescribeSObjectResult objResult) {
-      DmlWrapper dmlWrapper = null;
+      global override npsp.TDTM_Runnable.DmlWrapper run(List<SObject> newlist, List<SObject> oldlist, npsp.TDTM_Runnable.Action triggerAction, Schema.DescribeSObjectResult objResult) {
+      
+      npsp.TDTM_Runnable.DmlWrapper dmlWrapper = null;
 
       if (triggerAction == npsp.TDTM_Runnable.Action.AfterInsert) {
+      
         dmlWrapper = new DmlWrapper();
         List<Opportunity> newOppList = (List<Opportunity>)newlist;        
         List<CampaignMember> members_to_add = new List<CampaignMember>();
               
             for (Opportunity o : newOppList) {
-              if (o.isClosed && o.isWon && o.CampaignId != null && o.npe01__Contact_Id_For_Role__c != null) {
-                CampaignMember cm = new CampaignMember(CampaignId = o.CampaignId, ContactId = o.npe01__Contact_Id_for_Role__c, Status = 'Responded');
+            
+              if (o.isClosed && o.isWon && o.CampaignId != null 
+              && o.npe01__Contact_Id_For_Role__c != null) {
+              
+                CampaignMember cm = new CampaignMember(CampaignId = o.CampaignId, 
+                ContactId = o.npe01__Contact_Id_for_Role__c, 
+                Status = 'Responded');
+                
                 if(o.Referred_By__c != null) {
                   cm.Referrer__c = o.Referred_By__c;
                 } 
@@ -59,7 +67,7 @@ This is an example of a class that is not part of the NPSP package, but that fol
               }
             }
             if(!members_to_add.isEmpty()) {
-              dmlWrapper.objectsToInsert.addAll((List<Sobject>)members_to_add);
+                dmlWrapper.objectsToInsert.addAll((List<Sobject>)members_to_add);
             }
         }
       return dmlWrapper;
