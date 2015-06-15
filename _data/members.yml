@@ -72,24 +72,18 @@ David Manelski:
   bio:            "I want to help accelerate people on a mission. On the Salesforce Foundation Technology & Products team, I help build the tools to make that possible. I work closely with customers, partners, and across our internal teams to help people scale their impact and deepen their engagement."
   twitter:        "greenstork"
 
-Chris McMahon:
-  github:         chrismcmahon
-  avatar:         https://avatars3.githubusercontent.com/u/204643
-  title:          "Quality Assurance Engineer"
-  bio:            "I'm a software tester and former professional bass player. I've been part of the greater public software testing community since about 2004, and have contributed to open source projects like Watir, Selenium, and FreeBSD."
-
-Saradha Rajagopalan:
-  github:         srajagopalan1712
-  avatar:         https://avatars1.githubusercontent.com/u/10519397
-  title:          "Quality Engineer &amp; Release Manager"
-  bio:            "I am a quality engineer with a passion for delivering highly functional and usable products. I have tested UI and API products for many years, and joined the Salesforce Foundation in January 2015 to help with Quality and Release management. I am known for my attention to detail, and enjoy cooking and traveling."
-
 Carlos Ramirez Martinez-Eiroa:
   github:         ceiroa
   avatar:         https://avatars1.githubusercontent.com/u/1894238
   title:          "Senior Force.com Developer"
   bio:            "I’m a certified Salesforce Admin, Developer, and Advanced Developer. I came to the Salesforce platform from the Java and PHP worlds, after recognizing its enormous potential for productivity. I live in the world of Triggers, Batches, Classes, and Scheduled jobs, and enjoy designing and writing robust, object-oriented code."
   twitter:        "carloseiroa"
+
+Chris McMahon:
+  github:         chrismcmahon
+  avatar:         https://avatars3.githubusercontent.com/u/204643
+  title:          "Quality Assurance Engineer"
+  bio:            "I'm a software tester and former professional bass player. I've been part of the greater public software testing community since about 2004, and have contributed to open source projects like Watir, Selenium, and FreeBSD."
 
 Laura Meerkatz:
   github:         lmeerkatz
@@ -114,3 +108,16 @@ Suzanne Veiga:
   avatar:         https://avatars0.githubusercontent.com/u/5631840
   title:          "System Administrator"
   bio:            "I'm a certified Salesforce Admin and Developer who's been working with the Salesforce platform since 2009. In the fall of 2013, I joined the Foundation Business Applications team. I enjoy exploring new ways of using declarative features, and sharing those innovations with nonprofits."
+
+Saradha Rajagopalan:
+  github:         srajagopalan1712
+  avatar:         https://avatars1.githubusercontent.com/u/10519397
+  title:          "Quality Engineer &amp; Release Manager"
+  bio:            "I am a quality engineer with a passion for delivering highly functional and usable products. I have tested UI and API products for many years, and joined the Salesforce Foundation in January 2015 to help with Quality and Release management. I am known for my attention to detail, and enjoy cooking and traveling."
+
+Judi Sohn:
+  github:         judisohn
+  avatar:         https://avatars3.githubusercontent.com/u/4614343
+  title:          "Open Source Manager"
+  website:        http://judisohn.com
+  twitter:        judis217
