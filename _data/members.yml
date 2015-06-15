@@ -98,17 +98,6 @@ Cheryl Porro:
   bio:            "I have the honor of leading the phenomenal Salesforce Foundation Technology & Products team, which builds products for nonprofits and higher ed institutions. We also build internal applications that support the daily operations of the Foundation, as well as volunteerism, pro bono, and gift-matching programs for Salesforce."
   twitter:        cporro_sfdc
 
-Jon Michael Varese:
-  github:         jvarese
-  avatar:         https://avatars2.githubusercontent.com/u/7268038
-  title:          "Lead Technical Writer"
-  bio:            "In another life I taught the Victorian novel to college students, but now I teach nonprofits how to use the Salesforce platform to further their mission. I joined the Salesforce Foundation in April of 2014, after nearly two years as a technical writer at Salesforce headquarters."
-Suzanne Veiga:
-  github:         sveiga
-  avatar:         https://avatars0.githubusercontent.com/u/5631840
-  title:          "System Administrator"
-  bio:            "I'm a certified Salesforce Admin and Developer who's been working with the Salesforce platform since 2009. In the fall of 2013, I joined the Foundation Business Applications team. I enjoy exploring new ways of using declarative features, and sharing those innovations with nonprofits."
-
 Saradha Rajagopalan:
   github:         srajagopalan1712
   avatar:         https://avatars1.githubusercontent.com/u/10519397
@@ -122,3 +111,15 @@ Judi Sohn:
   website:        http://judisohn.com
   twitter:        judis217
   bio:            "I have been actively involved in the community of nonprofits using Salesforce since 2006, and have worked for both ISV and SI partners. I hold four Salesforce certifications and have been a Salesforce MVP. Now at the Foundation, I manage community contributions to our open source projects, including the Nonprofit Starter Pack."
+
+Jon Michael Varese:
+  github:         jvarese
+  avatar:         https://avatars2.githubusercontent.com/u/7268038
+  title:          "Lead Technical Writer"
+  bio:            "In another life I taught the Victorian novel to college students, but now I teach nonprofits how to use the Salesforce platform to further their mission. I joined the Salesforce Foundation in April of 2014, after nearly two years as a technical writer at Salesforce headquarters."
+
+Suzanne Veiga:
+  github:         sveiga
+  avatar:         https://avatars0.githubusercontent.com/u/5631840
+  title:          "System Administrator"
+  bio:            "I'm a certified Salesforce Admin and Developer who's been working with the Salesforce platform since 2009. In the fall of 2013, I joined the Foundation Business Applications team. I enjoy exploring new ways of using declarative features, and sharing those innovations with nonprofits."
