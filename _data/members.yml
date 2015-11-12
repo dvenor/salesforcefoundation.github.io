@@ -2,16 +2,23 @@ Nick Bailey:
   github:         NickHBailey
   avatar:         https://avatars3.githubusercontent.com/u/937498
   title:          "Vice President, Enterprise Systems"
-  bio:            "I joined the Salesforce Foundation as a Developer in 2011, after several years as a Foundation customer and partner. I enjoy working on technology projects that have delightful user experiences, have impact at scale, and provide value to the people we serve."
+  bio:            "I joined Salesforce.org as a Developer in 2011, after several years as a customer and partner. I enjoy working on technology projects that have delightful user experiences, have impact at scale, and provide value to the people we serve."
   url:            "http://www.nickhbailey.com"
   twitter:        "nickhbailey"
 Kevin Bromer:
   github:         kbromer
   avatar:         https://avatars1.githubusercontent.com/u/926530
   title:          "Vice President, Product Delivery"
-  bio:            "I've been working with nonprofits on the Salesforce platform since 2007, and with the Foundation since 2010. I'm continually impressed with what Salesforce and the force.com platform can enable for those communities. I'm into building super functional apps with great APIs, and have been known to write a meandering batch class or two when provoked."
+  bio:            "I've been working with nonprofits on the Salesforce platform since 2007, and with the Salesforce.org since 2010. I'm continually impressed with what Salesforce and the force.com platform can enable for those communities. I'm into building super functional apps with great APIs, and have been known to write a meandering batch class or two when provoked."
   twitter:        "kevinbromer"
   url:            "http://kevinbromer.com"
+
+Meghan Butler:
+  github:         meghangab
+  avatar:         https://avatars2.githubusercontent.com/u/15806943
+  title:          "System Adminstrator"
+  bio:            "I'm a certified Salesforce Advanced Administrator with more than seven years of experience supporting international nonprofits that leverage the Salesforce platform. I joined the Enterprise Systems team during the summer of 2015 and am thrilled to be part of Salesforce.org!"
+
 Evan Callahan:
   github:         groundwired
   avatar:         https://avatars3.githubusercontent.com/u/806318
@@ -30,7 +37,7 @@ Calista Carter:
   avatar:         https://avatars1.githubusercontent.com/u/1326683
   url:            "http://calistacarter.com/"
   twitter:        "calistabcarter"
-  bio:            "I’m a certified Salesforce Administrator and Developer, and joined the Foundation’s Enterprise Systems team in 2015. I fell in love with working at the intersection of technology and non-profit because of the potential for social good and the enormous generosity and passion of the people working in this space."
+  bio:            "I’m a certified Salesforce Administrator and Developer, and have been working in the nonprofit Salesforce space since 2007. I love working at the intersection of technology and non-profit because of the potential for social good and the enormous generosity and passion of the people in this community."
 
 Ryan Foster:
   avatar:         https://avatars0.githubusercontent.com/u/779557
@@ -49,7 +56,7 @@ Rajiv Kulkarni:
   github:         rajiv-steelerfan
   title:          "Product Manager"
   avatar:         https://avatars3.githubusercontent.com/u/7685818
-  bio:            "I joined the Salesforce Foundation in 2014, after 5 years at Teach for America, where I helped shape TFA's Salesforce implementation. My hope in coming to the Foundation is to make an even larger impact, and to help complex organizations turn themselves into stream-lined, data-driven nonprofits."
+  bio:            "I joined Salesforce.org in 2014, after 5 years at Teach for America, where I helped shape TFA's Salesforce implementation. My hope in coming to Salesforce.org is to make an even larger impact, and to help complex organizations turn themselves into stream-lined, data-driven nonprofits."
   twitter:        "rajivsteelerfan"
 
 Jason Lantz:
@@ -63,13 +70,13 @@ Adam Lincoln:
   avatar:         https://avatars3.githubusercontent.com/u/251229
   title:          "Force.com Developer"
   twitter:        adamjlincoln
-  bio:            "I joined the Foundation in early 2015 after five years as a Force.com, Python, and Perl developer in higher education.  I particularly enjoy flexing the platform's batch capabilities and APIs.  I value automation and clean code, and am a big believer in open source software."
+  bio:            "I joined the Salesforce.org in early 2015 after five years as a Force.com, Python, and Perl developer in higher education.  I particularly enjoy flexing the platform's batch capabilities and APIs.  I value automation and clean code, and am a big believer in open source software."
 
 David Manelski:
   github:         greenstork
   avatar:         https://avatars2.githubusercontent.com/u/794530
   title:          "Lead Architect, Enterprise Systems"
-  bio:            "I want to help accelerate people on a mission. On the Salesforce Foundation Technology & Products team, I help build the tools to make that possible. I work closely with customers, partners, and across our internal teams to help people scale their impact and deepen their engagement."
+  bio:            "I want to help accelerate people on a mission. On the Salesforce.org Technology & Products team, I help build the tools to make that possible. I work closely with customers, partners, and across our internal teams to help people scale their impact and deepen their engagement."
   twitter:        "greenstork"
 
 Carlos Ramirez Martinez-Eiroa:
@@ -95,14 +102,14 @@ Cheryl Porro:
   github:         cporro
   avatar:         https://avatars3.githubusercontent.com/u/7000589
   title:          "SVP, Tech and Product"
-  bio:            "I have the honor of leading the phenomenal Salesforce Foundation Technology & Products team, which builds products for nonprofits and higher ed institutions. We also build internal applications that support the daily operations of the Foundation, as well as volunteerism, pro bono, and gift-matching programs for Salesforce."
+  bio:            "I have the honor of leading the phenomenal Salesforce.org Technology & Products team, which builds products for nonprofits and higher ed institutions. We also build internal applications that support the daily operations of Salesforce.org, as well as volunteerism, pro bono, and gift-matching programs for Salesforce."
   twitter:        cporro_sfdc
 
 Saradha Rajagopalan:
   github:         srajagopalan1712
   avatar:         https://avatars1.githubusercontent.com/u/10519397
   title:          "Quality Engineer &amp; Release Manager"
-  bio:            "I am a quality engineer with a passion for delivering highly functional and usable products. I have tested UI and API products for many years, and joined the Salesforce Foundation in January 2015 to help with Quality and Release management. I am known for my attention to detail, and enjoy cooking and traveling."
+  bio:            "I am a quality engineer with a passion for delivering highly functional and usable products. I have tested UI and API products for many years, and joined the Salesforce.org in January 2015 to help with Quality and Release management. I am known for my attention to detail, and enjoy cooking and traveling."
 
 Judi Sohn:
   github:         judisohn
@@ -110,16 +117,16 @@ Judi Sohn:
   title:          "Open Source Manager"
   website:        http://judisohn.com
   twitter:        judis217
-  bio:            "I have been actively involved in the community of nonprofits using Salesforce since 2006, and have worked for both ISV and SI partners. I hold four Salesforce certifications and have been a Salesforce MVP. Now at the Foundation, I manage community contributions to our open source projects, including the Nonprofit Starter Pack."
+  bio:            "I have been actively involved in the community of nonprofits using Salesforce since 2006, and have worked for both ISV and SI partners. I hold four Salesforce certifications and have been a Salesforce MVP. Now at Salesforce.org, I manage community contributions to our open source projects, including the Nonprofit Starter Pack."
 
 Jon Michael Varese:
   github:         jvarese
   avatar:         https://avatars2.githubusercontent.com/u/7268038
   title:          "Lead Technical Writer"
-  bio:            "In another life I taught the Victorian novel to college students, but now I teach nonprofits how to use the Salesforce platform to further their mission. I joined the Salesforce Foundation in April of 2014, after nearly two years as a technical writer at Salesforce headquarters."
+  bio:            "In another life I taught the Victorian novel to college students, but now I teach nonprofits how to use the Salesforce platform to further their mission. I joined Salesforce.org in April of 2014, after nearly two years as a technical writer at Salesforce headquarters."
 
 Suzanne Veiga:
   github:         sveiga
   avatar:         https://avatars0.githubusercontent.com/u/5631840
   title:          "Lead Data and System Administrator"
-  bio:            "I'm a certified Salesforce Admin and Developer who's been working with the Salesforce platform since 2009. In the fall of 2013, I joined the Foundation Business Applications team. I enjoy exploring new ways of using declarative features, and sharing those innovations with nonprofits."
+  bio:            "I'm a certified Salesforce Admin and Developer who's been working with the Salesforce platform since 2009. In the fall of 2013, I joined the Salesforce.org Enterprise Systems team. I enjoy exploring new ways of using declarative features, and sharing those innovations with nonprofits."
