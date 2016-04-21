@@ -28,7 +28,7 @@ Evan Callahan:
 
 Nicolas Campbell:
   github:         njjc
-  title:          "Force.com Developer"
+  title:          "Senior Member of Technical Staff"
   avatar:         https://avatars1.githubusercontent.com/u/1018198
   bio:            "I'm a certified Force.com Developer who has been consulting for nonprofits on the Salesforce platform since 2011. I have enjoyed helping individual nonprofits achieve their mission through the judicious use of technology, and I feel very fortunate to be part of a team dedicated to creating software for all nonprofits."
 
@@ -43,22 +43,15 @@ Calista Carter:
 Ryan Foster:
   avatar:         https://avatars0.githubusercontent.com/u/779557
   github:         dextermilo
-  title:          "Lead Engineer"
+  title:          "Lead Member of Technical Staff"
   bio:            "I am a long-time web developer, primarily for nonprofits, and was thrilled to discover Salesforce and Force.com in 2011. My favorite projects have three primary ingredients: good design, elegant code, and a good cause. I am known for telling everyone to \"Have fun\", and gripe at my meowing cat while working from home."
 
 David Habib:
   github:         davidhabib
   avatar:         https://avatars0.githubusercontent.com/u/908119
-  title:          "Senior Force.com Developer"
+  title:          "Lead Member of Technical Staff"
   bio:            "I've been working with nonprofits since 2000, and focused exclusively on the Salesforce platform since 2008.  I am the author of the popular AppExchange products Volunteers for Salesforce and Auctions for Salesforce, which I continue to support in my free time. I've been a Senior Force.com Developer with the Foundation since 2013, and work on the Nonprofit Starter Pack."
   url:            "http://djhconsulting.com"
-
-Rajiv Kulkarni:
-  github:         rajiv-steelerfan
-  title:          "Product Manager"
-  avatar:         https://avatars3.githubusercontent.com/u/7685818
-  bio:            "I joined Salesforce.org in 2014, after 5 years at Teach for America, where I helped shape TFA's Salesforce implementation. My hope in coming to Salesforce.org is to make an even larger impact, and to help complex organizations turn themselves into stream-lined, data-driven nonprofits."
-  twitter:        "rajivsteelerfan"
 
 Jason Lantz:
   github:         jlantz
@@ -69,7 +62,7 @@ Jason Lantz:
 Adam Lincoln:
   github:         adamlincoln
   avatar:         https://avatars3.githubusercontent.com/u/251229
-  title:          "Force.com Developer"
+  title:          "Senion Member of Technical Staff"
   twitter:        adamjlincoln
   bio:            "I joined the Salesforce.org in early 2015 after five years as a Force.com, Python, and Perl developer in higher education.  I particularly enjoy flexing the platform's batch capabilities and APIs.  I value automation and clean code, and am a big believer in open source software."
 
@@ -83,7 +76,7 @@ David Manelski:
 Carlos Ramirez Martinez-Eiroa:
   github:         ceiroa
   avatar:         https://avatars1.githubusercontent.com/u/1894238
-  title:          "Senior Force.com Developer"
+  title:          "Lead Member of Technical Staff"
   bio:            "I’m a certified Salesforce Admin, Developer, and Advanced Developer. I came to the Salesforce platform from the Java and PHP worlds, after recognizing its enormous potential for productivity. I live in the world of Triggers, Batches, Classes, and Scheduled jobs, and enjoy designing and writing robust, object-oriented code."
   twitter:        "carloseiroa"
 
@@ -96,7 +89,7 @@ Chris McMahon:
 Laura Meerkatz:
   github:         lmeerkatz
   avatar:         https://avatars1.githubusercontent.com/u/2000501
-  title:          "Force.com Developer"
+  title:          "Senior Member of Technical Staff"
   bio:            "I've been working with nonprofits on the Salesforce platform since 2010. I'm a certified Salesforce Advanced Developer and Advanced Administrator, as well as an active member of <a href=\"http://wearegirlforce.com\" title=\"Girlforce\">Girlforce</a>. I'm passionate (and/or stubborn) about making the tech world more welcoming to women, and believe that the end-user and his or her goals are at the heart of every technology project."
 
 Cheryl Porro:
