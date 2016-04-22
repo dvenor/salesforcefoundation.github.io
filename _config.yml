@@ -1,6 +1,5 @@
 name: Salesforce Foundation Technology and Products
-url: http://developer.salesforcefoundation.org
-markdown: redcarpet
+url: http://developer.salesforce.org
 pygments: true
 
 paginate: 10
