@@ -5,6 +5,7 @@ Nick Bailey:
   bio:            "I joined Salesforce.org as a Developer in 2011, after several years as a customer and partner. I enjoy working on technology projects that have delightful user experiences, have impact at scale, and provide value to the people we serve."
   url:            "http://www.nickhbailey.com"
   twitter:        "nickhbailey"
+
 Kevin Bromer:
   github:         kbromer
   avatar:         https://avatars1.githubusercontent.com/u/926530
@@ -45,6 +46,14 @@ Ryan Foster:
   github:         dextermilo
   title:          "Lead Member of Technical Staff"
   bio:            "I am a long-time web developer, primarily for nonprofits, and was thrilled to discover Salesforce and Force.com in 2011. My favorite projects have three primary ingredients: good design, elegant code, and a good cause. I am known for telling everyone to \"Have fun\", and gripe at my meowing cat while working from home."
+
+Clifford Fajardo:
+  avatar:         https://avatars2.githubusercontent.com/u/6743796
+  github:         cliffordfajardo
+  title:          "Associate Member of Technical Staff, Front End Engineering"
+  bio:            "I began my journey at Salesforce.org in the spring of 2016. I'm a mission & product driven engineer who enjoys developing amazing web experiences. I'm also very passionate about sharing knowledge on the web, education, writing, teaching, & discovering new tools that make me more productive."
+  twitter:        cliffordfajard0
+  url:            "http://cliffordfajardo.com"
 
 David Habib:
   github:         davidhabib
