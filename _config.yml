@@ -1,7 +1,9 @@
 name: Salesforce Foundation Technology and Products
 url: http://developer.salesforce.org
-pygments: true
+markdown: kramdown
+highlighter: rouge
 
+gems: [jekyll-paginate]
 paginate: 10
 paginate_path: ":num"
 
