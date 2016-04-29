@@ -133,3 +133,15 @@ Suzanne Veiga:
   avatar:         https://avatars0.githubusercontent.com/u/5631840
   title:          "Lead Data and System Administrator"
   bio:            "I'm a certified Salesforce Admin and Developer who's been working with the Salesforce platform since 2009. In the fall of 2013, I joined the Salesforce.org Enterprise Systems team. I enjoy exploring new ways of using declarative features, and sharing those innovations with nonprofits."
+
+Sarah Marovich:
+  github:         smarovich
+  avatar:         https://avatars3.githubusercontent.com/u/18448536
+  title:          "Senior Member of Technical Staff, Documentation"
+  bio:            "I joined Salesforce.org in 2015, after 9 years at Salesforce.com. As a Technical Writer, I believe that documentation plays an integral part in helping customers successfully implement and use products. I love working with our passionate nonprofit community and learning more about how we can tailor our documentation to their needs."
+
+Dave Perry:
+  github:         daveperry
+  avatar:         https://avatars1.githubusercontent.com/u/413601
+  title:          "Lead Member of Technical Staff, Higher Ed"
+  bio:            "I'm the Technical Architect for Higher Education products at Salesforce.org. Prior to this, I was the Salesforce Program Manager at Western Governors University, as well as a member of the Higher Ed Advisory Council, a Salesforce MVP, and co-organizer of the Utah Salesforce Developer Group."
