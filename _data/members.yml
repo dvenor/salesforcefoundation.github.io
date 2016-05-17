@@ -41,12 +41,6 @@ Calista Carter:
   twitter:        "calistabcarter"
   bio:            "I’m a certified Salesforce Administrator and Developer, and have been working in the nonprofit Salesforce space since 2007. I love working at the intersection of technology and non-profit because of the potential for social good and the enormous generosity and passion of the people in this community."
 
-Ryan Foster:
-  avatar:         https://avatars0.githubusercontent.com/u/779557
-  github:         dextermilo
-  title:          "Lead Member of Technical Staff"
-  bio:            "I am a long-time web developer, primarily for nonprofits, and was thrilled to discover Salesforce and Force.com in 2011. My favorite projects have three primary ingredients: good design, elegant code, and a good cause. I am known for telling everyone to \"Have fun\", and gripe at my meowing cat while working from home."
-
 Clifford Fajardo:
   avatar:         https://avatars2.githubusercontent.com/u/6743796
   github:         cliffordfajardo
@@ -54,6 +48,12 @@ Clifford Fajardo:
   bio:            "I began my journey at Salesforce.org in the spring of 2016. I'm a mission & product driven engineer who enjoys developing amazing web experiences. I'm also very passionate about sharing knowledge on the web, education, writing, teaching, & discovering new tools that make me more productive."
   twitter:        cliffordfajard0
   url:            "http://cliffordfajardo.com"
+
+Ryan Foster:
+  avatar:         https://avatars0.githubusercontent.com/u/779557
+  github:         dextermilo
+  title:          "Lead Member of Technical Staff"
+  bio:            "I am a long-time web developer, primarily for nonprofits, and was thrilled to discover Salesforce and Force.com in 2011. My favorite projects have three primary ingredients: good design, elegant code, and a good cause. I am known for telling everyone to \"Have fun\", and gripe at my meowing cat while working from home."
 
 David Habib:
   github:         davidhabib
@@ -82,6 +82,12 @@ David Manelski:
   bio:            "I want to help accelerate people on a mission. On the Salesforce.org Technology & Products team, I help build the tools to make that possible. I work closely with customers, partners, and across our internal teams to help people scale their impact and deepen their engagement."
   twitter:        "greenstork"
 
+Sarah Marovich:
+  github:         smarovich
+  avatar:         https://avatars3.githubusercontent.com/u/18448536
+  title:          "Senior Member of Technical Staff, Documentation"
+  bio:            "I joined Salesforce.org in 2015, after 9 years at Salesforce.com. As a Technical Writer, I believe that documentation plays an integral part in helping customers successfully implement and use products. I love working with our passionate nonprofit community and learning more about how we can tailor our documentation to their needs."
+
 Carlos Ramirez Martinez-Eiroa:
   github:         ceiroa
   avatar:         https://avatars1.githubusercontent.com/u/1894238
@@ -100,6 +106,12 @@ Laura Meerkatz:
   avatar:         https://avatars1.githubusercontent.com/u/2000501
   title:          "Senior Member of Technical Staff"
   bio:            "I've been working with nonprofits on the Salesforce platform since 2010. I'm a certified Salesforce Advanced Developer and Advanced Administrator, as well as an active member of <a href=\"http://wearegirlforce.com\" title=\"Girlforce\">Girlforce</a>. I'm passionate (and/or stubborn) about making the tech world more welcoming to women, and believe that the end-user and his or her goals are at the heart of every technology project."
+
+Dave Perry:
+  github:         daveperry
+  avatar:         https://avatars1.githubusercontent.com/u/413601
+  title:          "Lead Member of Technical Staff, Higher Ed"
+  bio:            "I'm the Technical Architect for Higher Education products at Salesforce.org. Prior to this, I was the Salesforce Program Manager at Western Governors University, as well as a member of the Higher Ed Advisory Council, a Salesforce MVP, and co-organizer of the Utah Salesforce Developer Group."
 
 Cheryl Porro:
   github:         cporro
@@ -133,15 +145,3 @@ Suzanne Veiga:
   avatar:         https://avatars0.githubusercontent.com/u/5631840
   title:          "Lead Data and System Administrator"
   bio:            "I'm a certified Salesforce Admin and Developer who's been working with the Salesforce platform since 2009. In the fall of 2013, I joined the Salesforce.org Enterprise Systems team. I enjoy exploring new ways of using declarative features, and sharing those innovations with nonprofits."
-
-Sarah Marovich:
-  github:         smarovich
-  avatar:         https://avatars3.githubusercontent.com/u/18448536
-  title:          "Senior Member of Technical Staff, Documentation"
-  bio:            "I joined Salesforce.org in 2015, after 9 years at Salesforce.com. As a Technical Writer, I believe that documentation plays an integral part in helping customers successfully implement and use products. I love working with our passionate nonprofit community and learning more about how we can tailor our documentation to their needs."
-
-Dave Perry:
-  github:         daveperry
-  avatar:         https://avatars1.githubusercontent.com/u/413601
-  title:          "Lead Member of Technical Staff, Higher Ed"
-  bio:            "I'm the Technical Architect for Higher Education products at Salesforce.org. Prior to this, I was the Salesforce Program Manager at Western Governors University, as well as a member of the Higher Ed Advisory Council, a Salesforce MVP, and co-organizer of the Utah Salesforce Developer Group."
