@@ -1,7 +1,7 @@
 ---
 layout:   post
 title:    "Five Essential Keys to Career Happiness"
-author:   Dave Manelski
+author:   David Manelski
 date:     2016-05-19 14:09:00
 excerpt: "Dave Manelski shares his five essentials keys to career happiness and how he found his #dreamjob at Salesforce.org"
 ---
