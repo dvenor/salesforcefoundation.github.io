@@ -10,7 +10,14 @@ excerpt: "Table-Driven Trigger Management (TDTM), is the approach we take in the
 ## Technical Overview
 _*We are using class names without prefix throughout the article. This matches what is in our [Github repository](https://github.com/SalesforceFoundation/Cumulus). However, the classes inside the managed package are all using the npsp prefix._
 
-With this design, only one trigger exists per object (one for Contact, one for Account, One for Opportunity, etc.), both for standard and for custom objects. The only thing these triggers do is calling our **Trigger Handler** ([`TDTM_TriggerHandler`](https://github.com/SalesforceFoundation/Cumulus/blob/dev/src/classes/TDTM_TriggerHandler.cls)), passing it all the environment information. All the actual business logic to run when an action is performed on a record is stored in plain old classes. We created a custom object to store what classes to run for which objects, under which actions. In this object we also define if the class is active or inactive, and if the logic is going to be run synchronously or asynchronously. The Trigger Handler is then charged with the task of calling these classes when appropriate. This has the added advantage of allowing us to centralize error handling for triggers around the Trigger Handler.
+With this design, only one trigger exists per object (one for Contact, one for Account, One for Opportunity, etc.), both for standard and for custom objects. The only thing these triggers do is calling our **Trigger Handler** ([`TDTM_TriggerHandler`](https://github.com/SalesforceFoundation/Cumulus/blob/dev/src/classes/TDTM_TriggerHandler.cls)), passing it all the environment information. All the actual business logic to run when an action is performed on a record is stored in plain old classes. We created a custom object, Trigger_Handler__c, to store what **classes** to run for which **objects**, under which **actions**. In this object we also define if the class is **active** or inactive, and if the logic is going to be run **synchronously** or asynchronously. The Trigger Handler is then charged with the task of calling these classes when appropriate. This has the added advantage of allowing us to centralize error handling for triggers around the Trigger Handler.
+
+That leaves us with the following fields in our Trigger_Handler__c custom object:
+- **Class__c**: the class to run
+- **Object__c**: the object that, when being modified, will make the class run
+- **Trigger_Action__c**: the actions on which the class will run (before insert, after update, etc)
+- **Load_Order__c**: the order on which classes that apply to the same object and which the same actions will run
+- **Asynchronous__c**: a flag that specifies whether the class will run synchronously or asynchronously
 
 Of course, we want this design to be extensible. We want to be able to add new classes and have our Trigger Handler run them. Also, we are storing the information of which classes to run (plus the details mentioned above), as strings in our custom object. Therefore we need to instantiate the classes to run dynamically. And in order to make sure that they can actually be run, they need to implement the [`TDTM_Runnable`](https://github.com/SalesforceFoundation/Cumulus/blob/dev/src/classes/TDTM_Runnable.cls) interface.
 
@@ -27,11 +34,14 @@ The code in our `TDTM_TriggerHandler` class that creates an instance of each cla
                TDTM_Runnable classToRun = (TDTM_Runnable)classInstance;
 
 Then we just need to have entries in our **`Trigger_Handler__c`** custom object, like this:
+
 ![TDTM Settings](/assets/images/TDTM_Settings.png)
  
-The screenshot above is the TDTM Settings section of the NPSP Settings tab. This page allows you to see all the classes that are going to run when a user interacts with each Object type. Here you can also add your own classes to work in conjunction with the NPSP TDTM design. Any class that your create must implement the `TDTM_Runnable` interface, and therefore have a `run` method with the necessary parameters, and you also need to create an entry on this page for your class. You could also create the record directly against the `Trigger_Handler__c` object, using the Force.com IDE or the Developer Console, for example, and the entry would be displayed here. 
+The screenshot above is from **NPSP Settings** > **System Tools** > **Trigger Configuration**. This page allows you to see all the classes that are going to run when a user interacts with each Object type. Here you can also add your own classes to work in conjunction with the NPSP TDTM design. Any class that your create must implement the `TDTM_Runnable` interface, and therefore have a `run` method with the necessary parameters, and you also need to create an entry on this page for your class. You could also create the record directly against the `Trigger_Handler__c` object, using the Force.com IDE or the Developer Console, for example, and the entry would be displayed here. 
 
 You can create new entries using the form at the bottom on this page, but you cannot edit or delete existing ones. This is by design. The functionality controlled by the settings displayed on this page is critical for the correct functioning of the NPSP, and we want to make sure that anyone that wishes to modify it is sure of what he/she is doing. Thus, to edit one of the existing entries, or one you created yourself, you’ll have to directly interact with the `Trigger_Handler__c` custom object. You could do that, for example, by running anonymous Apex through the Developer Console.
+
+**WARNING**: Any modification to the settings will drastically alter the behavior of the NPSP, and may in fact cause cascading issues down the road. As with any major change, we strongly suggest make the change in a sandbox first, testing the new behavior, and only once the stability of the system is ensured, apply that change to your production instance. As a nonprofit organization, you are entitled to a select number of free sandboxes, this is a great use of them.
 
 **Regarding deployment**, keep in mind that if you are developing your own custom TDTM class in a sandbox, you not only need to migrate the code to production, but you have to migrate/recreate this record.
 
