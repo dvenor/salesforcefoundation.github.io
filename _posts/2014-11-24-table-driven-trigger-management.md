@@ -8,16 +8,16 @@ excerpt: "Table-Driven Trigger Management (TDTM), is the Nonprofit Starter Pack'
 **Table-Driven Trigger Management** (TDTM), is the Nonprofit Starter Pack's approach to trigger management. As you probably know, large custom applications or packages, such as the NPSP, can often wind up with a large number of triggers, including multiple triggers on the same Object (a very bad practice). These multiple triggers are often written by different developers and even consulting companies, and can interact with each other in sometimes-unpredictable ways. Under these circumstances, problems become very hard to understand, and even harder to debug. TDTM makes it easier for us and for our users to know what happens when a user interacts with a record.
 
 ## Technical Overview
-_*We are using class names without prefix throughout the article. This matches what is in our [Github repository](https://github.com/SalesforceFoundation/Cumulus). However, the classes inside the managed package are all using the npsp prefix._
+**NOTE:** _We're using class names without prefixes throughout the article. This naming convention matches what's in our [Github repository](https://github.com/SalesforceFoundation/Cumulus). However, the classes inside the NPSP managed package all use the npsp prefix._
 
-With this design, only one trigger exists per object (one for Contact, one for Account, One for Opportunity, etc.), both for standard and for custom objects. The only thing these triggers do is calling our **Trigger Handler** ([`TDTM_TriggerHandler`](https://github.com/SalesforceFoundation/Cumulus/blob/dev/src/classes/TDTM_TriggerHandler.cls)), passing it all the environment information. All the actual business logic to run when an action is performed on a record is stored in plain old classes. We created a custom object, Trigger_Handler__c, to store what **classes** to run for which **objects**, under which **actions**. In this object we also define if the class is **active** or inactive, and if the logic is going to be run **synchronously** or asynchronously. The Trigger Handler is then charged with the task of calling these classes when appropriate. This has the added advantage of allowing us to centralize error handling for triggers around the Trigger Handler.
+In our TDTM design, one trigger and one trigger only exists for each object (one for Contact, one for Account, one for Opportunity, and so on), both for standard and for custom objects. These triggers call our **Trigger Handler** ([`TDTM_TriggerHandler`](https://github.com/SalesforceFoundation/Cumulus/blob/dev/src/classes/TDTM_TriggerHandler.cls))---that's it---and pass it all the environment information. The actual business logic that needs to run when an action occurs on a record is stored in plain old classes. We created a custom object, Trigger_Handler__c, to store what **classes** to run for which **objects**, and under which **actions**. In this object we also define if the class is active or inactive, and if the logic is going to be run synchronously or asynchronously. The Trigger Handler is then charged with the task of calling these classes when appropriate, which provides the added advantage of allowing us to centralize error handling for triggers around the Trigger Handler.
 
 That leaves us with the following fields in our Trigger_Handler__c custom object:
-- **Class__c**: the class to run
-- **Object__c**: the object that, when being modified, will make the class run
-- **Trigger_Action__c**: the actions on which the class will run (before insert, after update, etc)
-- **Load_Order__c**: the order on which classes that apply to the same object and which the same actions will run
-- **Asynchronous__c**: a flag that specifies whether the class will run synchronously or asynchronously
+* **Class__c**: the class to run
+* **Object__c**: the object that, when being modified, will make the class run
+* **Trigger_Action__c**: the actions on which the class will run (before insert, after update, and so on)
+* **Load_Order__c**: the order on which classes that apply to the same object and which the same actions will run
+* **Asynchronous__c**: a flag that specifies whether the class will run synchronously or asynchronously
 
 Of course, we want this design to be extensible. We want to be able to add new classes and have our Trigger Handler run them. Also, we are storing the information of which classes to run (plus the details mentioned above), as strings in our custom object. Therefore we need to instantiate the classes to run dynamically. And in order to make sure that they can actually be run, they need to implement the [`TDTM_Runnable`](https://github.com/SalesforceFoundation/Cumulus/blob/dev/src/classes/TDTM_Runnable.cls) interface.
 
