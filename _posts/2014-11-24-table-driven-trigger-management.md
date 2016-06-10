@@ -10,19 +10,19 @@ excerpt: "Table-Driven Trigger Management (TDTM), is the Nonprofit Starter Pack'
 ## Technical Overview
 **NOTE:** _We're using class names without prefixes throughout this article. This naming convention matches what's in our [Github repository](https://github.com/SalesforceFoundation/Cumulus). However, the classes inside the NPSP managed package all use the npsp prefix._
 
-In our TDTM design, one trigger and one trigger only exists for each object (one for Contact, one for Account, one for Opportunity, and so on), both for standard and for custom objects. These triggers call our **Trigger Handler** ([`TDTM_TriggerHandler`](https://github.com/SalesforceFoundation/Cumulus/blob/dev/src/classes/TDTM_TriggerHandler.cls))---that's it---and pass it all the environment information. The actual business logic that needs to run when an action occurs on a record is stored in plain old classes. We created a custom object, Trigger_Handler__c, to store what **classes** to run for which **objects**, and under which **actions**. In this object we also define if the class is active or inactive, and if the logic is going to be run synchronously or asynchronously. The Trigger Handler is then charged with the task of calling these classes when appropriate, which provides the added advantage of allowing us to centralize error handling for triggers around the Trigger Handler.
+In our TDTM design, one trigger and one trigger only exists for each object (one for Contact, one for Account, one for Opportunity, and so on), both for standard and for custom objects. These triggers call our **Trigger Handler** ([`TDTM_TriggerHandler`](https://github.com/SalesforceFoundation/Cumulus/blob/dev/src/classes/TDTM_TriggerHandler.cls))---that's it---and pass it all the environment information. The actual business logic that needs to run when an action occurs on a record is stored in plain old classes. We created a custom object, Trigger_Handler__c, to store which **classes** should run for each **object**, along with the related **actions**. In this object we also define whether the class is active or inactive, and whether the logic is going to be run synchronously or asynchronously. The Trigger Handler is then charged with the task of calling these classes when appropriate, which provides the added advantage of allowing us to centralize error handling for triggers around the Trigger Handler.
 
 That leaves us with the following fields in our Trigger_Handler__c custom object:
 
   * **Class__c**: the class to run
   * **Object__c**: the object that, when being modified, will make the class run
   * **Trigger_Action__c**: the actions on which the class will run (before insert, after update, and so on)
-  * **Load_Order__c**: the order on which classes that apply to the same object and which the same actions will run
+  * **Load_Order__c**: the order in which classes for the same object, and with the same actions, will run
   * **Asynchronous__c**: a flag that specifies whether the class will run synchronously or asynchronously
 
-Of course, we want this design to be extensible. We want to be able to add new classes and have our Trigger Handler run them. Also, we are storing the information of which classes to run (plus the details mentioned above), as strings in our custom object. Therefore we need to instantiate the classes to run dynamically. And in order to make sure that they can actually be run, they need to implement the [`TDTM_Runnable`](https://github.com/SalesforceFoundation/Cumulus/blob/dev/src/classes/TDTM_Runnable.cls) interface.
+Of course, we want this design to be extensible. We want to be able to add new classes and have our Trigger Handler run them. We're also storing the information about which classes to run (plus the details mentioned above), as strings in our custom object. Therefore we need to instantiate the classes to run dynamically. These classes also need to implement the [`TDTM_Runnable`](https://github.com/SalesforceFoundation/Cumulus/blob/dev/src/classes/TDTM_Runnable.cls) interface, in order to ensure that they can actually be run.
 
-The code in our `TDTM_TriggerHandler` class that creates an instance of each class to run and checks if it implements the required interface, looks like this:
+The code in our `TDTM_TriggerHandler` class that creates an instance of each class to run, and checks to see if the class implements the required interface, looks like this:
 
     if(classToRunRecord != null) {
         String classToRunName = String.valueOf(classToRunRecord.get('Class__c'));
@@ -38,16 +38,17 @@ Then we just need to have entries in our **`Trigger_Handler__c`** custom object,
 
 ![TDTM Settings](/assets/images/TDTM_Settings.png)
  
-The screenshot above is from **NPSP Settings** > **System Tools** > **Trigger Configuration**. This page allows you to see all the classes that are going to run when a user interacts with each Object type. Here you can also add your own classes to work in conjunction with the NPSP TDTM design. Any class that your create must implement the `TDTM_Runnable` interface, and therefore have a `run` method with the necessary parameters, and you also need to create an entry on this page for your class. You could also create the record directly against the `Trigger_Handler__c` object, using the Force.com IDE or the Developer Console, for example, and the entry would be displayed here. 
+The screenshot above is from the Trigger Configuration page in NPSP Settings (**System Tools** | **Trigger Configuration**). This page allows you to see all the classes that are going to run when a user interacts with each Object type. Here you can also add your own classes to work in conjunction with the NPSP TDTM design. Any class that you create must implement the `TDTM_Runnable` interface, and therefore have a `run` method with the necessary parameters. You also need to create an entry on this page for your class. Alternatively, you could create the record directly against the `Trigger_Handler__c` object, using the Force.com IDE or the Developer Console, for example, and the entry would be displayed here. 
 
-You can create new entries using the form at the bottom on this page, but you cannot edit or delete existing ones. This is by design. The functionality controlled by the settings displayed on this page is critical for the correct functioning of the NPSP, and we want to make sure that anyone that wishes to modify it is sure of what he/she is doing. Thus, to edit one of the existing entries, or one you created yourself, you’ll have to directly interact with the `Trigger_Handler__c` custom object. You could do that, for example, by running anonymous Apex through the Developer Console.
+You can create new entries using the form at the bottom on this page, but you cannot edit or delete existing entries. This is by design. The functionality controlled by these settings is critical to the NPSP, and we want to make sure that anyone who wants to modify it knows what they're is doing. Thus, to edit one of the existing entries, or one you created yourself, you’ll have to interact directly with the `Trigger_Handler__c` custom object. You could do that, for example, by running anonymous Apex through the Developer Console.
 
-**WARNING**: Any modification to the settings will drastically alter the behavior of the NPSP, and may in fact cause cascading issues down the road. As with any major change, we strongly suggest make the change in a sandbox first, testing the new behavior, and only once the stability of the system is ensured, apply that change to your production instance. As a nonprofit organization, you are entitled to a select number of free sandboxes, this is a great use of them.
+**WARNING**: Any modification to these settings will drastically alter the behavior of the NPSP, and may in fact cause cascading issues down the road. As with any major change, we strongly suggest that you make changes in a sandbox first. Test the new behavior and apply that change to your production instance only after you've ensured the stability of your system. As a nonprofit organization, you're entitled to a select number of free sandboxes, and this is a great use for them.
 
-**Regarding deployment**, keep in mind that if you are developing your own custom TDTM class in a sandbox, you not only need to migrate the code to production, but you have to migrate/recreate this record.
+## Deployment Example
 
-## Example
-This is an example of a class that is not part of the NPSP package, but that follows the TDTM design:
+Keep in mind that if you're developing your own custom TDTM class in a sandbox, you not only need to migrate the code to production, but you have to migrate/recreate the appropriate record.
+
+Here's an example of a class that's not part of the NPSP package, but that follows the TDTM design:
 
     global without sharing class OpportunityMemberCreation_TDTM extends npsp.TDTM_Runnable {
   
@@ -85,15 +86,15 @@ This is an example of a class that is not part of the NPSP package, but that fol
       }
     }
 
-This class creates a new `CampaignMember` for each closed-won opportunity belonging to a campaign, that has a contact role defined. It also creates a relationship between the contact that referred the opportunity and the campaign member. (This class is taken from the DF14 “Extend and Customize the Nonprofit Starter Pack” session. Full recording available online.)
+This class creates a new `CampaignMember` for each Closed-Won Opportunity belonging to a Campaign that has a Contact role defined. It also creates a relationship between the referring Contact and the new Campaign member. (This class is taken from the DF14 “Extend and Customize the Nonprofit Starter Pack” session. Full recording available online.)
 
-Note the **`global`** class declaration. This is necessary for our TDTM implementation classes to be dynamically instantiated from our Trigger Handler. If you use the `public` identifier instead, you will not get an error, but won’t see the expected behavior. It will be as if the class doesn’t exist or is inactive.
+Note the **`global`** class declaration. This declaration is necessary for our TDTM implementation classes to be dynamically instantiated from our Trigger Handler. If you use the `public` identifier instead, you won't get an error, but you won’t see the expected behavior either. It will appear as if the class doesn’t exist or is inactive.
 
 ## Additional Information
 
-Another interesting component of this design that we use internally and that is also available for you, as you can see in the example above, is our **`DmlWrapper`**. This is a class that we use to store all (or most of) the records to perform DML on in the current transaction. This way we can just make one DML operation of each type (insert, update, etc.) at the end of the transaction. DML can also be performed at any point during the transaction, if there are operations or business logic that requires it (for example the creation of a record with a reference to other record created in the same transaction), but any other independent DML can be saved for the end.  
+Another interesting component of this design that we use internally and that's also available for you is our **`DmlWrapper`** (see above). We use this class to store all (or most of) the records on which we want to perform DML in the current transaction. This lets us make just one DML operation of each type (insert, update, etc.) at the end of the transaction. DML can also happen at any point during the transaction, if there are operations or business logic that require it (for example the creation of a record with a reference to another record created in the same transaction), but we can save any other independent DML for the end.  
 
-This is the beginning of the `DmlWrapper` declaration, where we can see the data structures that we use to store the records to the processed: 
+This is the beginning of the `DmlWrapper` declaration, where we can see the data structures that we use to store the records we want processed: 
 
     global class DmlWrapper {
         global List<SObject> objectsToInsert = new List<SObject>(); 
@@ -102,8 +103,8 @@ This is the beginning of the `DmlWrapper` declaration, where we can see the data
         global List<SObject> objectsToUndelete = new List<SObject>();
         ...
         
-One more interesting aspect of `DmlWrapper` is that Salesforce has a limit of 10 different types of objects DML can be performed upon in a single call. Switching between different types of objects, even if the same type is repeated again, is counted as a new type every time. See the section “Creating Records for Multiple Object Types” at [Apex Dml Limitations](https://www.salesforce.com/us/developer/docs/apexcode/Content/langCon_apex_dml_limitations.htm). To avoid hitting this limit, we group all records of the same type before performing the DML operation. See the method `groupSObjects` in [`TDTM_Runnable`](https://github.com/SalesforceFoundation/Cumulus/blob/dev/src/classes/TDTM_Runnable.cls) for details.
+One more interesting aspect of `DmlWrapper` is that Salesforce has a limit of 10 different types of objects upon which DML can be performed in a single call. Switching between different types of objects, even if the same type is repeated again, counts toward you limit every time. See “Creating Records for Multiple Object Types” at [Things You Should Know about Data in Apex](https://www.salesforce.com/us/developer/docs/apexcode/Content/langCon_apex_dml_limitations.htm). To avoid hitting this limit, we group all records of the same type before performing the DML operation. See the method `groupSObjects` in [`TDTM_Runnable`](https://github.com/SalesforceFoundation/Cumulus/blob/dev/src/classes/TDTM_Runnable.cls) for details.
 
 ## Conclusion
 
-I hope this gives you a good idea of what the Table-Driven Trigger Management pattern is, how we use it at the Nonprofit Starter Pack, and how you can use it yourself to extend the trigger design in the NPSP, or even in your own independent applications. All the code in the Nonprofit Starter Pack is open source, so feel free to check it out at our [NPSP Github repository](https://github.com/SalesforceFoundation/Cumulus). If you have questions, you can find a vibrant and helpful community at the [Power of Us Hub](https://powerofus.force.com/). Happy coding!
+I hope this gives you a good idea of what the Table-Driven Trigger Management pattern is, how we use it in the Nonprofit Starter Pack, and how you can use it yourself to extend the trigger design in the NPSP, or even in your own independent applications. All the code in the Nonprofit Starter Pack is open source, so feel free to check it out at our [NPSP Github repository](https://github.com/SalesforceFoundation/Cumulus). If you have questions, you can find a vibrant and helpful community at the [Power of Us Hub](https://powerofus.force.com/). Happy coding!
