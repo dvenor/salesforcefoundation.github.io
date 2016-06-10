@@ -42,7 +42,7 @@ The screenshot above is from the Trigger Configuration page in NPSP Settings (**
 
 You can create new entries using the form at the bottom on this page, but you cannot edit or delete existing entries. This is by design. The functionality controlled by these settings is critical to the NPSP, and we want to make sure that anyone who wants to modify it knows what they're is doing. Thus, to edit one of the existing entries, or one you created yourself, you’ll have to interact directly with the `Trigger_Handler__c` custom object. You could do that, for example, by running anonymous Apex through the Developer Console.
 
-**WARNING**: Any modification to these settings will drastically alter the behavior of the NPSP, and may in fact cause cascading issues down the road. As with any major change, we strongly suggest that you make changes in a sandbox first. Test the new behavior and apply that change to your production instance only after you've ensured the stability of your system. As a nonprofit organization, you're entitled to a select number of free sandboxes, and this is a great use for them.
+**WARNING**: _Any modification to these settings will drastically alter the behavior of the NPSP, and may in fact cause cascading issues down the road. As with any major change, we strongly suggest that you make changes in a sandbox first. Test the new behavior and apply that change to your production instance only after you've ensured the stability of your system. As a nonprofit organization, you're entitled to a select number of free sandboxes, and this is a great use for them_.
 
 ## Deployment Example
 
