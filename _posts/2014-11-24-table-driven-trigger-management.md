@@ -84,7 +84,7 @@ Here's an example of a class that's not part of the NPSP package, but that follo
       }
     }
 
-This class creates a new `CampaignMember` for each Closed-Won Opportunity belonging to a Campaign that has a Contact role defined. It also creates a relationship between the referring Contact and the new Campaign member. (This class is taken from the DF14 “Extend and Customize the Nonprofit Starter Pack” session. Full recording available online.)
+This class creates a new `CampaignMember` for each Closed-Won Opportunity belonging to a Campaign that has a Contact role defined. It also creates a relationship between the referring Contact and the new Campaign member.
 
 Note the **`global`** class declaration. This declaration is necessary for our TDTM implementation classes to be dynamically instantiated from our Trigger Handler. If you use the `public` identifier instead, you won't get an error, but you won’t see the expected behavior either. It will appear as if the class doesn’t exist or is inactive.
 
