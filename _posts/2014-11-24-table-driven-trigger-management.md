@@ -86,7 +86,7 @@ Here's an example of an external class that follows the TDTM design:
 
 This class creates a new `CampaignMember` for each Closed-Won Opportunity belonging to a Campaign that has a Contact role defined. It also creates a relationship between the referring Contact and the new Campaign member. 
 
-Note that because the class is external, it needs to declare the method `global`, and needs to use the npsp prefix when calling classes inside the package. The global calss declaration is necessary for our TDTM implementation classes to be dynamically instantiated from our Trigger Handler. If you use the `public` identifier instead, you won't get an error, but you won’t see the expected behavior either. It will appear as if the class doesn’t exist or is inactive.
+Note that because the class is external, it needs to declare the method `global`, and needs to use the npsp prefix when calling classes inside the package. The global class declaration is necessary for our TDTM implementation classes to be dynamically instantiated from our Trigger Handler. If you use the `public` identifier instead, you won't get an error, but you won’t see the expected behavior either. It will appear as if the class doesn’t exist or is inactive.
 
 ## Additional Information
 
