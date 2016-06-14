@@ -7,6 +7,8 @@ excerpt: "Table-Driven Trigger Management (TDTM), is the Nonprofit Starter Pack'
 ---
 **Table-Driven Trigger Management** (TDTM), is the Nonprofit Starter Pack's approach to trigger management. As you probably know, large custom applications or packages, such as the NPSP, can often wind up with a large number of triggers, including multiple triggers on the same object (a very bad practice). These multiple triggers are often written by different developers and even consulting companies, and can interact with each other in sometimes-unpredictable ways. Under these circumstances, problems become very hard to understand, and even harder to debug. TDTM makes it easier for us and for our users to know what happens when a user interacts with a record.
 
+This article provides a "down in the weeds" explanation of the NPSP's TDTM design. If you're looking for a less technical overview of what TDTM is and what value it can bring to your organization, see Mary Pustejovsky's excellent Salesforce.org blog post, ["Table-Driven Trigger Management and Why it Matters."](http://www.salesforce.org/table-driven-trigger-management-matters/)
+
 ## Technical Overview
 **NOTE:** _We're using class names without prefixes throughout this article. This naming convention matches what's in our [Github repository](https://github.com/SalesforceFoundation/Cumulus). However, the classes inside the NPSP managed package all use the npsp prefix._
 
