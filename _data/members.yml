@@ -119,6 +119,13 @@ Cheryl Porro:
   title:          "SVP, Tech and Product"
   bio:            "I have the honor of leading the phenomenal Salesforce.org Technology & Products team, which builds products for nonprofits and higher ed institutions. We also build internal applications that support the daily operations of Salesforce.org, as well as volunteerism, pro bono, and gift-matching programs for Salesforce."
   twitter:        cporro_sfdc
+  
+Mary Pustejovsky:
+  github:         mpusto
+  avatar:         https://avatars3.githubusercontent.com/u/10934541
+  title:          "Technical Product Manager, Nonprofit"
+  bio:            "I'm the product manager for Nonprofit Starter Pack, the most widely used nonprofit application on the Salesforce platform. Prior to joining Salesforce.org I was a consultant for 9 years solely focused on nonprofit technology. I was a 3 time Salesforce MVP. I'm thrilled that my work impacts thousands of nonprofits worldwide."
+  twitter:        mpusto
 
 Saradha Rajagopalan:
   github:         srajagopalan1712
