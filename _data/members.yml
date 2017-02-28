@@ -120,12 +120,6 @@ David Manelski:
   bio:            "I want to help accelerate people on a mission. On the Salesforce.org Technology & Products team, I help build the tools to make that possible. I work closely with customers, partners, and across our internal teams to help people scale their impact and deepen their engagement."
   twitter:        "greenstork"
 
-Chelsea Mckay:
-  github:         chelseamckay
-  avatar:         https://avatars1.githubusercontent.com/u/20907700
-  title:          "Associate Member of Technical Staff, Engineering"
-  bio:            "I’m a certified Force.com Developer and joined Salesforce.org in 2016. I'm driven by our mission to deliver technology and resources to nonprofits, while leading the way for how other companies should emphasize volunteering philanthropy. I love the puzzle that coding and implementing technical solutions provides!"
-
 Sarah Marovich:
   github:         smarovich
   avatar:         https://avatars3.githubusercontent.com/u/18448536
@@ -144,6 +138,12 @@ Carlos Ramirez Martinez-Eiroa:
   title:          "Lead Member of Technical Staff"
   bio:            "I’m a certified Salesforce Admin, Developer, and Advanced Developer. I came to the Salesforce platform from the Java and PHP worlds, after recognizing its enormous potential for productivity. I live in the world of Triggers, Batches, Classes, and Scheduled jobs, and enjoy designing and writing robust, object-oriented code."
   twitter:        "carloseiroa"
+
+Chelsea Mckay:
+  github:         chelseamckay
+  avatar:         https://avatars1.githubusercontent.com/u/20907700
+  title:          "Associate Member of Technical Staff, Engineering"
+  bio:            "I’m a certified Force.com Developer and joined Salesforce.org in 2016. I'm driven by our mission to deliver technology and resources to nonprofits, while leading the way for how other companies should emphasize volunteering philanthropy. I love the puzzle that coding and implementing technical solutions provides!"
 
 Chris McMahon:
   github:         chrismcmahon
