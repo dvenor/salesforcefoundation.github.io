@@ -182,6 +182,12 @@ Saradha Rajagopalan:
   title:          "Member of Technical Staff, Quality Engineering"
   bio:            "I am a quality engineer with a passion for delivering highly functional and usable products. I have tested UI and API products for many years, and joined the Salesforce.org in January 2015 to help with Quality and Release management. I am known for my attention to detail, and enjoy cooking and traveling."
 
+David Ray:
+  github:         davidjray
+  avatar:         https://avatars1.githubusercontent.com/u/4258978?v=3&u=636c4c3eb77eea16440185f971dce142e3fc54b0
+  title:          "Associate Member of the Technical Staff"
+  bio:            "Code is Poetry."
+
 Breonna Slade:
   github:         breslade
   avatar:         https://avatars0.githubusercontent.com/u/25372028
@@ -226,9 +232,3 @@ Joshua Yeung:
   avatar:         https://avatars0.githubusercontent.com/u/25670033
   title:          "Workday Specialist"
   bio:            "I joined Salesforce.org as a Workday administrator in November 2016, after two years of doing HR consulting and Workday implementations. I enjoy solving puzzles and leveraging HR technology solutions to enable our partners and customers."
-
-David Ray:
-  github:         davidjray
-  avatar:         https://avatars3.githubusercontent.com/u/4258978
-  title:          "Associate Member of the Technical Staff"
-  bio:            "Code is Poetry."
