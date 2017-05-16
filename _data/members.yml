@@ -23,7 +23,7 @@ Jennifer Bennett:
   github:         jjbennett
   avatar:         https://avatars2.githubusercontent.com/u/450473
   title:          "Member of Technical Staff"
-  bio:            "I am a certified Salesforce Advanced Developer and have worked on the Salesforce platform since 2012. I joined the Salesforce.org Nonprofit Success Pack Team in 2016 and I am thrilled to be part of a team geared toward helping nonprofits leverage the power of the Salesforce platform."
+  bio:            "I am a certified Salesforce Advanced Developer and have been working on the Salesforce platform since 2012. I joined the Salesforce.org Nonprofit Success Pack Team in 2016 and am thrilled to be part of a team geared toward helping nonprofits leverage the power of the Salesforce platform."
 
 Kevin Bromer:
   github:         kbromer
@@ -124,7 +124,7 @@ Sarah Marovich:
   github:         smarovich
   avatar:         https://avatars3.githubusercontent.com/u/18448536
   title:          "Lead Member of Technical Staff, Documentation"
-  bio:            "I joined Salesforce.org in 2015, after 9 years at Salesforce.com. As a Technical Writer, I believe that documentation plays an integral part in helping customers successfully implement and use products. I love working with our passionate nonprofit community and learning more about how we can tailor our documentation to their needs."
+  bio:            "I joined Salesforce.org in 2016, after 9 years at Salesforce.com. As a Technical Writer, I believe that documentation plays an integral part in helping customers successfully implement and use products. I love working with our passionate nonprofit community and learning more about how we can tailor our documentation to their needs."
 
 Dennis Markunas:
   github:         DJM13
@@ -156,12 +156,6 @@ Laura Meerkatz:
   avatar:         https://avatars1.githubusercontent.com/u/2000501
   title:          "Senior Member of Technical Staff"
   bio:            "I've been working with nonprofits on the Salesforce platform since 2010. I'm a certified Salesforce Advanced Developer and Advanced Administrator, as well as an active member of <a href=\"http://wearegirlforce.com\" title=\"Girlforce\">Girlforce</a>. I'm passionate (and/or stubborn) about making the tech world more welcoming to women, and believe that the end-user and his or her goals are at the heart of every technology project."
-
-Dave Perry:
-  github:         daveperry
-  avatar:         https://avatars1.githubusercontent.com/u/413601
-  title:          "Lead Member of Technical Staff, Higher Ed"
-  bio:            "I'm the Technical Architect for Higher Education products at Salesforce.org. Prior to this, I was the Salesforce Program Manager at Western Governors University, as well as a member of the Higher Ed Advisory Council, a Salesforce MVP, and co-organizer of the Utah Salesforce Developer Group."
 
 Chris Polcyn:
   github:         cpolcyn
@@ -201,6 +195,13 @@ Judi Sohn:
   website:        http://judisohn.com
   twitter:        judis217
   bio:            "I have been actively involved in the community of nonprofits using Salesforce since 2006, and have worked for both ISV and SI partners. I hold four Salesforce certifications and have been a Salesforce MVP. Now at Salesforce.org, I manage community contributions to our open source projects, including the Nonprofit Success Pack."
+
+Michael Smith:
+  github:         force2b
+  avatar:         https://avatars3.githubusercontent.com/u/801017?v=3&u=7428ed27e8017a1d72abf081351251c03a35807d&s=400
+  title:          "Senior Member of the Technical Staff"
+  bio:            "I'm a 7x certified Salesforce Developer and have been working on the platform since 2001. While consulting with and implementing Salesforce for various nonprofits I quickly became hooked on the Nonprofit Success Pack. In 2017, I joined Salesforce.org to help further expand the power and reach of the NPSP product line."
+  twitter:        "force2b_mike"
 
 Jon Stahl:
   github:         jonstahl
