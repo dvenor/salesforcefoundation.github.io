@@ -1,6 +1,12 @@
 - name:           NPSP
   description:        The next version of the Salesforce.org Nonprofit Starter Pack.
   repo:               https://github.com/SalesforceFoundation/Cumulus
+  url:                http://www.salesforce.org/nonprofit/nonprofit-success-pack/
+
+- name:           HEDA
+  description:        The Higher-Ed-specific platform and architecture for growth for organizations utilizing Salesforce.
+  repo:               https://github.com/SalesforceFoundation/HEDAP
+  url:                http://www.salesforce.org/highered/data-architecture/
 
 - name:           CumulusCI
   description:        Build and automation scripts to facilitate best practices based development and release processes for managed package development on the Salesforce1 Platform.
