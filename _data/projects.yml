@@ -1,5 +1,5 @@
 - name:           NPSP
-  description:        The next version of the Salesforce.org Nonprofit Starter Pack.
+  description:        The industry-standard impact plaform for nonprofits utilizing Salesforce.
   repo:               https://github.com/SalesforceFoundation/Cumulus
   url:                http://www.salesforce.org/nonprofit/nonprofit-success-pack/
 
