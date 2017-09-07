@@ -11,14 +11,6 @@ Radmila Askraba:
   bio:            "I've enjoyed designing and building solutions on the Force.com platform since 2007, and am thrilled to be a member of the Salesforce.org team providing solutions to nonprofits. It's so rewarding to belong to a developer community where giving back, sharing knowledge, and supporting others is ingrained in our daily work."
   twitter:        RadmilaAskraba
 
-Nick Bailey:
-  github:         NickHBailey
-  avatar:         https://avatars3.githubusercontent.com/u/937498
-  title:          "Vice President, Enterprise Systems"
-  bio:            "I joined Salesforce.org as a Developer in 2011, after several years as a customer and partner. I enjoy working on technology projects that have delightful user experiences, have impact at scale, and provide value to the people we serve."
-  url:            "http://www.nickhbailey.com"
-  twitter:        "nickhbailey"
-
 Eric Barela:
   github:         ebarela
   avatar:         https://avatars0.githubusercontent.com/u/24924637
@@ -278,13 +270,6 @@ Michael Smith:
   title:          "Senior Member of the Technical Staff"
   bio:            "I'm a 7x certified Salesforce Developer and have been working on the platform since 2001. While consulting with and implementing Salesforce for various nonprofits I quickly became hooked on the Nonprofit Success Pack. In 2017, I joined Salesforce.org to help further expand the power and reach of the NPSP product line."
   twitter:        "force2b_mike"
-
-Jon Stahl:
-  github:         jonstahl
-  avatar:         https://avatars2.githubusercontent.com/u/882456
-  title:          "Product Manager, Programs + Employee Engagement"
-  bio:            "I have been working at the intersection of technology, social movements, and philanthropy for over twenty years, and joined Salesforce.org in 2016. I product manage the systems that support our philanthropic programs and employee engagement work. I love helping people connect with the causes they are most passionate about."
-  twitter:        "jonstahl"
 
 Jon Michael Varese:
   github:         jvarese
