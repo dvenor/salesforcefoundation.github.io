@@ -1,6 +1,6 @@
 ---
 layout:   post
-title:    "User Experience Matters in Business Applications Too"
+title:    "Post 0: Why Should You Care?"
 date:     2017-11-07 12:00:00
 author:   Phil Nadeau
 excerpt:  "This is the first post in a series of blog articles that I will be writing for Salesforce.org's developers' blog about Artificial Intelligence, the public good, and what nonprofits should know about AI. We will, of course, cover the things you'd expect, like tools, use cases, the theory and practice of AI, and so on."
