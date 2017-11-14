@@ -50,12 +50,24 @@ Kevin Bromer:
   twitter:        "kevinbromer"
   url:            "http://kevinbromer.com"
 
+Veronica Beck:
+  github:         watersbeck
+  avatar:         https://avatars2.githubusercontent.com/u/32141987
+  title:          "Technical Writer"
+  bio:            "I’ve been doing technical writing for salesforce.org with the best team ever since February 2017. I love: technical and creative writing, organizing in my community as a way of connecting with my neighbors, and playing fetch with my rambunctious dog at the dog park."
+
 Meghan Butler:
   github:         meghangab
   avatar:         https://avatars2.githubusercontent.com/u/15806943
   title:          "System Adminstrator"
   bio:            "I'm a certified Salesforce Advanced Administrator with more than seven years of experience supporting international nonprofits that leverage the Salesforce platform. I joined the Enterprise Systems team during the summer of 2015 and am thrilled to be part of Salesforce.org!"
   twitter:        "meghangab"
+
+Jace Bryan:
+  github:         jacebryan
+  avatar:         https://avatars3.githubusercontent.com/u/25934611
+  title:          "Higher Education Open Source Community Manager"
+  bio:            "I'm a certified Salesforce Advanced Administrator with more than seven years of experience supporting international nonprofits that leverage the Salesforce platform. I joined the Enterprise Systems team during the summer of 2015 and am thrilled to be part of Salesforce.org!"
 
 Evan Callahan:
   github:         groundwired
@@ -65,7 +77,7 @@ Evan Callahan:
 
 Nicolas Campbell:
   github:         njjc
-  title:          "Senior Member of Technical Staff"
+  title:          "Lead Member of Technical Staff"
   avatar:         https://avatars1.githubusercontent.com/u/1018198
   bio:            "I'm a certified Force.com Developer who has been consulting for nonprofits on the Salesforce platform since 2011. I have enjoyed helping individual nonprofits achieve their mission through the judicious use of technology, and I feel very fortunate to be part of a team dedicated to creating software for all nonprofits."
 
@@ -75,7 +87,7 @@ Calista Carter:
   avatar:         https://avatars1.githubusercontent.com/u/1326683
   url:            "http://calistacarter.com/"
   twitter:        "calistabcarter"
-  bio:            "I’m a certified Salesforce Administrator and Developer, and have been working in the nonprofit Salesforce space since 2007. I love working at the intersection of technology and non-profit because of the potential for social good and the enormous generosity and passion of the people in this community."
+  bio:            "The potential for social good and the enormous generosity of the nonprofit technology community has inspired me for 10+ years. I worked as an implementation consultant before joining Salesforce.org in 2015, and currently lead a team of product managers working to support the technology needs of internal business users."
 
 Christian Carter:
   github:         cdcarter
@@ -91,18 +103,22 @@ Marcel Christian:
   twitter:        "marcel_ade"
   bio:            "I aim to design products that empower our HED and NGO customers to engender transformational change. I strive to craft products that delight and inspire through their accessibility, usefulness, simplicity, and sophistication. Above all, it's my hope that our products foster impactful change and exemplify continuous improvement, empathy, and service."
 
-Clifford Fajardo:
-  avatar:         https://avatars2.githubusercontent.com/u/6743796
-  github:         cliffordfajardo
-  title:          "Associate Member of Technical Staff, Front End Engineering"
-  bio:            "I began my journey at Salesforce.org in the spring of 2016. I'm a mission & product driven engineer who enjoys developing amazing web experiences. I'm also very passionate about sharing knowledge on the web (Quora/Twitter/YouTube), mentoring students in my community and discovering new tools that make me more productive."
-  twitter:        cliffordfajard0
-  url:            "http://cliffordfajardo.com"
+Joysorlyn Dixon:
+  github:         joy-sfdo
+  title:          "Senior Member of Technical Staff"
+  avatar:         https://avatars2.githubusercontent.com/u/26443060
+  bio:            "When introduced to Salesforce in 2007, I became an instant fan of its technology. Since then I've designed and developed applications as well as taught others to do the same on the platform. I'm excited to be part of Salesforce.org!"
+
+Brian Driver:
+  github:         3lDuderino
+  title:          "Senior Product Manager"
+  avatar:         https://avatars0.githubusercontent.com/u/32491846
+  bio:            "I joined Salesforce.org in 2016 as Product Manager after three years at Salesforce.com. I'm passionate about volunteering to help nonprofits get the most out of their technology and execute on their mission.  Raised in the East Bay (Go Warriors!), I've lived in Oregon since 1993 (Go Blazers!)."
 
 Ryan Foster:
   avatar:         https://avatars0.githubusercontent.com/u/779557
   github:         dextermilo
-  title:          "Lead Member of Technical Staff"
+  title:          "Principal Member of Technical Staff"
   bio:            "I am a long-time web developer, primarily for nonprofits, and was thrilled to discover Salesforce and Force.com in 2011. My favorite projects have three primary ingredients: good design, elegant code, and a good cause. I am known for telling everyone to \"Have fun\", and gripe at my meowing cat while working from home."
 
 David Habib:
@@ -120,18 +136,18 @@ Dylan Hansen:
   twitter:        dillyh
   url:            "http://dylanhansen.ca"
 
-Andrew Hoffman:
-  github:         andhofmt
-  avatar:         https://avatars0.githubusercontent.com/u/6434076
-  title:          "Member of Technical Staff"
-  bio:            "I'm a software developer who specializes in full-stack JavaScript. I enjoy traveling, reading educational books and biographies, and skiing. Although I'm originally from Bozeman, Montana, I migrated up to Washington so that I could experience working in a rapidly growing tech hub."
-
 Jessica Ingrasselino:
   github:         https://github.com/jessingrass
   avatar:         https://avatars3.githubusercontent.com/u/1976801
   title:          "Senior Member of Technical Staff, QA"
   bio:            "I am a software tester; teacher of testing, python, and music; and founder of TeachCode.org. Prior to my career in test, I taught instrumental music in NYC public schools. I am active in the Python education community as the Chair of the PyCon Education summit, and speak frequently at programming and testing meetups."
 
+Kofi Johnson:
+  github:         kofijohnson
+  avatar:         https://avatars0.githubusercontent.com/u/10543596
+  title:          "Senior Member of Technical Staff"
+  bio:            "I've been developing on the Force.com Platform since 2013, and joined Salesforce.org in 2017. I'm passionate about software development, and  am very excited to be part of a team that supports nonprofits. In my free time, I enjoy working on pro bono and open-source projects."
+  
 William Jue:
   github:         willjue
   avatar:         https://avatars1.githubusercontent.com/u/29460948
@@ -165,7 +181,7 @@ David Lea:
 Adam Lincoln:
   github:         adamlincoln
   avatar:         https://avatars3.githubusercontent.com/u/251229
-  title:          "Senior Member of Technical Staff"
+  title:          "Senior Manager, Engineering"
   twitter:        adamjlincoln
   bio:            "I joined the Salesforce.org in early 2015 after five years as a Force.com, Python, and Perl developer in higher education.  I particularly enjoy flexing the platform's batch capabilities and APIs.  I value automation and clean code, and am a big believer in open source software."
 
@@ -180,19 +196,13 @@ Eric Lopez:
   avatar:         https://avatars2.githubusercontent.com/u/29154126
   title:          "Senior Member of Technical Staff, System Administrator"
   bio:            "I'm a certified Salesforce admin and have been working with the platform since 2001. After four years as a Salesforce admin in IT-ESAS at the mothership, I joined Salesforce.org in 2017. I love helping others learn, and thrive on the joy of shared creativity and success."
-  
+
 Paul Malenke:
   github:         paulmalenke
   avatar:         https://avatars1.githubusercontent.com/u/1997507
   title:          "Member of Technical Staff, Engineering"
   bio:            "I came to the Force.com Platform in 2014, and immediately fell in love with it and all that it has to offer. At Salesforce.org, I'm focused on developing the best possible products for the higher education community. In my free time, I enjoy hobby electronics, traveling, and spending time with my family."
-  
-David Manelski:
-  github:         greenstork
-  avatar:         https://avatars2.githubusercontent.com/u/794530
-  title:          "Lead Architect, Enterprise Systems"
-  bio:            "I want to help accelerate people on a mission. On the Salesforce.org Technology & Products team, I help build the tools to make that possible. I work closely with customers, partners, and across our internal teams to help people scale their impact and deepen their engagement."
-  twitter:        "greenstork"
+
 
 Sarah Marovich:
   github:         smarovich
@@ -253,7 +263,7 @@ Cheryl Porro:
 Saradha Rajagopalan:
   github:         srajagopalan1712
   avatar:         https://avatars1.githubusercontent.com/u/10519397
-  title:          "Member of Technical Staff, Quality Engineering"
+  title:          "Senior Member of Technical Staff, Quality Engineering"
   bio:            "I am a quality engineer with a passion for delivering highly functional and usable products. I have tested UI and API products for many years, and joined the Salesforce.org in January 2015 to help with Quality and Release management. I am known for my attention to detail, and enjoy cooking and traveling."
 
 David Ray:
@@ -261,6 +271,13 @@ David Ray:
   avatar:         https://avatars1.githubusercontent.com/u/4258978?v=3&u=636c4c3eb77eea16440185f971dce142e3fc54b0
   title:          "Associate Member of the Technical Staff"
   bio:            "Code is Poetry."
+
+
+John Schultz:
+  github:         jcschultz
+  avatar:         https://avatars1.githubusercontent.com/u/1054020
+  title:          "Senior Member of Technical Staff"
+  bio:            "I joined Salesforce.org after over four years as a technical consultant at Salesforce.com. I enjoy building cool products, and currently hold eleven Salesforce certifications. In my spare time, I'm a musician, sound guy, outdoor enthusiast, volunteer, and am involved in a number of developer/user groups."
 
 Breonna Slade:
   github:         breslade
@@ -271,7 +288,7 @@ Breonna Slade:
 Judi Sohn:
   github:         judisohn
   avatar:         https://avatars3.githubusercontent.com/u/4614343
-  title:          "Manager, Open Source Community"
+  title:          "NGO Open Source Community Manager"
   website:        http://judisohn.com
   twitter:        judis217
   bio:            "I have been actively involved in the community of nonprofits using Salesforce since 2006, and have worked for both ISV and SI partners. I hold four Salesforce certifications and have been a Salesforce MVP. Now at Salesforce.org, I manage community contributions to our open source projects, including the Nonprofit Success Pack."
@@ -283,6 +300,30 @@ Michael Smith:
   bio:            "I'm a 7x certified Salesforce Developer and have been working on the platform since 2001. While consulting with and implementing Salesforce for various nonprofits I quickly became hooked on the Nonprofit Success Pack. In 2017, I joined Salesforce.org to help further expand the power and reach of the NPSP product line."
   twitter:        "force2b_mike"
 
+David Sokoloff:
+  github:         dbsokoloff85
+  avatar:         https://avatars0.githubusercontent.com/u/23663916
+  title:          "Senior Member of the Technical Staff"
+  bio:            "I've been working with the Salesforce platform since 2011 and am very passionate about supporting nonprofits through technology. I’ve finally found my #dreamjob! I work remotely from San Diego, California. In my free time I love to surf, travel and tinker with any gadget I can get my hands on."
+  
+Sureka Sree:
+  github:         sreesureka
+  avatar:         https://avatars3.githubusercontent.com/u/30421619
+  title:          "Member of Technical Staff, QA"
+  bio:            "I am an enthusiastic and experienced Quality Engineer with an eye for detail and determination to ensure that every line of our production code is of highest quality. I'm also an active member of the Portland Software Quality Assurance User’s group. When I'm not working I enjoy cooking and hiking."
+
+Eric Steele:
+  github:         esteele
+  avatar:         https://avatars3.githubusercontent.com/u/483999
+  title:          "Senior Member of Technical Staff, Quality Engineering"
+  bio:            "I joined Salesforce.org as a quality engineer in Fall 2016. Prior to that, I developed higher-ed web applications, and had a brief stint making training tools for Olympic athletes. I'm pleased to be part of Salesforce.org, which highly values the contributions we make both here and in our personal lives."
+
+Kevin Swiggum:
+  github:         kevinswiggum
+  avatar:         https://avatars0.githubusercontent.com/u/30477616
+  title:          "Lead Member of Technical Staff, Engineering"
+  bio:            "I started writing custom solutions for businesses twenty years ago, and started working with the Force.com platform in 2007. I've never looked back! I enjoy learning how organizations achieve their mission, and then helping them use technology to make their work more efficient, measurable, and fun."
+
 Jon Michael Varese:
   github:         jvarese
   avatar:         https://avatars2.githubusercontent.com/u/7268038
@@ -292,7 +333,7 @@ Jon Michael Varese:
 Suzanne Veiga:
   github:         sveiga
   avatar:         https://avatars0.githubusercontent.com/u/5631840
-  title:          "Lead Data and System Administrator"
+  title:          "Director, Data Architecture and Administration"
   bio:            "I'm a certified Salesforce Admin and Developer who's been working with the Salesforce platform since 2009. In the fall of 2013, I joined the Salesforce.org Enterprise Systems team. I enjoy exploring new ways of using declarative features, and sharing those innovations with nonprofits."
 
 Liane Yee:
@@ -306,3 +347,9 @@ Joshua Yeung:
   avatar:         https://avatars0.githubusercontent.com/u/25670033
   title:          "Workday Specialist"
   bio:            "I joined Salesforce.org as a Workday administrator in November 2016, after two years of doing HR consulting and Workday implementations. I enjoy solving puzzles and leveraging HR technology solutions to enable our partners and customers."
+
+Wei Zhang:
+  github:         weizsf
+  avatar:         https://avatars2.githubusercontent.com/u/31747737
+  title:          "Senior Member of Technical Staff"
+  bio:            "I am a certified Salesforce Platform Developer II who loves coding and problem solving. When I encounter an issue, I enjoy figuring out the cause and the solution for it. I joined Salesforce.org in 2017 and I am super excited to be a part of this big family!"
