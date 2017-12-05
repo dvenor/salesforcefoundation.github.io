@@ -1,12 +1,12 @@
 ---
 layout:   post
-title:    "Post 1: A Brief History of AI"
+title:    "Post 1: Where Did AI Come From?"
 date:     2017-11-07 12:00:00
 author:   Phil Nadeau
 excerpt:  "Artificial intelligence (“AI”) is the buzzword of 2017, but it didn't come from nothing. AI has been a feature of the Internet since it became a consumer phenomenon in the 90s, starting with search engines. In 2001, the spam epidemic brought us SpamAssassin, which brought the Bayesian machine learning algorithm to celebrity status."
 ---
 
-# Post 1: Where Did AI Come From?
+# Post 1: A Brief History Of AI
 
 Artificial intelligence (“AI”) is the buzzword of 2017, but it didn't come from nothing. AI has been a feature of the Internet since it became a consumer phenomenon in the 90s, starting with search engines. In 2001, the spam epidemic brought us SpamAssassin, which brought the Bayesian machine learning algorithm to celebrity status.
 
