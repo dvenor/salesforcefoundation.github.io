@@ -60,6 +60,6 @@ For more on how to create custom Apex classes that use TDTM and Trigger Handlers
 ## Conclusion
 
 
-We hope this post helps you understand recent enhancements to default Trigger Handler management. Please feel free to let us know if you need any help or have feedback on these changes. We would love to hear from you so that we can build a product that best serves the education community.
+We hope this post helps you understand recent enhancements to default Trigger Handler management. Please feel free to let us know if you need any help or have feedback on these changes by posting a comment to the [HEDA Group](https://powerofus.force.com/_ui/core/chatter/groups/GroupProfilePage?g=0F980000000D6uj) in the [Power of US Hub](https://powerofus.force.com/publogin). We would love to hear from you so that we can build a product that best serves the education community.
 
 Did you know that you can even make your own contributions to the HEDA package? HEDA, like other Salesforce.org products, benefits from community-contributed features and bug fixes. You can create your own pull requests at the [HEDA Github repository](https://github.com/SalesforceFoundation/HEDAP). We're glad to assist you with merging your pull request, and would love to recognize you in the community for your work!
