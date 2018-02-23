@@ -90,7 +90,7 @@ This class creates a new `CampaignMember` for each Closed-Won Opportunity belong
 
 Note that because the class is external, it needs to declare the method `global`, and needs to use the npsp prefix when calling classes inside the package. The global class declaration is necessary for our TDTM implementation classes to be dynamically instantiated from our Trigger Handler. If you use the `public` identifier instead, you won't get an error, but you won’t see the expected behavior either. It will appear as if the class doesn’t exist or is inactive.
 
-Additionally, if the class you are writing is inside another managed package, you'll have to include the package prefix when entering the class name in the Class__c field. In our example, if ```OpportunityMemberCreation_TDTM``` was inside a managed package with prefix ```foo```, it's name should be stored as ```foo.OpportunityMemberCreation_TDTM```. 
+Additionally, if the class you are writing is inside another managed package, include the package prefix when entering the class name in the Class__c field. In our example, if ```OpportunityMemberCreation_TDTM``` was inside a managed package with prefix ```foo```, it's name should be entered as ```foo.OpportunityMemberCreation_TDTM```. 
 
 ## Additional Information
 
