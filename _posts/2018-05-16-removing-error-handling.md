@@ -6,7 +6,7 @@ date:     2018-05-16 15:00:00
 
 excerpt: "Writing a generic error handler is a common thing to do–nearly everyone ends up doing it at some point. We did it for NPSP and HEDA. But, it turns out it has non-obvious drawbacks, which we'd like to share with you."
 ---
-# Why we removed (most of) our custom Error Handling
+# Why we removed (most of) our custom Error Handling from NPSP and HEDA
 
 Some time ago, circa 2014, we decided to implement our own custom error handling in [NPSP](http://www.salesforce.org/nonprofit/nonprofit-success-pack/), as described in the post titled [“How the Nonprofit Starter Pack does Error Handling on Salesforce"](http://developer.salesforce.org/#blog/post/2015/02/03/how-npsp-does-error-handling-on-salesforce.html).
 
