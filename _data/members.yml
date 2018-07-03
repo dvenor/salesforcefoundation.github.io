@@ -38,7 +38,7 @@ Jaye Brown:
 Jennifer Bennett:
   github:         jjbennett
   avatar:         https://avatars2.githubusercontent.com/u/450473
-  title:          "Member of Technical Staff"
+  title:          "Senior Member of Technical Staff"
   bio:            "I am a certified Salesforce Advanced Developer and have been working on the Salesforce platform since 2012. I joined the Salesforce.org Nonprofit Success Pack Team in 2016 and am thrilled to be part of a team geared toward helping nonprofits leverage the power of the Salesforce platform."
 
 Kevin Bromer:
@@ -94,7 +94,6 @@ Christian Carter:
   avatar:         https://avatars3.githubusercontent.com/u/164
   bio:            "I joined Salesforce as a Performance Engineer in 2017. Previously, I was designing Salesforce implementations for human services nonprofits. A Certified Application and Systems Architect, I've contributed to many open source projects on the Salesforce platform. I'm dedicated to delivering high quality products to the organizations making a difference."
 
-
 Marcel Christian:
   github:         mac11389
   title:          "Lead Product Designer"
@@ -119,13 +118,6 @@ Ryan Foster:
   github:         dextermilo
   title:          "Principal Member of Technical Staff"
   bio:            "I am a long-time web developer, primarily for nonprofits, and was thrilled to discover Salesforce and Force.com in 2011. My favorite projects have three primary ingredients: good design, elegant code, and a good cause. I am known for telling everyone to \"Have fun\", and gripe at my meowing cat while working from home."
-
-David Habib:
-  github:         davidhabib
-  avatar:         https://avatars0.githubusercontent.com/u/908119
-  title:          "Lead Member of Technical Staff"
-  bio:            "I've been working with nonprofits since 2000, and focused exclusively on the Salesforce platform since 2008.  I am the author of the popular AppExchange products Volunteers for Salesforce and Auctions for Salesforce, which I continue to support in my free time. I've been a Senior Force.com Developer with the Foundation since 2013, and work on the Nonprofit Success Pack."
-  url:            "http://djhconsulting.com"
 
 Dylan Hansen:
   github:         dylanhansen
@@ -272,9 +264,8 @@ Saradha Rajagopalan:
 David Ray:
   github:         davidjray
   avatar:         https://avatars1.githubusercontent.com/u/4258978?v=3&u=636c4c3eb77eea16440185f971dce142e3fc54b0
-  title:          "Associate Member of the Technical Staff"
+  title:          "Member of the Technical Staff"
   bio:            "Code is Poetry."
-
 
 John Schultz:
   github:         jcschultz
@@ -338,6 +329,12 @@ Suzanne Veiga:
   avatar:         https://avatars0.githubusercontent.com/u/5631840
   title:          "Director, Data Architecture and Administration"
   bio:            "I'm a certified Salesforce Admin and Developer who's been working with the Salesforce platform since 2009. In the fall of 2013, I joined the Salesforce.org Enterprise Systems team. I enjoy exploring new ways of using declarative features, and sharing those innovations with nonprofits."
+  
+Randi Wilson:
+  github:         randi274
+  avatar:         https://avatars0.githubusercontent.com/u/9795193
+  title:          "Associate Member of Technical Staff, Engineering"
+  bio:            "I started with Salesforce.com in 2015 as a Customer Success Agent for enterprise developers. Two years later I happily made the jump to Salesforce.org to begin working with our incredible nonprofit product team. When I’m not navigating code repositories, you’ll find me cooking, trying new restaurants, or reading a good book."
 
 Liane Yee:
   github:         lianeyee
