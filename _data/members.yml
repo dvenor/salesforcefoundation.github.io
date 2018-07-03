@@ -139,12 +139,6 @@ Kofi Johnson:
   title:          "Senior Member of Technical Staff"
   bio:            "I've been developing on the Force.com Platform since 2013, and joined Salesforce.org in 2017. I'm passionate about software development, and  am very excited to be part of a team that supports nonprofits. In my free time, I enjoy working on pro bono and open-source projects."
   
-William Jue:
-  github:         willjue
-  avatar:         https://avatars1.githubusercontent.com/u/29460948
-  title:          "Senior Business Systems Analyst, Finance"
-  bio:            "I joined Salesforce.org back in 2007 as an intern. I was part of the Finance business team until 2017 when I moved to the Enterprise Systems team. I was born and raised in San Francisco, and am super excited to be part of the Tech & Products team."
-
 Evan Kennedy:
   github:         ZergyPoo
   avatar:         https://avatars3.githubusercontent.com/u/3171260
@@ -219,34 +213,17 @@ Chelsea Mckay:
   title:          "Member of Technical Staff, Engineering"
   bio:            "I’m a certified Force.com Developer and joined Salesforce.org in 2016. I'm driven by our mission to deliver technology and resources to nonprofits, while leading the way for how other companies should emphasize volunteering philanthropy. I love the puzzle that coding and implementing technical solutions provides!"
 
-Chris McMahon:
-  github:         chrismcmahon
-  avatar:         https://avatars3.githubusercontent.com/u/204643
-  title:          "Senior Member of Technical Staff, Quality Assurance"
-  bio:            "I'm a software tester and former professional bass player. I've been part of the greater public software testing community since about 2004, and have contributed to open source projects like Watir, Selenium, and FreeBSD."
-
 Laura Meerkatz:
   github:         lmeerkatz
   avatar:         https://avatars1.githubusercontent.com/u/2000501
   title:          "Senior Member of Technical Staff"
   bio:            "I've been working with nonprofits on the Salesforce platform since 2010. I'm a certified Salesforce Advanced Developer and Advanced Administrator, as well as an active member of <a href=\"http://wearegirlforce.com\" title=\"Girlforce\">Girlforce</a>. I'm passionate (and/or stubborn) about making the tech world more welcoming to women, and believe that the end-user and his or her goals are at the heart of every technology project."
-
-Phil Nadeau:
-  avatar:         /assets/images/phil.jpg
-  title:          "Lead Software Engineer"
-  bio:           
-
+  
 Brandon Parker:
   github:         Br4nd0R
   avatar:         https://avatars0.githubusercontent.com/u/6100538
   title:          "Member of Technical Staff, Engineering"
   bio:            "I'm a native Portlander, hold degrees in Music & Computer Science from Oregon State University, and am an avid Beaver fan. When I'm not working you can find me playing with my daughter, playing piano, cooking a delicious meal, or building the newest Lego Star Wars set."
-
-Chris Polcyn:
-  github:         cpolcyn
-  avatar:         https://avatars3.githubusercontent.com/u/11445853
-  title:          "Member of Technical Staff, Release Engineering"
-  bio:            "I'm a musician and software engineer with a background in audio signal processing. I joined Salesforce.org in 2016 and I'm proud to be part of an organization that values community and giving back. My role here is to make sure we deliver quality products on a regular basis."
 
 Cheryl Porro:
   github:         cporro
