@@ -48,7 +48,7 @@ Both engaging with risk and practicing critical questioning require levels of fr
 At Salesforce.org, we follow a collaborative testing style that encourages full-team participation in the creation of test charters, and  loosely structured session-based test management for the more structured reporting needs. Test charters and team conversations are favored over strictly scripted test plans, as they allow for the necessary full-team collaboration and feedback necessary to develop, test, and deliver a complex product. As such, like in a musical ensemble, the philosophy of collaboration permeates the day to day activities of testers in our team.
 
 
-### Software TESTING AT SFDO
+### Software Testing at SFDO Tech and Products Team
 
 We believe everyone on the development team contributes to product quality. Testers are responsible for upholding quality principles through practicing risk philosophy, asking critical questions throughout the SDLC, and engaging in an improvisational mindset to solve problems. While all team members help, skilled quality engineers are the best equipped to carry out exploratory testing and design strategic automation to support the entire product team.
 
