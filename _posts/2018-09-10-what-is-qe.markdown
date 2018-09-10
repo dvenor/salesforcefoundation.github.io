@@ -1,8 +1,7 @@
 ---
 layout:   post
 title:    "What is Quality Engineering at Salesforce.org?"
-author:   Jessica Ingrassellino
-date:     2018-09-10 15:00:00
+
 
 excerpt: "The core principles informing our approach are examining philosophies of risk, critical qualitative questioning, and improvisational thinking to find and help solve software problems."
 ---
@@ -21,14 +20,14 @@ The core philosophical principles of Salesforce.org Quality Engineering:
 
 ## CORE PHILOSOPHICAL PRINCIPLES
 
-### Risk
+### EXAMINE RISK
 
 > “Between calculated risk and reckless decision-making lies the dividing line between profit and loss.” Charles Duhigg
 
 
 Testers at [Salesforce.org](http://salesforce.org/) regularly engage with risk, and examine product risks focused on the key concerns of our users and customers based on customer feedback, product needs, and known product performance over time. By interacting  with philosophies of risk, testers help inform the team about what risks exist, what risks we can ethically accept, and how we will develop and test to ensure that unacceptable risks do not impact or harm our customers.
 
-### Questioning
+### CRITICAL QUALITATIVE QUESTIONING
 
 > “To raise new questions, new possibilities, to regard old problems from a new angle, requires creative imagination and marks real advance in science.” Albert Einstein
 
@@ -39,7 +38,7 @@ Critical questioning asks us to acknowledge that the way we approach the product
 
 One way to ensure that we hold the myriad of experiences in our minds while we test is to practice reflexivity. Reflexivity encourages us to dig deeper into our understanding of ourselves and our customers, adjusting our testing based upon the information that we learn with each test that we perform.
 
-### Improvisation
+### IMPROVISATIONAL THINKING
 
 > “Through improvisation, jazz teaches you about yourself. And through swing, it teaches you that other people are individuals too. It teaches you how to coordinate with them.” Wynton Marsalis
 
@@ -49,7 +48,7 @@ Both engaging with risk and practicing critical questioning require levels of fr
 At Salesforce.org, we follow a collaborative testing style that encourages full-team participation in the creation of test charters, and  loosely structured session-based test management for the more structured reporting needs. Test charters and team conversations are favored over strictly scripted test plans, as they allow for the necessary full-team collaboration and feedback necessary to develop, test, and deliver a complex product. As such, like in a musical ensemble, the philosophy of collaboration permeates the day to day activities of testers in our team.
 
 
-### Software TESTING AT SFDO
+### Software Testing in the SFDO Tech and Products Team
 
 We believe everyone on the development team contributes to product quality. Testers are responsible for upholding quality principles through practicing risk philosophy, asking critical questions throughout the SDLC, and engaging in an improvisational mindset to solve problems. While all team members help, skilled quality engineers are the best equipped to carry out exploratory testing and design strategic automation to support the entire product team.
 
