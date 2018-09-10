@@ -7,7 +7,6 @@ date:     2018-09-10 15:00:00
 excerpt: "The core principles informing our approach are examining philosophies of risk, critical qualitative questioning, and improvisational thinking to find and help solve software problems."
 ---
 
-# What is Quality Engineering at Salesforce.org v1
 
 When talking about Quality Engineering, a lot of companies talk about what they do. There are hundreds of books, many good, about the “how” of Quality Engineering. Before I get to the how, I'd like to talk about the why. Our philosophy of Quality Engineering here at [Salesforce.org](http://salesforce.org/) is derived from our mission:
 
