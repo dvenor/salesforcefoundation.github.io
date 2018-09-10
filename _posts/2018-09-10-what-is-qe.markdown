@@ -1,0 +1,60 @@
+---
+layout:   post
+title:    "What is Quality Engineering at Salesforce.org?"
+author:   Jessica Ingrassellino
+date:     2018-09-10 15:00:00
+
+excerpt: "The core principles informing our approach are examining philosophies of risk, critical qualitative questioning, and improvisational thinking to find and help solve software problems."
+---
+
+# What is Quality Engineering at Salesforce.org v1
+
+When talking about Quality Engineering, a lot of companies talk about what they do. There are hundreds of books, many good, about the “how” of Quality Engineering. Before I get to the how, I'd like to talk about the why. Our philosophy of Quality Engineering here at [Salesforce.org](http://salesforce.org/) is derived from our mission:
+
+
+> Technology is the most powerful equalizer of our time, providing access to data, knowledge, and — above all — connections. Salesforce.org puts the world’s best technology in the hands of nonprofits and educational institutions, so they connect their organizations and accelerate their impact. As a social enterprise, the more missions our technology supports, the more we can invest back into the community, creating an endless circle of good.
+
+ 
+The core philosophical principles of Salesforce.org Quality Engineering: 
+* examine risk
+* critical qualitative questioning
+* improvisational thinking 
+
+## CORE PHILOSOPHICAL PRINCIPLES
+
+### Risk
+
+> “Between calculated risk and reckless decision-making lies the dividing line between profit and loss.” Charles Duhigg
+
+
+Testers at [Salesforce.org](http://salesforce.org/) regularly engage with risk, and examine product risks focused on the key concerns of our users and customers based on customer feedback, product needs, and known product performance over time. By interacting  with philosophies of risk, testers help inform the team about what risks exist, what risks we can ethically accept, and how we will develop and test to ensure that unacceptable risks do not impact or harm our customers.
+
+### Questioning
+
+> “To raise new questions, new possibilities, to regard old problems from a new angle, requires creative imagination and marks real advance in science.” Albert Einstein
+
+
+Critical qualitative questioning strategies are those that encourage us to question our product while situating that product in the social context(s) and values of our end-users. As a social enterprise, it is important that we are intentional about the way in which we question our products. 
+
+Critical questioning asks us to acknowledge that the way we approach the product as testers may be biased by our prior testing experiences, product experiences, and lived experiences. It is important for testers to understand the beliefs and values important to us as individuals, to our development team, and to our broader user community, and to be able to hold all of those together in our mental space as we perform testing.
+
+One way to ensure that we hold the myriad of experiences in our minds while we test is to practice reflexivity. Reflexivity encourages us to dig deeper into our understanding of ourselves and our customers, adjusting our testing based upon the information that we learn with each test that we perform.
+
+### Improvisation
+
+> “Through improvisation, jazz teaches you about yourself. And through swing, it teaches you that other people are individuals too. It teaches you how to coordinate with them.” Wynton Marsalis
+
+
+Both engaging with risk and practicing critical questioning require levels of freedom and independence on behalf of the tester. While the needs of team and product are the reason that a tester is part of the company, the tester must, inevitably, operate as an individual in this team. We can look to improvisational performance disciplines like jazz improvisation for inspiration on participating as individuals within structured processes. 
+
+At Salesforce.org, we follow a collaborative testing style that encourages full-team participation in the creation of test charters, and  loosely structured session-based test management for the more structured reporting needs. Test charters and team conversations are favored over strictly scripted test plans, as they allow for the necessary full-team collaboration and feedback necessary to develop, test, and deliver a complex product. As such, like in a musical ensemble, the philosophy of collaboration permeates the day to day activities of testers in our team.
+
+
+### Software TESTING AT SFDO
+
+We believe everyone on the development team contributes to product quality. Testers are responsible for upholding quality principles through practicing risk philosophy, asking critical questions throughout the SDLC, and engaging in an improvisational mindset to solve problems. While all team members help, skilled quality engineers are the best equipped to carry out exploratory testing and design strategic automation to support the entire product team.
+
+Next week, come back to the blog as we explore what risk, questioning, and improvisation look like as practical tools for testing.
+
+
+
