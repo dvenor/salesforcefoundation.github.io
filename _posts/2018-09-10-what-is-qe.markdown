@@ -1,6 +1,7 @@
 ---
 layout:   post
 title:    "What is Quality Engineering at Salesforce.org?"
+author: Jess Ingrassellino
 
 
 excerpt: "The core principles informing our approach are examining philosophies of risk, critical qualitative questioning, and improvisational thinking to find and help solve software problems."
