@@ -130,8 +130,15 @@ Dylan Hansen:
 Jessica Ingrasselino:
   github:         jessingrass
   avatar:         https://avatars3.githubusercontent.com/u/1976801
-  title:          "Senior Member of Technical Staff, QA"
+  title:          "Director, Quality Engineering"
+  twitter:        jess_ingrass
   bio:            "I am a software tester; teacher of testing, python, and music; and founder of TeachCode.org. Prior to my career in test, I taught instrumental music in NYC public schools. I am active in the Python education community as the Chair of the PyCon Education summit, and speak frequently at programming and testing meetups."
+
+Anne Jackson:
+  github:         annejackson
+  avatar:         https://avatars1.githubusercontent.com/u/35311289?v=4
+  title:          "Principal Member of Technical Staff, QE"
+  bio:            "I am currently a Principal Member of Technical Staff in Quality Engineering at Salesforce.org. I am a passionate bug finder and “disruptor”. I am a software tester and quality advocate who focuses on the customer first and delivering value to all stakeholders."
 
 Kofi Johnson:
   github:         kofijohnson
@@ -273,7 +280,7 @@ Breonna Slade:
 Judi Sohn:
   github:         judisohn
   avatar:         https://avatars3.githubusercontent.com/u/4614343
-  title:          "NGO Open Source Community Manager"
+  title:          "Director, Customer Centric Engineering"
   website:        http://judisohn.com
   twitter:        judis217
   bio:            "I have been actively involved in the community of nonprofits using Salesforce since 2006, and have worked for both ISV and SI partners. I hold four Salesforce certifications and have been a Salesforce MVP. Now at Salesforce.org, I manage community contributions to our open source projects, including the Nonprofit Success Pack."
@@ -290,12 +297,6 @@ David Sokoloff:
   avatar:         https://avatars0.githubusercontent.com/u/23663916
   title:          "Senior Member of the Technical Staff"
   bio:            "I've been working with the Salesforce platform since 2011 and am very passionate about supporting nonprofits through technology. I’ve finally found my #dreamjob! I work remotely from San Diego, California. In my free time I love to surf, travel and tinker with any gadget I can get my hands on."
-  
-Sureka Sree:
-  github:         sreesureka
-  avatar:         https://avatars3.githubusercontent.com/u/30421619
-  title:          "Member of Technical Staff, QA"
-  bio:            "I am an enthusiastic and experienced Quality Engineer with an eye for detail and determination to ensure that every line of our production code is of highest quality. I'm also an active member of the Portland Software Quality Assurance User’s group. When I'm not working I enjoy cooking and hiking."
 
 Eric Steele:
   github:         esteele
