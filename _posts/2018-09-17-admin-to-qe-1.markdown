@@ -1,0 +1,59 @@
+---
+layout:   post
+title:    "What does a Quality Engineer do?"
+author: Jess Ingrassellino
+
+
+# What does a quality engineer do? 
+
+#### Part 1 of a 4 part series: From Salesforce Admin to Quality Engineer
+ 
+
+Last week, we shared our quality engineering philosophy of risk, questioning, and improvisation. We'll take a look at how those philosophies transform into action, as we reveal the path from Salesforce Admin to Quality Engineer over the next several weeks. 
+
+
+### Investigates risk 
+
+ As any Awesome Admin could guess, the highly configurable nature of salesforce means that testing is a complex endeavor. Quality engineers are like investigative reporters, and we get involved while features are being developed. While the feature idea is in the planning phases, quality engineers can help everyone consider risks inherent in developing the feature. We do this by asking questions like:
+
+* What are the expected outcomes for the users of this feature?
+* How will this feature interact with other parts of the product?
+* How are users likely to mis-use this feature?
+* What can we do to help prevent misuse?
+* What areas of this feature are high-risk areas that might cause breaks or regression?
+
+These types of questions help the entire team to think about the benefits and consequences of the feature, and to fine-tune how features are built and tested.
+
+### Explores Changes
+
+In the development phase, the quality engineer is rapidly learning and exploring the code changes, thinking about all the ways that a user could use (or misuse!) our product. At Salesforce.org, we work collaboratively with our product, UX, documentation, customer centric engineering, and development teams to make sure that we are taking multiple viewpoints into consideration when test planning. This knowledge is used to think about how we will test the product, and what tests we should consider automating. We co-create a document called a test charter, which is used by the tester during exploratory testing. 
+
+Exploratory testing is kind of like going on a trip to a new town. You investigated hotel and airfare prices, booked your reservations, and packed your bags. But how do you decide what to do once you've arrived? You probably have some structure in mind. Unpack your luggage, figure out what services are available in your hotel, eat a meal, and do something fun. That mental structure is like a test charter. It has some basic information about what you need to do, but it doesn't tell you how how to do it.
+
+### Asks Questions and Improvises
+
+
+How we perform exploratory testing depends on a lot of factors. Low risk changes that apply to only one area of the product are less risky than changes that apply to objects that are used in multiple places. Using the feedback and comments from the risk investigation, along with the comments and information provided in the charter, we make estimates for how much time we believe it will take to address them fully.
+
+Like a trip to a new place, it's really hard to predict what will happen once we get started. Maybe we hit traffic, and it takes longer to get to dinner than we anticipate, so we improvise on our plan. Instead of a fancy meal, we eat at fast food so we don't miss the concert we're attending. Maybe we intend to take a short walk in a local park, but find an interesting path to explore with flowers that only grow in that region. Exploring a new path wasn't part of the original plan, but we decide that the beauty of the flowers was worth changing our plan.
+
+Quality engineers make a lot of choices and ask a lot of questions about a product, especially when we find something unexpected. We use this information to make decisions about what to test next, and we constantly evaluate and re-evaluate what is important to all our stakeholders. We investigate the product and adjust our tests to ensure that our customers have the best possible product experience. 
+
+
+### Communicates Clearly
+
+
+After any great (or awful!) meal or trip, most of us share the experience with our friends. We tell them what we loved, and what we hated. That feedback is likely to influence what our friends and others choose to do if they visit the same place.
+
+Quality engineers are always communicating during the testing process. We imagine and improvise about who our user is and what they might try to do. We pay attention to details, from seemingly small things like how many times we click on a button, to big things, like how a new feature might look with certain page layouts, or impact workflow rules. 
+
+When we find something that seems concerning or is just broken, we bring it to the team as soon as possible. We write up detailed summaries and take screenshots or video to help communicate what we are observing as clearly as possible. Quality engineers are major advocates for a positive user experience! Once we have done our best to explore the product and communicate any issues, we share our completed test charter with the team, and the code is released.
+
+### Work at Salesforce.org!
+
+Do these characteristics describe you? Great! Next week, learn how specific salesforce admin skills apply to quality engineering.
+
+Are you a Salesforce nonprofit or education administrator who loves to investigate each new release? Check out our latest quality engineering roles at [salesforce.org](http://salesforce.org/): https://salesforce.wd1.myworkdayjobs.com/External_Career_Site/0/refreshFacet/318c8bb6f553100021d223d9780d30be
+
+
+
