@@ -2,12 +2,12 @@
 layout:   post
 title:    "What does a Quality Engineer do?"
 author: Jess Ingrassellino
+
+excerpt: "Part 1 of a 4 part series"
 ---
 
 
 # What does a quality engineer do? 
-
-#### Part 1 of a 4 part series: From Salesforce Admin to Quality Engineer
  
 
 Last week, we shared our quality engineering philosophy of risk, questioning, and improvisation. We'll take a look at how those philosophies transform into action, as we reveal the path from Salesforce Admin to Quality Engineer over the next several weeks. 
