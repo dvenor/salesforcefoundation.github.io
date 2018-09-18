@@ -53,7 +53,7 @@ At Salesforce.org, we follow a collaborative testing style that encourages full-
 
 We believe everyone on the development team contributes to product quality. Testers are responsible for upholding quality principles through practicing risk philosophy, asking critical questions throughout the SDLC, and engaging in an improvisational mindset to solve problems. While all team members help, skilled quality engineers are the best equipped to carry out exploratory testing and design strategic automation to support the entire product team.
 
-Interested in joining us at Salesforce.org? [Click here for more info](https://salesforce.wd1.myworkdayjobs.com/External_Career_Site/job/California---San-Francisco/Quality-Assurance-Engineer---Salesforceorg_JR22609)
+Interested in joining us at Salesforce.org? [Click here for more info](https://salesforce.wd1.myworkdayjobs.com/External_Career_Site/0/refreshFacet/318c8bb6f553100021d223d9780d30be)
 
 Next week, come back to the blog as we explore what risk, questioning, and improvisation look like as practical tools for testing.
 
