@@ -1,0 +1,38 @@
+---
+layout:   post
+title:    "Can Salesforce Admins be Quality Engineers?"
+author: Jess Ingrassellino
+
+excerpt: "Part 2 of a 4 part series"
+---
+
+
+### Part 2 of a 4 part series: From Salesforce Admin to Quality Engineer
+
+
+Last week, in the first of our 4-part series, we learned about what a Quality Engineer does at Salesforce.org. This week, we will in dive in and learn about how Salesforce Admins have what it takes to transition into a Quality Engineering career. 
+
+
+### Domain Knowledge
+
+Great testers are experts in testing and in the domain that they are testing. Salesforce admins are also domain experts! Because salesforce administrators use salesforce on a daily basis, you have a deep understanding of the product that comes from using it over time. More importantly, you understand the world in which your deployment operates. What does that mean? Well, if you are an admin for a non-profit or educational organization, then you have domain knowledge about non-profit and education spaces that will help you to test what matters to the users who interact with the product most.
+
+
+### Know Thyself: User Insights
+
+Quality engineers have the very important job of keeping user needs top-of-mind as they test, thinking compassionately about what the users need to do their jobs well. Part of testing salesforce is making sure that using [salesforce.org](http://salesforce.org/) is a pleasant, delightful experience. As long-time users of salesforce, admins know what fellow admins need to do the best possible work for their organizations. You also know what kinds of mistakes that first-time users might make, and you know how other Salesforce Adminisrators expect the product to work. 
+
+These insights and personal experiences with the product are invaluable! By transitioning into a career in quality engineering at salesforce.org, you get to bring your domain knowledge together with your personal insights about salesforce.org, and work with product managers, developers, and the entire team to help us get our products right.
+
+### Troubleshooting and Communication
+
+A great strength of being a salesforce admin is knowing the software so well that you can troubleshoot with ease, trying out potential remedies, and narrowing down issues to their root cause. Once you get that root cause, you are careful about communicating the problem by reaching out to the right channels, writing up the issue in a way that is easy for someone else to understand, and providing extra information to help the engineering staff address your issue, if necessary. You help to document the issue in case someone else has the same problem that you have. These are all the same skills that a Quality Engineer uses when they find and report an issue during testing.
+
+### Work at Salesforce.org!
+
+This week, you've seen first-hand how specific salesforce admin skills apply to quality engineering. Next week, we'll highlight the testing skills that you can develop to help your transition from salesforce admin to quality engineer. 
+
+If you are looking to make an impact on many organizations with your knowledge and experience, consider our latest quality engineering roles at [salesforce.org](http://salesforce.org/): https://salesforce.wd1.myworkdayjobs.com/External_Career_Site/0/refreshFacet/318c8bb6f553100021d223d9780d30be
+
+
+
