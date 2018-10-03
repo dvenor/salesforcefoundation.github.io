@@ -33,10 +33,14 @@ For developers interested in testing software by building and maintaining code, 
 
 There is a vibrant community of software testers around the world, with many meetups available in urban and suburban locales internationally. Some groups that you can join/conferences you can attend if you want to learn more include:
 
+
 [Ministry of Testing](https://www.ministryoftesting.com/)
+
 [Association for Software Testing](https://www.associationforsoftwaretesting.org/)
+
 [Software Test Professionals Conference](https://www.stpcon.com/)
-[Meetup.com](http://meetup.com/): search “software testing”
+
+[Meetup.com](http://meetup.com/): search “software testing” for meetups in your local area
 
 This article represents just a few of thousands of resources about software testing. You can perform a search on any of the terms and find endless information about each of the skills briefly listed here. 
 
