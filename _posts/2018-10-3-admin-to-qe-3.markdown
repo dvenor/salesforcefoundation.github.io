@@ -8,7 +8,7 @@ excerpt: "Part 3 of a 4 part series"
 
 # The Special Skills of Quality Engineers
 
-### Part 3 of a 4 part series: From salesforce Admin to Quality Engineer
+### Part 3 of a 4 part series: From Salesforce Admin to Quality Engineer
 
 
 Last week, in the second of our 4-part series, we learned about why Salesforce Admins have some great skills for Quality Engineering. This week, we will identify some of the special skills of quality engineers, and how you can build those skills. (resources listed do not constitute an endorsement of the resources nor the individuals who wrote them by [Salesforce.org](http://salesforce.org/) nor Salesforce.com)
