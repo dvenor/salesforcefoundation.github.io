@@ -1,0 +1,47 @@
+---
+layout:   post
+title:    "Career Paths in Quality Engineering"
+author: Jess Ingrassellino
+
+excerpt: "Part 4 of a 4 part series"
+---
+
+
+# Career Paths in Quality Engineering
+### Part 4 of a 4 part series: From Salesforce Admin to Quality Engineer
+
+
+You know what you do. You know what we do. Today, we'll explore some career paths available for Quality Engineers with Salesforce experience!
+
+
+### Exploratory Tester
+
+
+The exploratory tester has an incredibly important role asking questions about features, from the moment an idea is born to the moment they are delivered to production. Exploratory testers work closely with product managers, UX designers, the CCE team, and developers to create robust test plans and consider all the possible ways a customer might use our features. It's incredibly important for exploratory testers to ask critical questions and push for clear answers. In this way, exploratory testers really advocate for the customer experience. 
+
+
+### Automation Engineer
+
+
+Automation engineers are testers who love to write code. They write code that automates the regression checklist and other parts of our test framework so that regression tests can be run quickly and frequently. Our automation engineers work together with developers, release engineers, and exploratory testers to decide what parts of a feature need to be added to the regression test. The automation engineer then writes code that runs to make sure no new issues were introduced to our existing product. 
+
+
+### Accessibility Tester
+
+
+Accessibility testers focus on ensuring that our products are useable by everyone, no matter how they choose to interact with our products. While accessibility is everybody's business, the accessibility tester digs deep to test different kinds of usability. Like exploratory testers, accessibility testers work with nearly every team to communicate their findings and coach on building solutions. Accessibility testers use both exploratory testing skills and automated tools to test the software for accessibility issues. 
+
+### Security Tester
+
+
+Trust is a major value of Salesforce.org, and security testers help make sure that our products remain secure. The security tester works closely with the internal security team, developers, and release engineers to identify security concerns through exploratory testing and automated testing. Deep knowledge of the entire Salesforce platform is invaluable for a security tester.
+
+
+### Work for [Salesforce.org](http://salesforce.org/)
+
+This is our last in the special series for Salesforce Admins. Next post, we'll hear from the different testers on our team as they share their experiences about their testing and testing careers.
+
+
+If you are looking to make an impact on many organizations with your knowledge and experience, consider our latest quality engineering roles at [salesforce.org](*http://salesforce.org/*) by [clicking here](*https://salesforce.wd1.myworkdayjobs.com/External_Career_Site/0/refreshFacet/318c8bb6f553100021d223d9780d30be*).
+
+
