@@ -7,7 +7,7 @@ excerpt: "Part 4 of a 4 part series"
 ---
 
 
-# Blog Part 4: Career Paths in Quality Engineering
+# Career Paths in Quality Engineering
 ### Part 4 of a 4 part series: From Salesforce Admin to Quality Engineer
 
 
@@ -17,13 +17,13 @@ You know what you do. You know what we do. Today, we'll explore some career path
 ### Exploratory Tester
 
 
-The exploratory tester has an incredibly important role asking questions about features from the moment an idea is born to the moment they are delivered to production. Exploratory testers work closely with product managers, UX designers, the CCE team, and developers to create robust test plans and consider all the possible ways a customer might use our features. It's incredibly important for exploratory testers to ask critical questions and push for clear answers. In this way, exploratory testers really advocate for the customer experience. 
+The exploratory tester has an incredibly important role asking questions about features, from the moment an idea is born to the moment they are delivered to production. Exploratory testers work closely with product managers, UX designers, the CCE team, and developers to create robust test plans and consider all the possible ways a customer might use our features. It's incredibly important for exploratory testers to ask critical questions and push for clear answers. In this way, exploratory testers really advocate for the customer experience. 
 
 
 ### Automation Engineer
 
 
-Automation engineers are testers who love to write code. They write code that automates the regression checklist and other parts of our test framework so that regression tests can be run quickly and frequently. Our automation engineers work together with developers, release engineers, and exploratory testers to decide what parts of a feature need to be added to the regression test. The automation engineer then writes code that ensures that the feature is tested continuously. 
+Automation engineers are testers who love to write code. They write code that automates the regression checklist and other parts of our test framework so that regression tests can be run quickly and frequently. Our automation engineers work together with developers, release engineers, and exploratory testers to decide what parts of a feature need to be added to the regression test. The automation engineer then writes code that runs to make sure no new issues were introduced to our existing product. 
 
 
 ### Accessibility Tester
