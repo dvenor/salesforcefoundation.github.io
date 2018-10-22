@@ -3,7 +3,7 @@ layout:   post
 title:    "Why We Built Our Own CI App"
 author: Jason Lantz
 
-excerpt: "The story of MetaCI, a crazy idea that now power Salesforce.org's Product Delivery team's daily work"
+excerpt: "The story of MetaCI, a crazy idea that now powers the Salesforce.org Product Delivery team's daily work."
 ---
 
 # Why We Built Our Own CI App
