@@ -35,14 +35,17 @@ Thus far, I haven't even mentioned my favorite feature of MetaCI: it's open sour
 
 This is just the first in a series of posts we'll be writing about our innovation in release engineering at Salesforce.org.  If you share a passion for seeing innovative, if sometimes crazy ideas, come to life to solve seemingly impossible challenges, check back for future posts.  Better yet, [consider joining our growing team](https://salesforce.wd1.myworkdayjobs.com/en-US/External_Career_Site/job/California---Remote/Performance-Engineer---Salesforceorg_JR20212-1).
 
-Resources related to this article:
+## Resources related to this article:
 
 Our production instance of MetaCI:
+
 [https://mrbelvedereci.herokuapp.com](https://mrbelvedereci.herokuapp.com/)
 
-CumulusCI's Documentation
+CumulusCI's Documentation:
+
 [http://cumulusci.readthedocs.io](http://cumulusci.readthedocs.io/)
 
-Github Repositories
+Github Repositories:
+
 https://github.com/SFDO-Tooling/MetaCI
 https://github.com/SFDO-Tooling/CumulusCI
