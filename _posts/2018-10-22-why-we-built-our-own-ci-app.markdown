@@ -6,8 +6,6 @@ author: Jason Lantz
 excerpt: "The story of MetaCI, a crazy idea that now powers the Salesforce.org Product Delivery team's daily work."
 ---
 
-# Why We Built Our Own CI App
-
 It's a natural tendency of developers to want to build things themselves.  If you've ever known a developer who wrote their own issue tracker or project management system, you may have some bias the next time you hear such a pitch.  It's understandable for engineering leaders to build up a bias when one of their developers makes the recommendation to build their own X.  I faced just such a challenge in November, 2016 trying to figure out how to pitch my boss on the idea of building our own CI app.  I knew I had a bit of a reputation for wanting to build things myself, usually accompanied by a statement like “it'll be easy” which was rarely true.
 
 First, a little bit of background.  [Salesforce.org](http://salesforce.org/) creates products with releases every 2 weeks to tens of thousands of nonprofit and education customers.  My team (Release Engineering) runs the tooling and processes for scalable and agile team development and release of these products.  All our products are built on the Salesforce platform as managed packages and share a common characteristic: our runtime environment is a Salesforce org instance, not our local machines or a virtual machine.  Our build scripts are really just API clients to deploy our code and run tests.  Recognizing that we're kind of an edge case in the CI world, we have invested resources over the years in creating [CumulusCI](https://github.com/SFDO-Tooling/CumulusCI), a Python framework for portable automation for the development of managed packages on the Salesforce platform.
@@ -47,5 +45,5 @@ CumulusCI's Documentation:
 
 Github Repositories:
 
-https://github.com/SFDO-Tooling/MetaCI
-https://github.com/SFDO-Tooling/CumulusCI
+* https://github.com/SFDO-Tooling/MetaCI
+* https://github.com/SFDO-Tooling/CumulusCI
