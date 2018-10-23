@@ -13,7 +13,7 @@ First, a little bit of background.  [Salesforce.org](http://salesforce.org/) cre
 After our initial prototyping of CumulusCI proved that we could effectively encapsulate all the automation needs of our projects, we set out to find a cloud based CI system where we could run our fancy new automation framework on commits to Github.  We already had our logic wrapped in Python classes which were easy to run.  For example, to build a feature branch requires just a single command in CumulusCI's command line interface:
 
 ```
-`cci flow run ci_feature --org dev`
+cci flow run ci_feature --org dev
 ```
 
 We found some limitations in almost all existing cloud CI systems given our unique needs:
@@ -25,7 +25,7 @@ We found some limitations in almost all existing cloud CI systems given our uniq
 
 In line with our culture, we viewed these limitations not as blockers but instead as a call to innovate.  I wrote up a proposal doc outlining the challenges with existing CI systems and pitching the idea of building our own CI app on [Django](https://www.djangoproject.com/) that could tap into our Python based automation and run on [Heroku](https://heroku.com/) for burstable scalability.  It was indeed a crazy idea, but the pitch was to give us 2 weeks to prototype the solution.  The pitch worked and after 2 weeks we had a prototype of what is now [MetaCI](https://github.com/SFDO-Tooling/MetaCI) running builds on Heroku.  The prototype helped us win support to continue building our own CI app.  In January, 2017 (2 months later) we went live with our custom CI app for all our projects.
 
-We're now 22 months and 40,000+ builds into this crazy idea experiment and it's easy to take our release engineering zen for granted.  The tension between developers and release engineers over backlogged build queues is a thing of the past.  We've integrated MetaCI with [Hirefire.io](http://hirefire.io/) to automatically scale up our worker dynos as our build queue grows allowing all builds to run concurrently where possible.  The entirety of the logic needed to handle the challenge of external resource blocking which had me on a years long search of a solution was solved in [46 lines of nicely formatted Python code](https://github.com/SFDO-Tooling/MetaCI/blob/master/metaci/build/tasks.py#L81-L127).  Best of all, we've been able to create a first class user experience for our team based on the Salesforce specific information for our builds.
+We're now 22 months and 40,000+ builds into this crazy idea experiment, and it's easy to take our release engineering zen for granted.  The tension between developers and release engineers over backlogged build queues is a thing of the past.  We've integrated MetaCI with [Hirefire.io](http://hirefire.io/) to automatically scale up our worker dynos as our build queue grows allowing all builds to run concurrently where possible.  The entirety of the logic needed to handle the challenge of external resource blocking which had me on a years long search of a solution was solved in [46 lines of nicely formatted Python code](https://github.com/SFDO-Tooling/MetaCI/blob/master/metaci/build/tasks.py#L81-L127).  Best of all, we've been able to create a first class user experience for our team based on the Salesforce specific information for our builds.
 
 The experience of running CI inside a single Heroku app definitely puts us in new territory and has brought some unanticipated benefits.  We're using [Heroku Pipelines](https://devcenter.heroku.com/articles/pipelines) and [Heroku CI](https://devcenter.heroku.com/articles/heroku-ci) to manage the deployments of changes to MetaCI.  Heroku CI is a great system for testing Heroku based applications.  We have a staging site where we can test out changes before deploying to our production CI site with the click of a button.  Heroku's container system lends itself well to our situation of a common set of tooling dependencies for all our projects as the compiled slug allows quick and easy scaling of dynos to handle load.  We've benefited from addons such as New Relic and Sentry, and it brings great peace of mind to have all our build and test result data living in a single, industry standard Postgresql database.
 
@@ -37,13 +37,13 @@ This is just the first in a series of posts we'll be writing about our innovatio
 
 Our production instance of MetaCI:
 
-[https://mrbelvedereci.herokuapp.com](https://mrbelvedereci.herokuapp.com/)
+* [https://mrbelvedereci.herokuapp.com](https://mrbelvedereci.herokuapp.com/)
 
 CumulusCI's Documentation:
 
-[http://cumulusci.readthedocs.io](http://cumulusci.readthedocs.io/)
+* [http://cumulusci.readthedocs.io](http://cumulusci.readthedocs.io/)
 
 Github Repositories:
 
-* https://github.com/SFDO-Tooling/MetaCI
-* https://github.com/SFDO-Tooling/CumulusCI
+* [https://github.com/SFDO-Tooling/MetaCI](https://github.com/SFDO-Tooling/MetaCI)
+* [https://github.com/SFDO-Tooling/CumulusCI](https://github.com/SFDO-Tooling/CumulusCI)
