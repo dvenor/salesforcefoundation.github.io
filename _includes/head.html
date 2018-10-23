@@ -4,6 +4,16 @@
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width">
     
+    <!-- Open Graph tags -->
+    <meta property='og:title' content="{{ page.title }}"/>
+    {% if page.author %}
+    {% assign member = site.data.members[page.author] %}
+    <meta property='og:image' content="{{member.avatar}}"/>
+    {% endif %}
+    {% if page.excerpt %}
+    <meta property='og:description' content="{{ page.excerpt }}"/>
+    {% endif %}
+
     <link rel="alternate" type="application/rss+xml" title="RSS"
         href="http://developer.salesforcefoundation.org/feed.xml">
 
