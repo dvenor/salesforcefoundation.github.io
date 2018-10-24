@@ -32,11 +32,12 @@ require([
       this.setElement($('.blog-list')).render();
     },
     setHref: function(item) {
-      return item === '1' ? 'index.html' : item;
+      return window.location.origin + '/' + (item === '1' ? 'index.html' : item);
     },
     get: function(item) {
       var self = this;
       var href = this.setHref(item);
+
       if (!this._cache[item]) {
         $.get(href,
           function(result) {
@@ -58,7 +59,8 @@ require([
       this.$('.posts-link, .posts-more, .pager a').on('click', function(event) {
         event.preventDefault();
         var prefix = $(this).parents('.posts').length > 0 ? '#blog/post' : '#blog/page/';
-        app.router.navigate(prefix + $(this).attr('href'), {trigger: true, replace: true});
+        var href = (prefix + $(this).attr('href')).replace('//', '/');
+        app.router.navigate(href, {trigger: true, replace: true});
       });
 
       _.each(this.$('.posts > li'), function(item) {
@@ -106,7 +108,7 @@ require([
       return this;
     }
   });
-  
+
   // Router for the app, mostly deals with the blog
   var BlogRouter = Backbone.Router.extend({
     routes: {
@@ -157,7 +159,7 @@ require([
           if (postMatch) {
             newHash += postMatch[0];
           }
-          
+
           hash = newHash;
         } else if (href.indexOf('/page/') > -1) {
           pageMatch = href.match(pageReg);
@@ -169,7 +171,7 @@ require([
           if (postMatch) {
             newHash += postMatch[0];
           }
-          
+
           hash = newHash;
         }
       } else {
@@ -194,7 +196,7 @@ require([
   $(document).ready(function () {
 
     app.router = new BlogRouter();
-    
+
     app.pager = new PagerView();
     app.blogpost = new PostView();
 
