@@ -33,19 +33,6 @@
 .bootstrap h6 {
   display: block;
 }
-@font-face {
-  font-family: 'ProximaNovaSoft-Regular';
-  src: url("../fonts/proximanovasoft-regular.eot");
-  src: url("../fonts/proximanovasoft-medium.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'ProximaNovaSoft-Medium';
-  src: url("../fonts/proximanovasoft-medium.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
 .bootstrap html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -13646,16 +13633,14 @@
   background-size: 100%;
   background-position: 50%;
 }
-.bootstrap .navbar-branded .navbar-brand {
-  padding: 25px 10px;
-}
 .bootstrap .navbar-branded .navbar-foundation-logo {
-  background: url('../images/logo.png');
+  background: url('../images/logo-white.png');
   background-size: 100%;
   background-position: 50%;
-  width: 156px;
-  height: 60px;
-  margin: 5px 0;
+  background-repeat: no-repeat;
+  width: 161.9047619px;
+  height: 50px;
+  margin: 10px 0;
   text-indent: -9999px;
   font-size: 1px;
   -webkit-transition: opacity 200ms;
