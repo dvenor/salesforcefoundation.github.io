@@ -42,6 +42,6 @@ Trust is a major value of Salesforce.org, and security testers help make sure th
 This is our last in the special series for Salesforce Admins. Next post, we'll hear from the different testers on our team as they share their experiences about their testing and testing careers.
 
 
-If you are looking to make an impact on many organizations with your knowledge and experience, consider our latest quality engineering roles at [salesforce.org](*http://salesforce.org/*) by [clicking here](*https://salesforce.wd1.myworkdayjobs.com/External_Career_Site/0/refreshFacet/318c8bb6f553100021d223d9780d30be*).
+If you are looking to make an impact on many organizations with your knowledge and experience, consider our latest quality engineering roles at [salesforce.org](*http://salesforce.org/*) by [clicking here](*https://salesforce.wd1.myworkdayjobs.com/External_Career_Site).
 
 
