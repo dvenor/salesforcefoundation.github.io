@@ -32,7 +32,7 @@ A great strength of being a salesforce admin is knowing the software so well tha
 
 This week, you've seen first-hand how specific salesforce admin skills apply to quality engineering. Next week, we'll highlight the testing skills that you can develop to help your transition from salesforce admin to quality engineer. 
 
-If you are looking to make an impact on many organizations with your knowledge and experience, consider our latest quality engineering roles at [salesforce.org](http://salesforce.org/): https://salesforce.wd1.myworkdayjobs.com/External_Career_Site/0/refreshFacet/318c8bb6f553100021d223d9780d30be
+If you are looking to make an impact on many organizations with your knowledge and experience, consider our latest quality engineering roles at [salesforce.org](https://salesforce.wd1.myworkdayjobs.com/External_Career_Site)
 
 
 

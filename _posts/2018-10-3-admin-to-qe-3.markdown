@@ -48,7 +48,7 @@ This article represents just a few of thousands of resources about software test
 
 This week, you've learned the skills a quality engineer needs, and the resources to develop them. Next week, we'll talk about the roles available here on our growing Quality Engineering team. 
 
-If you are looking to make an impact on many organizations with your knowledge and experience, consider our latest quality engineering roles at [salesforce.org](http://salesforce.org/) by [clicking here](https://salesforce.wd1.myworkdayjobs.com/External_Career_Site/0/refreshFacet/318c8bb6f553100021d223d9780d30be).
+If you are looking to make an impact on many organizations with your knowledge and experience, consider our latest quality engineering roles at [salesforce.org](http://salesforce.org/) by [clicking here](https://salesforce.wd1.myworkdayjobs.com/External_Career_Site).
 
 
 
